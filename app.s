@@ -14,8 +14,8 @@ main:
     // x0 contiene la direccion base del framebuffer
     //TODO ---------------- CODE HERE ------------------------------------
 	MOV X1, #1
-	MOV X2, #300
-	MOV X3, #200
+	MOV X2, #1
+	MOV X3, #600
 	MOV X4, #400
     movz X7, 0xC7, lsl 16
     movk X7, 0x1585, lsl 00
@@ -30,7 +30,7 @@ InfLoop:
     // NOTE (x,y) esta en la direccion: Dirección de inicio + 4 * [x + (y * 640)]
     // fun dibujar_pixel(x,y,color) regs:(X1, X2, X7) desc: pixel en (x, y) del color color
 
-dibujar_pixel:
+dibujar_pixel: // NOTE ANDA!
     MOV X16, SCREEN_WIDTH							// x16 = SCREEN_WIDTH = 640
     MUL X16, X2, X16        						// x16 = y * 640 = X2 * SCREEN_WIDTH
     ADD X16, X1, X16								// x16 = x + y * 640
@@ -40,7 +40,7 @@ dibujar_pixel:
     RET 											// Retorno
 
     // fun dibujar_linea(x1,y1,x2,y2,color) regs: (X1, X2, X3, X4, X7) desc: hace una linea desde (x1,y1) hasta (x2,y2)
-dibujar_linea:       								// (5,10)-----(5,20)   vertical ||    (5,10)-----(20,10)   horizontal
+dibujar_linea:  // NOTE ANDA! pero no se // (5,10)-----(5,20)   vertical ||    (5,10)-----(20,10)   horizontal
 	// Preservo los argumentos en el stack, solo modifico x1=X1, y1=X2 en el medio, solo guardo eso
     SUB     SP, SP, #24   					        // Hago espacio para los argumentos en el stack
     STR     X1, [SP]           						// Guardo X1=x1 en el stack
@@ -68,7 +68,7 @@ dibujar_linea:       								// (5,10)-----(5,20)   vertical ||    (5,10)-----(2
 		STR X2, [SP]								// push(y1)
 		STR X30, [SP, #8]							// push(LR)
 
-		 comienzo_loop_linea_vertical:			    // Pinto la linea hasta terminar
+		//  comienzo_loop_linea_vertical:			    // Pinto la linea hasta terminar
 			CMP X2, X4								// if 
 			B.LE continuar_loop_linea_vertical		// y1 <= y2 then continuar_loop_linea_vertical
 
@@ -98,7 +98,7 @@ dibujar_linea:       								// (5,10)-----(5,20)   vertical ||    (5,10)-----(2
 	STR X1, [SP]									// push(x1)
 	STR X30, [SP, #8]								// push(LR)
 
-	comienzo_loop_linea_horizontal:					// Pinto la linea hasta terminar
+	// comienzo_loop_linea_horizontal:					// Pinto la linea hasta terminar
 		CMP X1, X3									// if 
 		B.LE continuar_loop_linea_horizontal		// x1 <= x2 then continuar_loop_linea_horizontal
 
@@ -120,9 +120,8 @@ dibujar_linea:       								// (5,10)-----(5,20)   vertical ||    (5,10)-----(2
 	ADD SP, SP, #16
 	ret
 
-
-// // fun dibujar_rectangulo(x1,y1,x2,y2,color) regs: (X1, X2, X3, X4, X7) desc: hace un rectangulo desde (x1,y1) inf iz a (x2,y2) sup der
-dibujar_rectangulo:
+// fun dibujar_rectangulo(x1,y1,x2,y2,color) regs: (X1, X2, X3, X4, X7) desc: hace un rectangulo desde (x1,y1) inf iz a (x2,y2) sup der
+dibujar_rectangulo: // FIXME
 	// PUSH(y1=X2, LR=X30)
 	SUB SP, SP, #16									// Abro el stack
 	STR X30, [SP]									// Guardo LR=X30
