@@ -84,12 +84,11 @@ dibujar_linea:       								// (5,10)-----(5,20)   vertical ||    (5,10)-----(2
 			CMP X2, X4								// if
 			B.LT dibujar_pixel_loop_linea_vertical	// y1 < y2 then dibujar_pixel_loop_linea_vertical
 
-	// POP(LR=X30, y2=X2) y retorno
-	LDR X30, [SP, #8]
-	LDR X2, [SP]
-	ADD SP, SP, #16
-ret
-
+		// POP(LR=X30, y2=X2) y retorno
+		LDR X30, [SP, #8]
+		LDR X2, [SP]
+		ADD SP, SP, #16
+	ret
 
 	// puede modificar x1 (puede modificar X1)
 	// proc dibujar_linea_vertical(x1,y1,x2,y2,color)
@@ -119,7 +118,7 @@ ret
 	LDR X30, [SP, #8]
 	LDR X1, [SP]
 	ADD SP, SP, #16
-ret
+	ret
 
 
 // // fun dibujar_rectangulo(x1,y1,x2,y2,color) regs: (X1, X2, X3, X4, X7) desc: hace un rectangulo desde (x1,y1) inf iz a (x2,y2) sup der
