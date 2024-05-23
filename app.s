@@ -77,18 +77,7 @@ main:
     LDR X7, =BLANCO
     BL dibujar_pixel
 
-    // Punto (BLANCO) // NOTE ANDA
-    MOV X1, SCREEN_WIDTH/2+32
-    MOV X2, SCREEN_HEIGHT/2 
-    LDR X7, =BLANCO
-    BL dibujar_pixel
-
-    // Punto (BLANCO) // NOTE ANDA
-    MOV X1, SCREEN_WIDTH/2 + 64
-    MOV X2, SCREEN_HEIGHT/2 
-    LDR X7, =BLANCO
-    BL dibujar_pixel
-
+    
     // Punto (BLANCO) // NOTE ANDA
     MOV X1, SCREEN_WIDTH/2 + 96
     MOV X2, SCREEN_HEIGHT/2 
@@ -135,12 +124,34 @@ main:
 
     // Rectángulo 1 (AZUL)      (x1 > x2 && y1 > y2)
     MOV X1, 250
-    MOV X2, 300
+    MOV X2, 340
     MOV X3, 475
     MOV X4, 400
     LDR X7, =VERDE_CLARO
     BL dibujar_rectangulo
 
+    // Rectángulo 1 (AZUL)      (x1 > x2 && y1 > y2)
+    MOV X1, 50
+    MOV X2, 100
+    MOV X3, 100
+    MOV X4, 100
+    LDR X7, =VERDE_CLARO
+    BL dibujar_rectangulo
+
+
+ 
+    // (250,340) (475,400)
+    // Punto (MAGENTA) // NOTE ANDA
+    MOV X1, 250
+    MOV X2, 340
+    LDR X7, =MAGENTA
+    BL dibujar_pixel
+
+    // Punto (VERDE) // NOTE ANDA
+    MOV X1, 475
+    MOV X2, 400
+    LDR X7, =VERDE
+    BL dibujar_pixel
 
     // // Rectángulo 3 (Verde Agua)
     // MOV X1, #100
@@ -277,21 +288,16 @@ ret
 
 	*/
 
-// TODO     MOV X1, 1
-    //      MOV X2, 50
-    //      MOV X3, 50
-    //      MOV X4, 50 
-    // (1,50) (50,50)
-
 // fun dibujar_rectangulo(x1,y1,x2,y2,color) regs: (X1, X2, X3, X4, X7) desc: hace un rectangulo desde (x1,y1) inf iz a (x2,y2) sup der
 dibujar_rectangulo: // FIXME
 	// PUSH(X1,X2,X3,X4,X30)
-	SUB SP, SP, #40 
+	SUB SP, SP, #48
 	STR X1, [SP]
 	STR X2, [SP, #8]
 	STR X3, [SP, #16]
 	STR X4, [SP, #24]
-	STR X30, [SP, #32]
+	STR X9, [SP, #32]
+	STR X30, [SP, #40]
 
     check_swap_xs:
     CMP X1, X3                     // if
@@ -319,31 +325,35 @@ dibujar_rectangulo: // FIXME
 (x1,y1++) = (X1,X2)----------(x2,y1++) = (X3,X2)
 (x1,y1  ) = (X1,X2)----------(x2,y1  ) = (X3,X2)        dibujar_linea(x1,y1,x2,y2), regs(X1,X2,X3,X4)
 */
+
+    // limite_superior .req X16
+    // y_actual .req X4
+    // NOTE Version 1
     // (1,50) (50,50)
-    MOV X16, X4                     // X16=y2, altura del rectangulo
+    MOV X9, X4         // X16=y2, altura del rectangulo
     // X16 = 50
-    MOV X4, X2                      // X4=y2 := X2=y1 "inicializo y1"
-    // X4 = 50
+    MOV X4, X2                // X4=y2 := X2=y1 "inicializo y1"
 
     loop_pintar_linea_del_rectangulo:
-    CMP X2, X16                     // if 
+    CMP X4, X9   // if 
     B.GT salir_loop                 // (y1 > y2)
        BL dibujar_linea
        ADD X2, X2, #1               // y1 ++
        ADD X4, X4, #1               // y2 ++
        b loop_pintar_linea_del_rectangulo
     salir_loop:
+    // NOTE Version 1
+
 
 	// POP(X30,X4,X3,X2,X1)
-	LDR X30, [SP, #32]
+	LDR X30, [SP, #40]
+	STR X4, [SP, #32]
 	STR X4, [SP, #24]
 	STR X3, [SP, #16]
 	STR X2, [SP, #8]
 	STR X1, [SP]
-	ADD SP, SP, #40 
+	ADD SP, SP, #48
 ret
-
-
 
 // TODO _-------------------------------------
 
