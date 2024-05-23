@@ -400,21 +400,14 @@ edificios_oscuros:
     MOV X3, 477
     MOV X4, 172
     LDR X7, =FONDO_VARANDA_0
-
     BL dibujar_rectangulo       // bloque 10
-    MOV X1, 495
-    MOV X2, 158
-    MOV X3, 490
-    MOV X4, 161
-    LDR X7, =FONDO_VARANDA_0
 
-    BL dibujar_rectangulo       // bloque 11
-    MOV X1, 484
-    MOV X2, 158
-    MOV X3, 477
-    MOV X4, 161
-    LDR X7, =FONDO_VARANDA_0
-    BL dibujar_rectangulo       // bloque 12
+    // MOV X1, 495
+    // MOV X2, 158
+    // MOV X3, 490
+    // MOV X4, 161
+    // LDR X7, =0xFF
+    // BL dibujar_rectangulo       // bloque 11
 
     MOV X1, 410
     MOV X2, 223
@@ -953,6 +946,236 @@ edificios_oscuros:
     LDR X7, =DARKSLATEGRAY_3
     BL dibujar_rectangulo       // bloque 14
 
+    MOV X1, 476
+    MOV X2, 220
+    MOV X3, 485
+    MOV X4, 218
+    LDR X7, =DARKSLATEGRAY_3
+    BL dibujar_rectangulo       // bloque 14
+
+    MOV X1, 478
+    MOV X2, 222
+    MOV X3, 483
+    MOV X4, 221
+    LDR X7, =DARKSLATEGRAY_3
+    BL dibujar_rectangulo       // bloque 14
+
+    MOV X1, 489
+    MOV X2, 222
+    MOV X3, 496
+    MOV X4, 218
+    LDR X7, =DARKSLATEGRAY_3
+    BL dibujar_rectangulo       // bloque 14
+
+    MOV X1, 500
+    MOV X2, 222
+    MOV X3, 507
+    MOV X4, 218
+    LDR X7, =DARKSLATEGRAY_3
+    BL dibujar_rectangulo       // bloque 14
+
+    MOV X1, 500
+    MOV X2, 210
+    MOV X3, 507
+    MOV X4, 207
+    LDR X7, =DARKSLATEGRAY_3
+    BL dibujar_rectangulo       // bloque 14
+
+    MOV X1, 489
+    MOV X2, 210
+    MOV X3, 496
+    MOV X4, 207
+    LDR X7, =DARKSLATEGRAY_3
+    BL dibujar_rectangulo       // bloque 14
+
+    MOV X1, 477
+    MOV X2, 210
+    MOV X3, 485
+    MOV X4, 207
+    LDR X7, =DARKSLATEGRAY_3
+    BL dibujar_rectangulo       // bloque 14
+
+    MOV X1, 489
+    MOV X2, 199
+    MOV X3, 496
+    MOV X4, 194
+    LDR X7, =DARKSLATEGRAY_3
+    BL dibujar_rectangulo       // bloque 14
+
+    MOV X1, 500
+    MOV X2, 199
+    MOV X3, 507
+    MOV X4, 194
+    LDR X7, =DARKSLATEGRAY_3
+    BL dibujar_rectangulo       // bloque 14
+
+    MOV X1, 476
+    MOV X2, 199
+    MOV X3, 485
+    MOV X4, 194
+    LDR X7, =DARKSLATEGRAY_3
+    BL dibujar_rectangulo       // bloque 14
+
+    MOV X1, 476
+    MOV X2, 188
+    MOV X3, 485
+    MOV X4, 183
+    LDR X7, =DARKSLATEGRAY_3
+    BL dibujar_rectangulo       // bloque 14
+
+    MOV X1, 489
+    MOV X2, 188
+    MOV X3, 496
+    MOV X4, 183
+    LDR X7, =DARKSLATEGRAY_3
+    BL dibujar_rectangulo       // bloque 14
+
+    MOV X1, 501
+    MOV X2, 188
+    MOV X3, 507
+    MOV X4, 183
+    LDR X7, =DARKSLATEGRAY_3
+    BL dibujar_rectangulo       // bloque 14
+ 
+    MOV X1, 538
+    MOV X2, 216
+    MOV X3, 546
+    MOV X4, 214
+    LDR X7, =DARKSLATEGRAY_3
+    BL dibujar_rectangulo       // bloque 14
+
+    MOV X1, 540
+    MOV X2, 218
+    MOV X3, 546
+    MOV X4, 217
+    LDR X7, =DARKSLATEGRAY_3
+    BL dibujar_rectangulo       // bloque 14
+
+    MOV X1, 550
+    MOV X2, 218
+    MOV X3, 557
+    MOV X4, 214
+    LDR X7, =DARKSLATEGRAY_3
+    BL dibujar_rectangulo       // bloque 14
+
+    MOV X1, 561
+    MOV X2, 218
+    MOV X3, 566
+    MOV X4, 214
+    LDR X7, =DARKSLATEGRAY_3
+    BL dibujar_rectangulo       // bloque 14
+
+    MOV X1, 561
+    MOV X2, 205
+    MOV X3, 566
+    MOV X4, 203
+    LDR X7, =DARKSLATEGRAY_3
+    BL dibujar_rectangulo       // bloque 14
+
+    MOV X1, 561
+    MOV X2, 207
+    MOV X3, 563
+    MOV X4, 206
+    LDR X7, =DARKSLATEGRAY_3
+    BL dibujar_rectangulo       // bloque 14
+
+    MOV X1, 550
+    MOV X2, 207
+    MOV X3, 557
+    MOV X4, 203
+    LDR X7, =DARKSLATEGRAY_3
+    BL dibujar_rectangulo       // bloque 14
+
+    MOV X1, 538
+    MOV X2, 205
+    MOV X3, 546
+    MOV X4, 203
+    LDR X7, =DARKSLATEGRAY_3
+    BL dibujar_rectangulo       // bloque 14
+
+    MOV X1, 540
+    MOV X2, 207
+    MOV X3, 544
+    MOV X4, 206
+    LDR X7, =DARKSLATEGRAY_3
+    BL dibujar_rectangulo       // bloque 14
+
+    MOV X1, 481
+    MOV X2, 172
+    MOV X3, 485
+    MOV X4, 164
+    LDR X7, =DARKSLATEGRAY_3
+    BL dibujar_rectangulo       // bloque 14
+
+    MOV X1, 489
+    MOV X2, 172
+    MOV X3, 492
+    MOV X4, 164
+    LDR X7, =DARKSLATEGRAY_3
+    BL dibujar_rectangulo       // bloque 14
+
+    MOV X1, 496
+    MOV X2, 172
+    MOV X3, 497
+    MOV X4, 171
+    LDR X7, =DARKSLATEGRAY_3
+    BL dibujar_rectangulo       // bloque 14
+
+    MOV X1, 499
+    MOV X2, 172
+    MOV X3, 500
+    MOV X4, 171
+    LDR X7, =DARKSLATEGRAY_3
+    BL dibujar_rectangulo       // bloque 14
+
+    MOV X1, 499
+    MOV X2, 165
+    MOV X3, 500
+    MOV X4, 164
+    LDR X7, =DARKSLATEGRAY_3
+    BL dibujar_rectangulo       // bloque 14
+
+    MOV X1, 498
+    MOV X2, 172
+    MOV X3, 498
+    MOV X4, 171
+    LDR X7, =DETALLE_VENTANA_0
+    BL dibujar_rectangulo       // bloque 14
+
+    MOV X1, 499
+    MOV X2, 170
+    MOV X3, 500
+    MOV X4, 166
+    LDR X7, =DETALLE_VENTANA_0
+    BL dibujar_rectangulo       // bloque 14
+
+    MOV X1, 496
+    MOV X2, 165
+    MOV X3, 498
+    MOV X4, 164
+    LDR X7, =DETALLE_VENTANA_0
+    BL dibujar_rectangulo       // bloque 14
+
+    MOV X1, 496
+    MOV X2, 170
+    MOV X3, 498
+    MOV X4, 166
+    LDR X7, =DETALLE_VENTANA_0
+    BL dibujar_rectangulo       // bloque 14
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
 
 
 
@@ -1075,7 +1298,6 @@ edificios_oscuros:
     MOV X4, 282
     LDR X7, =DARKSLATEGRAY_3
     BL dibujar_rectangulo       // detalles bloque 1
-
     MOV X1, 461
     MOV X2, 276
     MOV X3, 459
@@ -1228,4 +1450,5 @@ edificios_oscuros:
 RET
 
 
+    // HOLA NEHUEN
 

@@ -13,7 +13,7 @@
 .equ DARKSLATEGRAY_3, 0x00506F      // Edificios oscuros detalles
 .equ DARKTURQUOISE, 0x3FD3E9
 .equ STEELBLUE_1, 0x000069
-.equ STEELBLUE_2, 0x006F99
+.equ STEELBLUE_2, 0x006F99          // DETALLE VENTANA 1
 
 .equ CIELO_0, 0x1289A3              // Cielo luz 0
 .equ CIELO_1, 0x1494AF              // Cielo luz 1
@@ -21,3 +21,4 @@
 .equ CIELO_3, 0x17A7C6              // Cielo luz 3
 
 .equ FONDO_VARANDA_0, 0x002233
+.equ DETALLE_VENTANA_0, 0x006699
