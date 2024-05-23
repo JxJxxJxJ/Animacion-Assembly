@@ -6,7 +6,7 @@
 // NOTE ---------------- CODE HERE ------------------------------------
 main:
 
-    BL capa_0
+    BL capa_0 
 
 // Infinite Loop
 InfLoop:

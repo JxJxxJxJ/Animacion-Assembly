@@ -227,7 +227,6 @@ varanda:
     LDR X7, =BLACK_0
     BL dibujar_rectangulo       // Varanda horizontal de abajo
 
-
     // Varandas seccion 3
     // Barras verticales flacas a mano (por sector)
     .equ VARANDAS_X1, 445
@@ -798,7 +797,7 @@ edificios_oscuros:
     MOV X2, 262
     LDR X7, =DARKSLATEGRAY_3
     BL dibujar_pixel            // bloque 14
-    
+
     MOV X1, 293
     MOV X2, 264
     MOV X3, 295
@@ -1163,73 +1162,6 @@ edificios_oscuros:
     LDR X7, =DETALLE_VENTANA_0
     BL dibujar_rectangulo       // bloque 14
 
-
-
-
-
-
-
-
-
-
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     MOV X1, 640
     MOV X2, 290
     MOV X3, 623
@@ -1424,19 +1356,6 @@ edificios_oscuros:
     MOV X4, 290
     LDR X7, =DARKSLATEGRAY_3
     BL dibujar_rectangulo       // detalles bloque 1
-
-
-
-
-
-   
-
-
-
-
-
-
-
 
     // PUSH(X30)
     LDR X30, [SP, 40]

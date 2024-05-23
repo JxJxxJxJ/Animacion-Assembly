@@ -1,6 +1,7 @@
 .include "framebuffer.s"
 
 // NOTE x0 contiene la direccion base del framebuffer
+
 // NOTE (x,y) esta en la direccion: Dirección de inicio + 4 * [x + (y * 640)]
 // fun dibujar_pixel(x,y,color) regs:(X1, X2, X7) desc: pixel en (x, y) del color color
 dibujar_pixel: // NOTE ANDA!
@@ -10,7 +11,7 @@ dibujar_pixel: // NOTE ANDA!
     LSL X16, X16, #2		   						// x16 = [4 * (x + (y * 640)]
     ADD X16, X0, X16  			                    // X16 = Direccio de Inicio + 4 * [x + (y * 640)]
     STR W7, [X16]									// Colorea X16=(x,y) del color X7=color
-RET		 											// Retorno
+RET	 	 											// Retorno
 
 // fun dibujar_linea(x1,y1,x2,y2,color) regs: (X1, X2, X3, X4, X7) desc: hace una linea desde (x1,y1) hasta (x2,y2)
 dibujar_linea:  // NOTE ANDA! pero no se			// (5,10)-----(5,20)   vertical ||    (5,10)-----(20,10)   horizontal
@@ -20,7 +21,7 @@ dibujar_linea:  // NOTE ANDA! pero no se			// (5,10)-----(5,20)   vertical ||   
     STR     X2, [SP, #8]        					
     STR     X3, [SP, #16]
     STR     X4, [SP, #24]
-    STR     X30, [SP, #32]       				    // Guardo X30=LR en el stack
+    STR     X30, [SP, #32]       				        // Guardo X30=LR en el stack
 
     CMP X1, X3 										// Comparo X1=x1 con X3=x2
     B.EQ dibujar_linea_vertical						// if(X1=x1 == X3=x2) -> tengo que dibujar vertical
@@ -164,3 +165,29 @@ dibujar_rectangulo:
 	LDR X1, [SP]
 	ADD SP, SP, #48
 RET
+
+
+/*!
+function1:
+
+RET
+
+function2:
+
+RET
+
+function3:
+
+RET
+
+
+
+BL function1
+
+BL function1
+
+BL function1
+
+
+
+*/
