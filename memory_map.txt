@@ -1,0 +1,108 @@
+
+There are no discarded input sections
+
+Configuración de la Memoria
+
+Nombre           Origen             Longitud           Atributos
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Guión del enlazador y mapa de memoria
+
+LOAD app.o
+LOAD capa0.o
+LOAD colores.o
+LOAD elementales.o
+LOAD framebuffer.o
+LOAD gpio.o
+LOAD start.o
+                0x0000000000080000                . = 0x80000
+
+.text           0x0000000000080000    0x92350
+ *(.text.boot)
+ .text.boot     0x0000000000080000    0x100c8 start.o
+                0x0000000000080000                _start
+ *(.text*)
+ .text          0x00000000000900c8     0x1090 app.o
+                0x000000000009112c                main
+ .text          0x0000000000091158     0x1088 capa0.o
+ .text          0x00000000000921e0        0x0 colores.o
+ .text          0x00000000000921e0      0x170 elementales.o
+ .text          0x0000000000092350        0x0 framebuffer.o
+ .text          0x0000000000092350        0x0 gpio.o
+ .text          0x0000000000092350    0x80000 start.o
+
+.iplt           0x0000000000112350        0x0
+ .iplt          0x0000000000112350        0x0 start.o
+
+.rela.dyn       0x0000000000112350        0x0
+ .rela.iplt     0x0000000000112350        0x0 start.o
+ .rela.text.boot
+                0x0000000000112350        0x0 start.o
+
+.data           0x0000000000112350        0x0
+ .data          0x0000000000112350        0x0 app.o
+ .data          0x0000000000112350        0x0 capa0.o
+ .data          0x0000000000112350        0x0 colores.o
+ .data          0x0000000000112350        0x0 elementales.o
+ .data          0x0000000000112350        0x0 framebuffer.o
+ .data          0x0000000000112350        0x0 gpio.o
+ .data          0x0000000000112350        0x0 start.o
+
+.igot.plt       0x0000000000112350        0x0
+ .igot.plt      0x0000000000112350        0x0 start.o
+
+.bss            0x0000000000112350        0x0
+ *(.bss*)
+ .bss           0x0000000000112350        0x0 app.o
+ .bss           0x0000000000112350        0x0 capa0.o
+ .bss           0x0000000000112350        0x0 colores.o
+ .bss           0x0000000000112350        0x0 elementales.o
+ .bss           0x0000000000112350        0x0 framebuffer.o
+ .bss           0x0000000000112350        0x0 gpio.o
+ .bss           0x0000000000112350        0x0 start.o
+
+.bss            0x0000000000112350        0x0
+                0x0000000000112350                . = ALIGN (0x10)
+                0x0000000000112350                __bss_start = .
+ *(.bss .bss.*)
+ *(COMMON)
+                0x0000000000112350                __bss_end = .
+                0x0000000000112350                _end = .
+                0x0000000000000000                __bss_size = ((__bss_end - __bss_start) >> 0x3)
+OUTPUT(kernel8.elf elf64-littleaarch64)
+LOAD linker stubs
+
+.debug_line     0x0000000000000000      0x9d5
+ .debug_line    0x0000000000000000      0x47e app.o
+ .debug_line    0x000000000000047e      0x46e capa0.o
+ .debug_line    0x00000000000008ec       0x99 elementales.o
+ .debug_line    0x0000000000000985       0x50 start.o
+
+.debug_info     0x0000000000000000       0xb8
+ .debug_info    0x0000000000000000       0x2e app.o
+ .debug_info    0x000000000000002e       0x2e capa0.o
+ .debug_info    0x000000000000005c       0x2e elementales.o
+ .debug_info    0x000000000000008a       0x2e start.o
+
+.debug_abbrev   0x0000000000000000       0x50
+ .debug_abbrev  0x0000000000000000       0x14 app.o
+ .debug_abbrev  0x0000000000000014       0x14 capa0.o
+ .debug_abbrev  0x0000000000000028       0x14 elementales.o
+ .debug_abbrev  0x000000000000003c       0x14 start.o
+
+.debug_aranges  0x0000000000000000       0xc0
+ .debug_aranges
+                0x0000000000000000       0x30 app.o
+ .debug_aranges
+                0x0000000000000030       0x30 capa0.o
+ .debug_aranges
+                0x0000000000000060       0x30 elementales.o
+ .debug_aranges
+                0x0000000000000090       0x30 start.o
+
+.debug_str      0x0000000000000000       0x55
+ .debug_str     0x0000000000000000       0x55 app.o
+                                         0x4d (tamaño antes de la relajación)
+ .debug_str     0x0000000000000055       0x4d capa0.o
+ .debug_str     0x0000000000000055       0x4d elementales.o
+ .debug_str     0x0000000000000055       0x47 start.o
