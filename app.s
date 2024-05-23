@@ -1,25 +1,13 @@
+.include "colores.s"        // Color definitions
+.include "elementales.s"    // Basic functions
+.include "framebuffer.s"    // Frame Buffer definitions
+
+
 .globl main
-    .equ SCREEN_WIDTH, 640
-    .equ SCREEN_HEIGHT, 480
-    .equ BITS_PER_PIXEL, 32
-
-    .equ GPIO_BASE, 0x3f200000
-    .equ GPIO_GPFSEL0, 0x00
-    .equ GPIO_GPLEV0, 0x34
-
-    .equ BLANCO, 0xFFFFFF
-    .equ ROJO, 0xFF0000
-    .equ VERDE, 0x00FF00
-    .equ VERDE_CLARO, 0xCCFFCC
-    .equ AZUL, 0x0000FF
-    .equ CIAN, 0x00FFFF
-    .equ AMARILLO, 0xFFFF00
-    .equ MAGENTA, 0xFF00FF
 
 // x0 contiene la direccion base del framebuffer
 // TODO ---------------- CODE HERE ------------------------------------
 main:
-
     // Punto (BLANCO) // NOTE ANDA
     MOV X1, SCREEN_WIDTH/2
     MOV X2, SCREEN_HEIGHT/2 
@@ -63,25 +51,43 @@ main:
     LDR X7, =MAGENTA
     BL dibujar_linea
 
-    // // Rectángulo 1 (AMARILLO)  (x1 < x2 && y1 < y2)
-    // MOV X1, #1
-    // MOV X2, #1
-    // MOV X3, #50
-    // MOV X4, #50
-    // LDR X7, =AMARILLO
-    // BL dibujar_rectangulo
+    // Rectángulo 1 (AMARILLO)  (x1 < x2 && y1 < y2)
+    MOV X1, #1
+    MOV X2, #1
+    MOV X3, #50
+    MOV X4, #50
+    LDR X7, =AMARILLO
+    BL dibujar_rectangulo
 
-    // // Rectángulo 1 (AZUL)      (x1 > x2 && y1 > y2)
-    // MOV X1, 250
-    // MOV X2, 340
-    // MOV X3, 475
-    // MOV X4, 400
-    // LDR X7, =VERDE_CLARO
-    // BL dibujar_rectangulo
+    // Rectángulo 1 (AMARILLO)  (x1 < x2 && y1 < y2)
+    MOV X1, #600
+    MOV X2, #400
+    MOV X3, #650
+    MOV X4, #420
+    LDR X7, =AMARILLO
+    BL dibujar_rectangulo
 
-    // (250,340) (475,400)
-    // Punto (MAGENTA) // NOTE ANDA
+
+  
+
+    // Rectángulo 1 (AZUL)      (x1 > x2 && y1 > y2)
     MOV X1, 250
+    MOV X2, 340
+    MOV X3, 260
+    MOV X4, 350
+    LDR X7, =VERDE_CLARO
+    BL dibujar_rectangulo
+
+    // Rectángulo 1 (VERDE CLARO)      (x1 > x2 && y1 > y2)
+    MOV X1, 450
+    MOV X2, 150
+    MOV X3, 150
+    MOV X4, 450
+    LDR X7, =VERDE_CLARO
+    BL dibujar_rectangulo
+
+    // Punto (MAGENTA) // NOTE ANDA
+    MOV X1, 500
     MOV X2, 340
     LDR X7, =MAGENTA
     BL dibujar_pixel
@@ -92,11 +98,12 @@ main:
     LDR X7, =VERDE
     BL dibujar_pixel
 
-
 // Infinite Loop
 InfLoop:
 B InfLoop
 
 
-// TODO _-------------------------------------
+
+
+
 
