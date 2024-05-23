@@ -14,7 +14,6 @@ capa_0:                         // Absolutamente estatica, no cambia nunca
     STR X7, [SP, 32]
     STR X30, [SP, 40]
 
-
     BL fondo_0
     BL varanda
     BL piso
@@ -33,7 +32,6 @@ capa_0:                         // Absolutamente estatica, no cambia nunca
     ADD SP, SP, #48
 RET
 
-
 fondo_0:
     // PUSH(X30)
     SUB SP, SP, 48
@@ -43,7 +41,6 @@ fondo_0:
     STR X4, [SP, 24]
     STR X7, [SP, 32]
     STR X30, [SP, 40]
-
 
     MOV X1, SCREEN_START
     MOV X2, SCREEN_START
@@ -68,7 +65,6 @@ fondo_0:
     LDR X1, [SP] 
     ADD SP, SP, #48
 RET
-
 
 varanda:
     // PUSH(X30)
@@ -115,7 +111,6 @@ varanda:
         ADD X3, X3, 184
         B loop_barrotes_gordos
     exit_loop_barrotes_gordos:
-
 
     // Varandas seccion 1
     // Barras verticales flacas a mano (por sector)
@@ -1367,7 +1362,4 @@ edificios_oscuros:
     ADD SP, SP, #48
 
 RET
-
-
-    // HOLA NEHUEN
 
