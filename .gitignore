@@ -12,3 +12,6 @@ kernel8.list
 
 # Ignorar el mapa de memoria
 memory_map.txt
+
+# Sacar .old
+*.old
