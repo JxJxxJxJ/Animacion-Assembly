@@ -1,5 +1,14 @@
+# Ignorar archivos de objeto
 *.o
+
+# Ignorar el archivo ELF del kernel
 kernel8.elf
+
+# Ignorar la imagen del kernel
 kernel8.img
+
+# Ignorar la lista del kernel
 kernel8.list
+
+# Ignorar el mapa de memoria
 memory_map.txt
