@@ -1,4 +1,6 @@
 
+There are no discarded input sections
+
 Configuración de la Memoria
 
 Nombre           Origen             Longitud           Atributos
@@ -9,14 +11,22 @@ Guión del enlazador y mapa de memoria
 LOAD app.o
 LOAD capa0.o
 LOAD colores.o
+<<<<<<< HEAD
 LOAD edificios_claros.o
+=======
+LOAD edificios_oscuros.o
+>>>>>>> b562fa20d5ef83603a7a07a9175f2c85515ec93e
 LOAD elementales.o
 LOAD framebuffer.o
 LOAD gpio.o
 LOAD start.o
                 0x0000000000080000                . = 0x80000
 
+<<<<<<< HEAD
 .text           0x0000000000080000    0x92b60
+=======
+.text           0x0000000000080000    0x93918
+>>>>>>> b562fa20d5ef83603a7a07a9175f2c85515ec93e
  *(.text.boot)
  .text.boot     0x0000000000080000    0x100c8 start.o
                 0x0000000000080000                _start
@@ -25,6 +35,7 @@ LOAD start.o
                 0x000000000009143c                main
  .text          0x0000000000091478     0x13a8 capa0.o
  .text          0x0000000000092820        0x0 colores.o
+<<<<<<< HEAD
  .text          0x0000000000092820      0x1d0 edificios_claros.o
  .text          0x00000000000929f0      0x170 elementales.o
  .text          0x0000000000092b60        0x0 framebuffer.o
@@ -70,28 +81,93 @@ LOAD start.o
  *(COMMON)
                 0x0000000000112b60                __bss_end = .
                 0x0000000000112b60                _end = .
+=======
+ .text          0x0000000000092820      0xf88 edificios_oscuros.o
+ .text          0x00000000000937a8      0x170 elementales.o
+ .text          0x0000000000093918        0x0 framebuffer.o
+ .text          0x0000000000093918        0x0 gpio.o
+ .text          0x0000000000093918    0x80000 start.o
+
+.iplt           0x0000000000113918        0x0
+ .iplt          0x0000000000113918        0x0 start.o
+
+.rela.dyn       0x0000000000113918        0x0
+ .rela.iplt     0x0000000000113918        0x0 start.o
+ .rela.text.boot
+                0x0000000000113918        0x0 start.o
+
+.data           0x0000000000113918        0x0
+ .data          0x0000000000113918        0x0 app.o
+ .data          0x0000000000113918        0x0 capa0.o
+ .data          0x0000000000113918        0x0 colores.o
+ .data          0x0000000000113918        0x0 edificios_oscuros.o
+ .data          0x0000000000113918        0x0 elementales.o
+ .data          0x0000000000113918        0x0 framebuffer.o
+ .data          0x0000000000113918        0x0 gpio.o
+ .data          0x0000000000113918        0x0 start.o
+
+.igot.plt       0x0000000000113918        0x0
+ .igot.plt      0x0000000000113918        0x0 start.o
+
+.bss            0x0000000000113918        0x0
+ *(.bss*)
+ .bss           0x0000000000113918        0x0 app.o
+ .bss           0x0000000000113918        0x0 capa0.o
+ .bss           0x0000000000113918        0x0 colores.o
+ .bss           0x0000000000113918        0x0 edificios_oscuros.o
+ .bss           0x0000000000113918        0x0 elementales.o
+ .bss           0x0000000000113918        0x0 framebuffer.o
+ .bss           0x0000000000113918        0x0 gpio.o
+ .bss           0x0000000000113918        0x0 start.o
+
+.bss            0x0000000000113918        0x8
+                0x0000000000113920                . = ALIGN (0x10)
+ *fill*         0x0000000000113918        0x8 
+                0x0000000000113920                __bss_start = .
+ *(.bss .bss.*)
+ *(COMMON)
+                0x0000000000113920                __bss_end = .
+                0x0000000000113920                _end = .
+>>>>>>> b562fa20d5ef83603a7a07a9175f2c85515ec93e
                 0x0000000000000000                __bss_size = ((__bss_end - __bss_start) >> 0x3)
 OUTPUT(kernel8.elf elf64-littleaarch64)
 LOAD linker stubs
 
+<<<<<<< HEAD
 .debug_line     0x0000000000000000      0xc69
  .debug_line    0x0000000000000000      0x55d app.o
  .debug_line    0x000000000000055d      0x54d capa0.o
  .debug_line    0x0000000000000aaa       0xce edificios_claros.o
  .debug_line    0x0000000000000b78       0x9e elementales.o
  .debug_line    0x0000000000000c16       0x53 start.o
+=======
+.debug_line     0x0000000000000000      0xfcb
+ .debug_line    0x0000000000000000      0x55c app.o
+ .debug_line    0x000000000000055c      0x54c capa0.o
+ .debug_line    0x0000000000000aa8      0x438 edificios_oscuros.o
+ .debug_line    0x0000000000000ee0       0x9b elementales.o
+ .debug_line    0x0000000000000f7b       0x50 start.o
+>>>>>>> b562fa20d5ef83603a7a07a9175f2c85515ec93e
 
 .debug_info     0x0000000000000000       0xe6
  .debug_info    0x0000000000000000       0x2e app.o
  .debug_info    0x000000000000002e       0x2e capa0.o
+<<<<<<< HEAD
  .debug_info    0x000000000000005c       0x2e edificios_claros.o
+=======
+ .debug_info    0x000000000000005c       0x2e edificios_oscuros.o
+>>>>>>> b562fa20d5ef83603a7a07a9175f2c85515ec93e
  .debug_info    0x000000000000008a       0x2e elementales.o
  .debug_info    0x00000000000000b8       0x2e start.o
 
 .debug_abbrev   0x0000000000000000       0x64
  .debug_abbrev  0x0000000000000000       0x14 app.o
  .debug_abbrev  0x0000000000000014       0x14 capa0.o
+<<<<<<< HEAD
  .debug_abbrev  0x0000000000000028       0x14 edificios_claros.o
+=======
+ .debug_abbrev  0x0000000000000028       0x14 edificios_oscuros.o
+>>>>>>> b562fa20d5ef83603a7a07a9175f2c85515ec93e
  .debug_abbrev  0x000000000000003c       0x14 elementales.o
  .debug_abbrev  0x0000000000000050       0x14 start.o
 
@@ -101,12 +177,17 @@ LOAD linker stubs
  .debug_aranges
                 0x0000000000000030       0x30 capa0.o
  .debug_aranges
+<<<<<<< HEAD
                 0x0000000000000060       0x30 edificios_claros.o
+=======
+                0x0000000000000060       0x30 edificios_oscuros.o
+>>>>>>> b562fa20d5ef83603a7a07a9175f2c85515ec93e
  .debug_aranges
                 0x0000000000000090       0x30 elementales.o
  .debug_aranges
                 0x00000000000000c0       0x30 start.o
 
+<<<<<<< HEAD
 .debug_str      0x0000000000000000       0x90
  .debug_str     0x0000000000000000       0x88 app.o
  .debug_str     0x0000000000000088       0x88 capa0.o
@@ -114,3 +195,12 @@ LOAD linker stubs
  .debug_str     0x0000000000000088       0x88 elementales.o
  .debug_str     0x0000000000000088        0x8 start.o
                                          0x82 (tamaño antes de la relajación)
+=======
+.debug_str      0x0000000000000000       0x55
+ .debug_str     0x0000000000000000       0x55 app.o
+                                         0x4d (tamaño antes de la relajación)
+ .debug_str     0x0000000000000055       0x4d capa0.o
+ .debug_str     0x0000000000000055       0x4d edificios_oscuros.o
+ .debug_str     0x0000000000000055       0x4d elementales.o
+ .debug_str     0x0000000000000055       0x47 start.o
+>>>>>>> b562fa20d5ef83603a7a07a9175f2c85515ec93e

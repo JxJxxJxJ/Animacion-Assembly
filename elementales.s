@@ -1,5 +1,9 @@
 .ifndef ELEMENTALES_S
+<<<<<<< HEAD
 .equ ELEMENTALES_S, 0x000000
+=======
+.equ ELEMENTALES_S, 0x00000
+>>>>>>> b562fa20d5ef83603a7a07a9175f2c85515ec93e
 
 .include "framebuffer.s"
 

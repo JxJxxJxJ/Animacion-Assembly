@@ -1,1 +1,5 @@
 *.o
+kernel8.elf
+kernel8.img
+kernel8.list
+memory_map.txt
