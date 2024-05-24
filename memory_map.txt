@@ -1,6 +1,4 @@
 
-There are no discarded input sections
-
 Configuración de la Memoria
 
 Nombre           Origen             Longitud           Atributos
@@ -17,66 +15,66 @@ LOAD gpio.o
 LOAD start.o
                 0x0000000000080000                . = 0x80000
 
-.text           0x0000000000080000    0x928d0
+.text           0x0000000000080000    0x92990
  *(.text.boot)
  .text.boot     0x0000000000080000    0x100c8 start.o
                 0x0000000000080000                _start
  *(.text*)
- .text          0x00000000000900c8     0x1350 app.o
-                0x00000000000913e4                main
- .text          0x0000000000091418     0x1348 capa0.o
- .text          0x0000000000092760        0x0 colores.o
- .text          0x0000000000092760      0x170 elementales.o
- .text          0x00000000000928d0        0x0 framebuffer.o
- .text          0x00000000000928d0        0x0 gpio.o
- .text          0x00000000000928d0    0x80000 start.o
+ .text          0x00000000000900c8     0x13b0 app.o
+                0x000000000009143c                main
+ .text          0x0000000000091478     0x13a8 capa0.o
+ .text          0x0000000000092820        0x0 colores.o
+ .text          0x0000000000092820      0x170 elementales.o
+ .text          0x0000000000092990        0x0 framebuffer.o
+ .text          0x0000000000092990        0x0 gpio.o
+ .text          0x0000000000092990    0x80000 start.o
 
-.iplt           0x00000000001128d0        0x0
- .iplt          0x00000000001128d0        0x0 start.o
+.iplt           0x0000000000112990        0x0
+ .iplt          0x0000000000112990        0x0 start.o
 
-.rela.dyn       0x00000000001128d0        0x0
- .rela.iplt     0x00000000001128d0        0x0 start.o
+.rela.dyn       0x0000000000112990        0x0
+ .rela.iplt     0x0000000000112990        0x0 start.o
  .rela.text.boot
-                0x00000000001128d0        0x0 start.o
+                0x0000000000112990        0x0 start.o
 
-.data           0x00000000001128d0        0x0
- .data          0x00000000001128d0        0x0 app.o
- .data          0x00000000001128d0        0x0 capa0.o
- .data          0x00000000001128d0        0x0 colores.o
- .data          0x00000000001128d0        0x0 elementales.o
- .data          0x00000000001128d0        0x0 framebuffer.o
- .data          0x00000000001128d0        0x0 gpio.o
- .data          0x00000000001128d0        0x0 start.o
+.data           0x0000000000112990        0x0
+ .data          0x0000000000112990        0x0 app.o
+ .data          0x0000000000112990        0x0 capa0.o
+ .data          0x0000000000112990        0x0 colores.o
+ .data          0x0000000000112990        0x0 elementales.o
+ .data          0x0000000000112990        0x0 framebuffer.o
+ .data          0x0000000000112990        0x0 gpio.o
+ .data          0x0000000000112990        0x0 start.o
 
-.igot.plt       0x00000000001128d0        0x0
- .igot.plt      0x00000000001128d0        0x0 start.o
+.igot.plt       0x0000000000112990        0x0
+ .igot.plt      0x0000000000112990        0x0 start.o
 
-.bss            0x00000000001128d0        0x0
+.bss            0x0000000000112990        0x0
  *(.bss*)
- .bss           0x00000000001128d0        0x0 app.o
- .bss           0x00000000001128d0        0x0 capa0.o
- .bss           0x00000000001128d0        0x0 colores.o
- .bss           0x00000000001128d0        0x0 elementales.o
- .bss           0x00000000001128d0        0x0 framebuffer.o
- .bss           0x00000000001128d0        0x0 gpio.o
- .bss           0x00000000001128d0        0x0 start.o
+ .bss           0x0000000000112990        0x0 app.o
+ .bss           0x0000000000112990        0x0 capa0.o
+ .bss           0x0000000000112990        0x0 colores.o
+ .bss           0x0000000000112990        0x0 elementales.o
+ .bss           0x0000000000112990        0x0 framebuffer.o
+ .bss           0x0000000000112990        0x0 gpio.o
+ .bss           0x0000000000112990        0x0 start.o
 
-.bss            0x00000000001128d0        0x0
-                0x00000000001128d0                . = ALIGN (0x10)
-                0x00000000001128d0                __bss_start = .
+.bss            0x0000000000112990        0x0
+                0x0000000000112990                . = ALIGN (0x10)
+                0x0000000000112990                __bss_start = .
  *(.bss .bss.*)
  *(COMMON)
-                0x00000000001128d0                __bss_end = .
-                0x00000000001128d0                _end = .
+                0x0000000000112990                __bss_end = .
+                0x0000000000112990                _end = .
                 0x0000000000000000                __bss_size = ((__bss_end - __bss_start) >> 0x3)
 OUTPUT(kernel8.elf elf64-littleaarch64)
 LOAD linker stubs
 
-.debug_line     0x0000000000000000      0xb29
- .debug_line    0x0000000000000000      0x528 app.o
- .debug_line    0x0000000000000528      0x518 capa0.o
- .debug_line    0x0000000000000a40       0x99 elementales.o
- .debug_line    0x0000000000000ad9       0x50 start.o
+.debug_line     0x0000000000000000      0xb61
+ .debug_line    0x0000000000000000      0x541 app.o
+ .debug_line    0x0000000000000541      0x531 capa0.o
+ .debug_line    0x0000000000000a72       0x9c elementales.o
+ .debug_line    0x0000000000000b0e       0x53 start.o
 
 .debug_info     0x0000000000000000       0xb8
  .debug_info    0x0000000000000000       0x2e app.o
@@ -100,9 +98,9 @@ LOAD linker stubs
  .debug_aranges
                 0x0000000000000090       0x30 start.o
 
-.debug_str      0x0000000000000000       0x55
- .debug_str     0x0000000000000000       0x55 app.o
-                                         0x4d (tamaño antes de la relajación)
- .debug_str     0x0000000000000055       0x4d capa0.o
- .debug_str     0x0000000000000055       0x4d elementales.o
- .debug_str     0x0000000000000055       0x47 start.o
+.debug_str      0x0000000000000000       0x90
+ .debug_str     0x0000000000000000       0x88 app.o
+ .debug_str     0x0000000000000088       0x88 capa0.o
+ .debug_str     0x0000000000000088       0x88 elementales.o
+ .debug_str     0x0000000000000088        0x8 start.o
+                                         0x82 (tamaño antes de la relajación)
