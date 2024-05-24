@@ -1,3 +1,6 @@
+.ifndef ELEMENTALES_S
+.equ ELEMENTALES_S, 0x00000
+
 .include "framebuffer.s"
 
 // NOTE x0 contiene la direccion base del framebuffer
@@ -191,3 +194,5 @@ BL function1
 
 
 */
+
+.endif
