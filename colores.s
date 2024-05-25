@@ -1,3 +1,6 @@
+// Poner en comentarios para que uso cada color, 
+// agregar si el uso no esta.
+
 .equ BLACK_0, 0x000000  
 .equ BLACK_1, 0x000E15
 .equ BLACK_2, 0x231705
