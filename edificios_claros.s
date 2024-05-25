@@ -16,13 +16,12 @@ edificios_claros:
     STR X30, [SP, 40]    
 
 
-    MOV X1, 224
-    MOV X2, 290
-    MOV X3, 249
-    MOV X4, 162
-    LDR X7, =STEELBLUE_2
-    BL dibujar_rectangulo
-
+    // MOV X1, // ...
+    // MOV X2, // ...
+    // MOV X3, // ...
+    // MOV X4, // ...
+    // LDR X7, =STEELBLUE_2
+    // BL dibujar_rectangulo
 
     // PUSH(X30)
     LDR X30, [SP, 40]
