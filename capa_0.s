@@ -238,6 +238,7 @@ varanda:
     MOV X2, 329
     MOV X3, SCREEN_END_X
     MOV X4, 308
+
     LDR X7, =BLACK_0
     BL dibujar_rectangulo
 
