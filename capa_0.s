@@ -23,9 +23,9 @@ capa_0:                         // Absolutamente estatica, no cambia nunca
     BL varanda
     BL piso
 
-    // BL edificios_claros         // Gaspar
+    BL edificios_claros         // Gaspar
     // BL edificios_medios         // Nehuen
-    // BL edificios_oscuros        // Juan Cruz
+    // BL edificios_oscuros        // Gaspar
 
     // PUSH(X30)
     LDR X30, [SP, 40]
