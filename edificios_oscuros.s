@@ -429,7 +429,6 @@ edificios_oscuros:
     BL dibujar_rectangulo
 
 
-    
 
     // PUSH(X30)
     LDR X30, [SP, 40]
