@@ -169,30 +169,16 @@ dibujar_rectangulo:
 	ADD SP, SP, #48
 RET
 
-
-/*!
-function1:
-
-RET
-
-function2:
-
-RET
-
-function3:
+// si aprox en 1 segundo hago 1 millon de lineas, duerme durante 1/12 segundos 
+sleep: 
+    seguir_durmiendo:
+    MOV X16, 1
+    CMP X16, 4096*2*2*2
+    B.EQ dejar_de_dormir
+    B seguir_durmiendo 
+    dejar_de_dormir:
 
 RET
 
-
-
-BL function1
-
-BL function1
-
-BL function1
-
-
-
-*/
 
 .endif
