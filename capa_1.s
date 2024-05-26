@@ -6,7 +6,9 @@
 .include "elementales.s"
 .include "edificios_oscuros.s"
 .include "edificios_claros.s"
-
+.include "edificios_claros.s"
+.include "capa_0.s"
+.include "sprites.s"
 
 capa_1: // Todas las rutinas que dibujen sprites iran aqui,
         // solo se admiten BL a otras figuras en cada frame.
@@ -23,11 +25,14 @@ capa_1: // Todas las rutinas que dibujen sprites iran aqui,
     /*                 FRAME 1                */
     /*                                        */
         
+        BL lampara_0
+
     /*             END FRAME 1                */
     /*                                        */
     /******************************************/
 
     BL sleep        // no hace nada durante 1/12 segundos
+    BL capa_0
 
     /******************************************/
     /*                 FRAME 2                */
