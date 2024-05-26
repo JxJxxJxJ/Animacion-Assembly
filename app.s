@@ -9,7 +9,7 @@ main:
 
     BL capa_0             // La capa mas estatica de todas (literalmente estatica)
     BL capa_1             // Animados y demas detalles
-
+    
   // Infinite Loop
 InfLoop:
 B InfLoop

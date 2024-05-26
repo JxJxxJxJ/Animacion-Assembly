@@ -6,7 +6,9 @@
 .include "elementales.s"
 .include "edificios_oscuros.s"
 .include "edificios_claros.s"
-
+.include "edificios_claros.s"
+.include "capa_0.s"
+.include "sprites.s"
 
 capa_1: // Todas las rutinas que dibujen sprites iran aqui,
         // solo se admiten BL a otras figuras en cada frame.
@@ -22,7 +24,8 @@ capa_1: // Todas las rutinas que dibujen sprites iran aqui,
     /******************************************/
     /*                 FRAME 1                */
     /*                                        */
-        
+        BL lampara_0
+
     /*             END FRAME 1                */
     /*                                        */
     /******************************************/
@@ -32,7 +35,10 @@ capa_1: // Todas las rutinas que dibujen sprites iran aqui,
     /******************************************/
     /*                 FRAME 2                */
     /*                                        */
-        
+
+        BL lampara_1
+        BL perro_1
+
     /*             END FRAME 2                */
     /*                                        */
     /******************************************/
@@ -362,7 +368,7 @@ capa_1: // Todas las rutinas que dibujen sprites iran aqui,
     /******************************************/
     /*                 FRAME 35               */
     /*                                        */
-        
+        BL lampara_0
     /*             END FRAME 35               */
     /*                                        */
     /******************************************/
@@ -382,7 +388,7 @@ capa_1: // Todas las rutinas que dibujen sprites iran aqui,
     /******************************************/
     /*                 FRAME 37               */
     /*                                        */
-        
+        BL lampara_1
     /*             END FRAME 37               */
     /*                                        */
     /******************************************/
@@ -402,7 +408,7 @@ capa_1: // Todas las rutinas que dibujen sprites iran aqui,
     /******************************************/
     /*                 FRAME 39               */
     /*                                        */
-        
+        BL lampara_0
     /*             END FRAME 39               */
     /*                                        */
     /******************************************/
