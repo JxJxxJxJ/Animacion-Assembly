@@ -1,8 +1,10 @@
 // Poner en comentarios para que uso cada color, 
 // agregar si el uso no esta.
 
+.equ DEBUG, 0xFF0000                // Rojo para debug
+
 .equ BLACK_0, 0x000000  
-.equ BLACK_1, 0x000E15
+.equ BLACK_1, 0x000E15              // Detalles de la lampara,
 .equ BLACK_2, 0x231705
 .equ BLACK_3, 0x000023
 .equ WHITE, 0xFFFFFF
@@ -13,10 +15,10 @@
 .equ DARKOLIVEGREEN, 0x8E7E40
 .equ KHAKI, 0xDED687
 
-.equ DARKSLATEGRAY_3, 0x00506F      // Edificios oscuros detalles , Edificio medios cuerpo
+.equ DARKSLATEGRAY_3, 0x00506F      // Edificios oscuros detalles, Edificio medios cuerpo, Foco centro lampara
 .equ DARKTURQUOISE, 0x3FD3E9
 .equ STEELBLUE_1, 0x000069
-.equ STEELBLUE_2, 0x006F99          // DETALLE VENTANA 1
+.equ STEELBLUE_2, 0x006F99          // DETALLE VENTANA 1, FOCO lampara
 
 .equ CIELO_0, 0x1289A3              // Cielo luz 0
 .equ CIELO_1, 0x1494AF              // Cielo luz 1
