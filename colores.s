@@ -13,7 +13,7 @@
 .equ DARKOLIVEGREEN, 0x8E7E40
 .equ KHAKI, 0xDED687
 
-.equ DARKSLATEGRAY_3, 0x00506F      // Edificios oscuros detalles
+.equ DARKSLATEGRAY_3, 0x00506F      // Edificios oscuros detalles , Edificio medios cuerpo
 .equ DARKTURQUOISE, 0x3FD3E9
 .equ STEELBLUE_1, 0x000069
 .equ STEELBLUE_2, 0x006F99          // DETALLE VENTANA 1

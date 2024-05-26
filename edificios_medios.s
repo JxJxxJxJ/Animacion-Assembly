@@ -23,7 +23,7 @@ edificios_medios:
     // Edificio 1 torre más alta
 
     MOV X1, 310
-    MOV X2, 171
+    MOV X2, 298
     MOV X3, 278
     MOV X4, 171
     LDR X7, = DARKSLATEGRAY_3

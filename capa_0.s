@@ -6,6 +6,7 @@
 .include "elementales.s"
 .include "edificios_oscuros.s"
 .include "edificios_claros.s"
+.include "edificios_medios.s"
 
 .equ Y_OFFSET, -64 + 48 // Restar a toda coordenada Y del gif
 
@@ -24,7 +25,7 @@ capa_0:                         // Absolutamente estatica, no cambia nunca
     BL piso
 
     BL edificios_claros         // Gaspar
-    // BL edificios_medios         // Nehuen
+    BL edificios_medios         // Nehuen
     BL edificios_oscuros        // Gaspar
 
     BL puente
