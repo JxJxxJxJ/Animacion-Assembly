@@ -339,13 +339,6 @@ puente:
     LDR X7, =FONDO_VARANDA_0
     BL dibujar_rectangulo
 
-    MOV X1, 384
-    MOV X2, 234
-    MOV X3, 394
-    MOV X4, 2382
-    LDR X7, =FONDO_VARANDA_0
-    BL dibujar_rectangulo
-
     MOV X1, 391
     MOV X2, 230
     MOV X3, 398

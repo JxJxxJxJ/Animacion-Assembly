@@ -346,7 +346,7 @@ lampara_0:
     MOV X2, 108
     MOV X3, 55
     MOV X4, 109
-    LDR X7, =FONDO_VARANDA_0
+    LDR X7, =DEBUG
     BL dibujar_rectangulo
     
     MOV X1, 50
@@ -360,7 +360,7 @@ lampara_0:
     MOV X2, 125
     MOV X3, 42
     MOV X4, 126
-    LDR X7, =FONDO_VARANDA_0
+    LDR X7, =DEBUG
     BL dibujar_rectangulo
  
     MOV X1, 39
