@@ -209,6 +209,53 @@ lampara_0:
     MOV X4, 105
     LDR X7, =BLACK_1
     BL dibujar_rectangulo
+
+    MOV X1, 73
+    MOV X2, 126
+    MOV X3, 100
+    MOV X4, 114
+    LDR X7, =STEELBLUE_2
+    BL dibujar_rectangulo
+    
+    MOV X1, 107
+    MOV X2, 110
+    MOV X3, 97
+    MOV X4, 113
+    LDR X7, =STEELBLUE_2
+    BL dibujar_rectangulo
+    
+    MOV X1, 101
+    MOV X2, 100
+    MOV X3, 107
+    MOV X4, 109
+    LDR X7, =STEELBLUE_2
+    BL dibujar_rectangulo
+    
+    MOV X1, 104
+    MOV X2, 95
+    MOV X3, 104
+    MOV X4, 99
+    LDR X7, =STEELBLUE_2
+    BL dibujar_rectangulo
+    
+    MOV X1, 103
+    MOV X2, 95
+    MOV X3, 66
+    MOV X4, 96
+    LDR X7, =STEELBLUE_2
+    BL dibujar_rectangulo
+
+    MOV X1, 78
+    MOV X2, 110
+    MOV X3, 96
+    MOV X4, 113
+    LDR X7, =DARKSLATEGRAY_3
+    BL dibujar_rectangulo
+    
+    
+    
+    
+    
     
     
     
