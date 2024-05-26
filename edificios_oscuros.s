@@ -25,7 +25,7 @@ edificios_oscuros:
 
     MOV X1, 419
     MOV X2, 217
-    MOV X3, 640
+    MOV X3, SCREEN_END_X
     MOV X4, 298
     LDR X7, =FONDO_VARANDA_0
     BL dibujar_rectangulo
