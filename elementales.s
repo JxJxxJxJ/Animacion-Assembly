@@ -170,15 +170,24 @@ dibujar_rectangulo:
 RET
 
 // si aprox en 1 segundo hago 1 millon de lineas, duerme durante 1/12 segundos 
-sleep: 
-    seguir_durmiendo:
-    MOV X16, 1
-    CMP X16, 4096*2*2*2
-    B.EQ dejar_de_dormir
-    B seguir_durmiendo 
-    dejar_de_dormir:
+sleep:
+    MOV X16, #0                   // Inicializar X16 a 0
 
-RET
+    // Cargar 1,000,000,000 en X17 usando múltiples instrucciones
+    MOVZ X17, #0xF, LSL #16       // Cargar los bits superiores
+    MOVK X17, #0x4240, LSL #0     // Cargar los bits inferiores
+    LSL X17, X17, 5
+
+
+
+seguir_durmiendo:
+    CMP X16, X17                  // Comparar X16 con X17
+    B.EQ dejar_de_dormir          // Si X16 es igual a X17, saltar a dejar_de_dormir
+    ADD X16, X16, #1              // Incrementar X16 en 1
+    B seguir_durmiendo            // Volver a seguir_durmiendo
+
+dejar_de_dormir:
+    RET                           // Retornar
 
 
 .endif
