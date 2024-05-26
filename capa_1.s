@@ -37,8 +37,8 @@ capa_1: // Todas las rutinas que dibujen sprites iran aqui,
     /*                 FRAME 2                */
     /*                                        */
 
-        BL lampara_0
-        BL perro_0
+        BL lampara_1
+        BL perro_1
 
     /*             END FRAME 2                */
     /*                                        */
@@ -49,7 +49,8 @@ capa_1: // Todas las rutinas que dibujen sprites iran aqui,
     /******************************************/
     /*                 FRAME 3                */
     /*                                        */
-        
+        BL lampara_0
+        BL perro_0
     /*             END FRAME 3                */
     /*                                        */
     /******************************************/
@@ -59,7 +60,8 @@ capa_1: // Todas las rutinas que dibujen sprites iran aqui,
     /******************************************/
     /*                 FRAME 4                */
     /*                                        */
-        
+        BL lampara_1
+        BL perro_1
     /*             END FRAME 4                */
     /*                                        */
     /******************************************/
@@ -592,7 +594,7 @@ capa_1: // Todas las rutinas que dibujen sprites iran aqui,
     /******************************************/
     /*                 FRAME 57               */
     /*                                        */
-        
+        BL perro_0_negro
     /*             END FRAME 57               */
     /*                                        */
     /******************************************/
@@ -602,7 +604,7 @@ capa_1: // Todas las rutinas que dibujen sprites iran aqui,
     /******************************************/
     /*                 FRAME 58               */
     /*                                        */
-        
+        BL perro_0
     /*             END FRAME 58               */
     /*                                        */
     /******************************************/
