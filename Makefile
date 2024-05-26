@@ -11,7 +11,7 @@ all: kernel8.img
 %.o: %.s
 	$(ARMGNU)-as $(AOPS) $< -o $@
 
-clean:
+clean: 
 	rm -f *.o memory_map.txt kernel8.list kernel8.img kernel8.elf
 
 kernel8.img: memmap $(ASM_OBJS)
@@ -19,12 +19,11 @@ kernel8.img: memmap $(ASM_OBJS)
 	$(ARMGNU)-objdump -D kernel8.elf > kernel8.list
 	$(ARMGNU)-objcopy kernel8.elf -O binary kernel8.img
 
-runQEMU: kernel8.img
+runQEMU: clean kernel8.img
 	qemu-system-aarch64 -M raspi3b -kernel kernel8.img  -serial stdio -qtest unix:/tmp/qtest.sock,server,nowait
 
-runQEMUtest: kernel8.img
+runQEMUtest: clean kernel8.img
 	qemu-system-aarch64 -s -S -M raspi3b -kernel kernel8.img  -serial stdio -qtest unix:/tmp/qtest.sock,server,nowait
-
 
 runGPIOM: bin/gpiom
 	./bin/gpiom
