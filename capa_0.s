@@ -216,17 +216,6 @@ varanda:
     LDR X7, =BLACK_0
     BL dibujar_rectangulo
     
-    
-    
-    
-
-    
-    
-    
-    
-    
-
-
     MOV X1, SCREEN_START
     MOV X2, SCREEN_END_Y
     MOV X3, SCREEN_END_X
@@ -241,7 +230,6 @@ varanda:
 
     LDR X7, =BLACK_0
     BL dibujar_rectangulo
-
 
     // PUSH(X30)
     LDR X30, [SP, 40]
@@ -291,6 +279,7 @@ puente:
     STR X7, [SP, 32]
     STR X30, [SP, 40]
 
+    // ---
     // parte oscura
 
     MOV X1, 257
