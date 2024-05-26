@@ -339,6 +339,137 @@ puente:
     LDR X7, =FONDO_VARANDA_0
     BL dibujar_rectangulo
 
+    MOV X1, 384
+    MOV X2, 234
+    MOV X3, 394
+    MOV X4, 2382
+    LDR X7, =FONDO_VARANDA_0
+    BL dibujar_rectangulo
+
+    MOV X1, 391
+    MOV X2, 230
+    MOV X3, 398
+    MOV X4, 233
+    LDR X7, =FONDO_VARANDA_0
+    BL dibujar_rectangulo
+
+    MOV X1, 391
+    MOV X2, 230
+    MOV X3, 391
+    MOV X4, 232
+    LDR X7, =DARKSLATEGRAY_3
+    BL dibujar_rectangulo
+
+    MOV X1, 314
+    MOV X2, 239
+    MOV X3, 318
+    MOV X4, 273
+    LDR X7, =FONDO_VARANDA_0
+    BL dibujar_rectangulo
+
+    MOV X1, 330
+    MOV X2, 247
+    MOV X3, 333
+    MOV X4, 273
+    LDR X7, =FONDO_VARANDA_0
+    BL dibujar_rectangulo
+
+    MOV X1, 345
+    MOV X2, 247
+    MOV X3, 348
+    MOV X4, 273
+    LDR X7, =FONDO_VARANDA_0
+    BL dibujar_rectangulo
+    
+    MOV X1, 360
+    MOV X2, 247
+    MOV X3, 364
+    MOV X4, 273
+    LDR X7, =FONDO_VARANDA_0
+    BL dibujar_rectangulo
+
+    MOV X1, 376
+    MOV X2, 247
+    MOV X3, 379
+    MOV X4, 273
+    LDR X7, =FONDO_VARANDA_0
+    BL dibujar_rectangulo
+
+    MOV X1, 303
+    MOV X2, 260
+    MOV X3, 398
+    MOV X4, 263
+    LDR X7, =FONDO_VARANDA_0
+    BL dibujar_rectangulo
+
+    MOV X1, 303
+    MOV X2, 269
+    MOV X3, 398
+    MOV X4, 281
+    LDR X7, =FONDO_VARANDA_0
+    BL dibujar_rectangulo
+
+    MOV X1, 314
+    MOV X2, 264
+    MOV X3, 322
+    MOV X4, 268
+    LDR X7, =FONDO_VARANDA_0
+    BL dibujar_rectangulo
+
+    MOV X1, 330
+    MOV X2, 264
+    MOV X3, 337
+    MOV X4, 268
+    LDR X7, =FONDO_VARANDA_0
+    BL dibujar_rectangulo
+
+    MOV X1, 345
+    MOV X2, 264
+    MOV X3, 352
+    MOV X4, 268
+    LDR X7, =FONDO_VARANDA_0
+    BL dibujar_rectangulo
+
+    MOV X1, 360
+    MOV X2, 264
+    MOV X3, 368
+    MOV X4, 268
+    LDR X7, =FONDO_VARANDA_0
+    BL dibujar_rectangulo
+
+
+    MOV X1, 391
+    MOV X2, 264
+    MOV X3, 391
+    MOV X4, 265
+    LDR X7, =FONDO_VARANDA_0
+    BL dibujar_rectangulo
+    
+    MOV X1, 388
+    MOV X2, 239
+    MOV X3, 391
+    MOV X4, 259
+    LDR X7, =DARKSLATEGRAY_3
+    BL dibujar_rectangulo
+
+    MOV X1, 380
+    MOV X2, 242
+    MOV X3, 391
+    MOV X4, 259
+    LDR X7, =DARKSLATEGRAY_3
+    BL dibujar_rectangulo
+    
+    
+    // detalles de mas abajo
+
+    MOV X1, 334
+    MOV X2, 294
+    MOV X3, SCREEN_END_X
+    MOV X4, 298
+    LDR X7, =DARKSLATEGRAY_3
+    BL dibujar_rectangulo
+    
+    
 // PUSH(X30)
     LDR X30, [SP, 40]
     LDR X7, [SP, 32]
