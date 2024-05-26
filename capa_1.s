@@ -24,20 +24,20 @@ capa_1: // Todas las rutinas que dibujen sprites iran aqui,
     /******************************************/
     /*                 FRAME 1                */
     /*                                        */
-        
-        BL lampara_1
+        BL lampara_0
 
     /*             END FRAME 1                */
     /*                                        */
     /******************************************/
 
     BL sleep        // no hace nada durante 1/12 segundos
-    BL capa_0
 
     /******************************************/
     /*                 FRAME 2                */
     /*                                        */
-        
+
+        BL lampara_1
+
     /*             END FRAME 2                */
     /*                                        */
     /******************************************/
@@ -367,7 +367,7 @@ capa_1: // Todas las rutinas que dibujen sprites iran aqui,
     /******************************************/
     /*                 FRAME 35               */
     /*                                        */
-        
+        BL lampara_0
     /*             END FRAME 35               */
     /*                                        */
     /******************************************/
@@ -387,7 +387,7 @@ capa_1: // Todas las rutinas que dibujen sprites iran aqui,
     /******************************************/
     /*                 FRAME 37               */
     /*                                        */
-        
+        BL lampara_1
     /*             END FRAME 37               */
     /*                                        */
     /******************************************/
@@ -407,7 +407,7 @@ capa_1: // Todas las rutinas que dibujen sprites iran aqui,
     /******************************************/
     /*                 FRAME 39               */
     /*                                        */
-        
+        BL lampara_0
     /*             END FRAME 39               */
     /*                                        */
     /******************************************/
