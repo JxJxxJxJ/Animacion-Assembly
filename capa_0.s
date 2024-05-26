@@ -57,13 +57,6 @@ fondo_0:
     LDR X7, =CIELO_0
     BL dibujar_rectangulo
 
-    MOV X1, 428
-    MOV X2, SCREEN_START
-    MOV X3, SCREEN_END_X
-    MOV X4, SCREEN_END_Y
-    LDR X7, =CIELO_0
-    BL dibujar_rectangulo
-
     // PUSH(X30)
     LDR X30, [SP, 40]
     LDR X7, [SP, 32]
@@ -256,7 +249,7 @@ piso:
     MOV X1, SCREEN_START
     MOV X2, SCREEN_END_Y
     MOV X3, SCREEN_END_X
-    MOV X4, 429
+    MOV X4, 457
     LDR X7, =BLACK_0
     BL dibujar_rectangulo
 

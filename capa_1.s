@@ -37,6 +37,7 @@ capa_1: // Todas las rutinas que dibujen sprites iran aqui,
     /*                                        */
 
         BL lampara_1
+        BL perro_1
 
     /*             END FRAME 2                */
     /*                                        */
