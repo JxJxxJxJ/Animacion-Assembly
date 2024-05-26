@@ -44,6 +44,13 @@ lampara_0:
     LDR X7, =BLACK_1
     BL dibujar_rectangulo
 
+    MOV X1, 23  
+    MOV X2, 309
+    MOV X3, 31
+    MOV X4, 331
+    LDR X7, =BLACK_0
+    BL dibujar_rectangulo
+    
     MOV X1, 65
     MOV X2, 92
     MOV X3, 51
