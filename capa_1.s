@@ -25,6 +25,7 @@ capa_1: // Todas las rutinas que dibujen sprites iran aqui,
     /*                 FRAME 1                */
     /*                                        */
         BL lampara_0
+        BL perro_0
 
     /*             END FRAME 1                */
     /*                                        */
@@ -36,8 +37,8 @@ capa_1: // Todas las rutinas que dibujen sprites iran aqui,
     /*                 FRAME 2                */
     /*                                        */
 
-        BL lampara_1
-        BL perro_1
+        BL lampara_0
+        BL perro_0
 
     /*             END FRAME 2                */
     /*                                        */
@@ -369,6 +370,7 @@ capa_1: // Todas las rutinas que dibujen sprites iran aqui,
     /*                 FRAME 35               */
     /*                                        */
         BL lampara_0
+        BL perro_0_azul
     /*             END FRAME 35               */
     /*                                        */
     /******************************************/
@@ -389,6 +391,7 @@ capa_1: // Todas las rutinas que dibujen sprites iran aqui,
     /*                 FRAME 37               */
     /*                                        */
         BL lampara_1
+        BL perro_1
     /*             END FRAME 37               */
     /*                                        */
     /******************************************/
@@ -409,6 +412,7 @@ capa_1: // Todas las rutinas que dibujen sprites iran aqui,
     /*                 FRAME 39               */
     /*                                        */
         BL lampara_0
+        BL perro_0
     /*             END FRAME 39               */
     /*                                        */
     /******************************************/
@@ -568,7 +572,7 @@ capa_1: // Todas las rutinas que dibujen sprites iran aqui,
     /******************************************/
     /*                 FRAME 55               */
     /*                                        */
-        
+        BL perro_0_negro
     /*             END FRAME 55               */
     /*                                        */
     /******************************************/
@@ -578,7 +582,7 @@ capa_1: // Todas las rutinas que dibujen sprites iran aqui,
     /******************************************/
     /*                 FRAME 56               */
     /*                                        */
-        
+        BL perro_0       
     /*             END FRAME 56               */
     /*                                        */
     /******************************************/
