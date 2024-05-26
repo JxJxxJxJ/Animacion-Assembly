@@ -889,3 +889,5 @@ capa_1: // Todas las rutinas que dibujen sprites iran aqui,
     ADD SP, SP, #48
 RET
 
+
+.endif
