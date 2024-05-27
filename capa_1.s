@@ -28,6 +28,7 @@ capa_1: // Todas las rutinas que dibujen sprites iran aqui,
         BL fondo_0
         BL lampara_0_cielo_3
         BL perro_0
+        BL hombre_0
 
     /*             END FRAME 1                */
     /*                                        */
@@ -42,6 +43,7 @@ capa_1: // Todas las rutinas que dibujen sprites iran aqui,
 
         BL lampara_1
         BL perro_1
+        BL hombre_1
 
     /*             END FRAME 2                */
     /*                                        */
