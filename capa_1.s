@@ -21,6 +21,8 @@ capa_1: // Todas las rutinas que dibujen sprites iran aqui,
     STR X7, [SP, 32]
     STR X30, [SP, 40]
 
+    BL hombre_0
+
     /******************************************/
     /*                 FRAME 1                */
     /*                                        */
@@ -32,6 +34,7 @@ capa_1: // Todas las rutinas que dibujen sprites iran aqui,
     /******************************************/
 
     BL sleep        // no hace nada durante 1/12 segundos
+
 
     /******************************************/
     /*                 FRAME 2                */
