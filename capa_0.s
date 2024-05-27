@@ -20,7 +20,6 @@ capa_0:                         // Absolutamente estatica, no cambia nunca
     STR X7, [SP, 32]
     STR X30, [SP, 40]
 
-    BL fondo_0                     // Hecho  
     BL varanda
     BL piso
 
@@ -29,33 +28,6 @@ capa_0:                         // Absolutamente estatica, no cambia nunca
     BL edificios_oscuros        // Gaspar
 
     BL puente
-
-    // PUSH(X30)
-    LDR X30, [SP, 40]
-    LDR X7, [SP, 32]
-    LDR X4, [SP, 24]
-    LDR X3, [SP, 16]
-    LDR X2, [SP, 8]
-    LDR X1, [SP] 
-    ADD SP, SP, #48
-RET
-
-fondo_0:
-    // PUSH(X30)
-    SUB SP, SP, 48
-    STR X1, [SP]
-    STR X2, [SP, 8]
-    STR X3, [SP, 16]
-    STR X4, [SP, 24]
-    STR X7, [SP, 32]
-    STR X30, [SP, 40]
-
-    MOV X1, SCREEN_START
-    MOV X2, SCREEN_START
-    MOV X3, SCREEN_END_X
-    MOV X4, SCREEN_END_Y
-    LDR X7, =CIELO_0
-    BL dibujar_rectangulo
 
     // PUSH(X30)
     LDR X30, [SP, 40]

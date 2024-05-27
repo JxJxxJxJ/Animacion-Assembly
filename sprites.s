@@ -5,7 +5,7 @@
 .include "framebuffer.s"
 .include "elementales.s"
 
-lampara_0: // NOTE DONE
+lampara_0_cielo_3: // NOTE DONE
     // PUSH(X30) 
     SUB SP, SP, 48
     STR X1, [SP]
@@ -14,6 +14,13 @@ lampara_0: // NOTE DONE
     STR X4, [SP, 24]
     STR X7, [SP, 32]
     STR X30, [SP, 40]
+
+    MOV X1, 66
+    MOV X2, 99
+    MOV X3, 107
+    MOV X4, 128
+    LDR X7, =CIELO_3
+    BL dibujar_rectangulo
     
     MOV X1, 23  
     MOV X2, 308
@@ -864,6 +871,13 @@ lampara_1: // TODO
     STR X4, [SP, 24]
     STR X7, [SP, 32]
     STR X30, [SP, 40]
+    
+    MOV X1, 66
+    MOV X2, 99
+    MOV X3, 107
+    MOV X4, 128
+    LDR X7, =CIELO_3
+    BL dibujar_rectangulo
     
     MOV X1, 19
     MOV X2, 454
@@ -4276,5 +4290,1115 @@ perro_0_negro: // NOTE DONE
     LDR X1, [SP] 
     ADD SP, SP, #48
 RET
+
+fondo_3:
+    // PUSH(X30)
+    SUB SP, SP, 48
+    STR X1, [SP]
+    STR X2, [SP, 8]
+    STR X3, [SP, 16]
+    STR X4, [SP, 24]
+    STR X7, [SP, 32]
+    STR X30, [SP, 40]
+
+    MOV X1, SCREEN_START
+    MOV X2, SCREEN_START
+    MOV X3, SCREEN_END_X
+    MOV X4, SCREEN_END_Y
+    LDR X7, =CIELO_3
+    BL dibujar_rectangulo
+
+    // PUSH(X30)
+    LDR X30, [SP, 40]
+    LDR X7, [SP, 32]
+    LDR X4, [SP, 24]
+    LDR X3, [SP, 16]
+    LDR X2, [SP, 8]
+    LDR X1, [SP] 
+    ADD SP, SP, #48
+RET
+
+
+fondo_2:
+    // PUSH(X30)
+    SUB SP, SP, 48
+    STR X1, [SP]
+    STR X2, [SP, 8]
+    STR X3, [SP, 16]
+    STR X4, [SP, 24]
+    STR X7, [SP, 32]
+    STR X30, [SP, 40]
+
+    MOV X1, SCREEN_START
+    MOV X2, SCREEN_START
+    MOV X3, SCREEN_END_X
+    MOV X4, SCREEN_END_Y
+    LDR X7, =CIELO_2
+    BL dibujar_rectangulo
+
+    // PUSH(X30)
+    LDR X30, [SP, 40]
+    LDR X7, [SP, 32]
+    LDR X4, [SP, 24]
+    LDR X3, [SP, 16]
+    LDR X2, [SP, 8]
+    LDR X1, [SP] 
+    ADD SP, SP, #48
+RET
+
+fondo_1:
+    // PUSH(X30)
+    SUB SP, SP, 48
+    STR X1, [SP]
+    STR X2, [SP, 8]
+    STR X3, [SP, 16]
+    STR X4, [SP, 24]
+    STR X7, [SP, 32]
+    STR X30, [SP, 40]
+
+    MOV X1, SCREEN_START
+    MOV X2, SCREEN_START
+    MOV X3, SCREEN_END_X
+    MOV X4, SCREEN_END_Y
+    LDR X7, =CIELO_1
+    BL dibujar_rectangulo
+
+    // PUSH(X30)
+    LDR X30, [SP, 40]
+    LDR X7, [SP, 32]
+    LDR X4, [SP, 24]
+    LDR X3, [SP, 16]
+    LDR X2, [SP, 8]
+    LDR X1, [SP] 
+    ADD SP, SP, #48
+RET
+
+fondo_0:
+    // PUSH(X30)
+    SUB SP, SP, 48
+    STR X1, [SP]
+    STR X2, [SP, 8]
+    STR X3, [SP, 16]
+    STR X4, [SP, 24]
+    STR X7, [SP, 32]
+    STR X30, [SP, 40]
+
+    MOV X1, SCREEN_START
+    MOV X2, 275 
+    MOV X3, 18
+    MOV X4, 299
+    LDR X7, =CIELO_0
+    BL dibujar_rectangulo
+    
+    MOV X1, 32
+    MOV X2, 275
+    MOV X3, 88
+    MOV X4, 299
+    
+    BL dibujar_rectangulo
+ 
+    MOV X1, 101
+    MOV X2, 275
+    MOV X3, 103
+    MOV X4, 294
+    
+    BL dibujar_rectangulo
+    
+    MOV X1, 104
+    MOV X2, 275
+    MOV X3, 107
+    MOV X4, 290
+    
+    BL dibujar_rectangulo
+    
+    MOV X1, 108
+    MOV X2, 275
+    MOV X3, 109
+    MOV X4, 286
+    
+    BL dibujar_rectangulo
+    
+    MOV X1, 110
+    MOV X2, 275
+    MOV X3, 111
+    MOV X4, 286 
+    
+    BL dibujar_rectangulo
+    
+    MOV X1, 112
+    MOV X2, 286
+    MOV X3, 114
+    MOV X4, 280
+    
+    BL dibujar_rectangulo
+    
+    MOV X1, 173
+    MOV X2, 275
+    MOV X3, 140
+    MOV X4, 299
+    
+    BL dibujar_rectangulo
+    
+    MOV X1, SCREEN_START
+    MOV X2, 235
+    MOV X3, 3
+    MOV X4, 260
+    
+    BL dibujar_rectangulo
+    
+    MOV X1, 4
+    MOV X2, 240
+    MOV X3, 7
+    MOV X4, 260
+    
+    BL dibujar_rectangulo
+       
+    MOV X1, 4
+    MOV X2, 239
+    
+    BL dibujar_pixel
+    
+    MOV X1, 14
+    MOV X2, 260
+    MOV X3, 15
+    MOV X4, 245
+    
+    BL dibujar_rectangulo
+    
+    MOV X1, 16
+    MOV X2, 248
+    MOV X3, 18
+    MOV X4, 260
+    
+    BL dibujar_rectangulo
+    
+    MOV X1, 32
+    MOV X2, 260
+    MOV X3, 35
+    MOV X4, 250
+    
+    BL dibujar_rectangulo
+
+    MOV X1, 33
+    MOV X2, 249
+    MOV X3, 33
+    MOV X4, 248
+    
+    BL dibujar_rectangulo
+    
+    MOV X1, 40
+    MOV X2, 260
+    MOV X3, 50
+    MOV X4, 248
+    
+    BL dibujar_rectangulo
+       
+    MOV X1, 55
+    MOV X2, 260
+    MOV X3, 65
+    MOV X4, 248
+    
+    BL dibujar_rectangulo
+    
+    MOV X1, 71
+    MOV X2, 260
+    MOV X3, 81
+    MOV X4, 245
+    
+    BL dibujar_rectangulo
+    
+    MOV X1, 78
+    MOV X2, 244
+    MOV X3, 81
+    MOV X4, 240
+    
+    BL dibujar_rectangulo
+    
+    MOV X1, 86
+    MOV X2, 260
+    MOV X3, 88
+    MOV X4, 235
+    
+    BL dibujar_rectangulo
+    
+    MOV X1, 101
+    MOV X2, 240
+    MOV X3, 107
+    MOV X4, 260
+    
+    BL dibujar_rectangulo
+    
+    MOV X1, 112
+    MOV X2, 245
+    MOV X3, 118
+    MOV X4, 260
+    
+    BL dibujar_rectangulo
+    
+    MOV X1, 151
+    MOV X2, 255
+    MOV X3, 153
+    MOV X4, 248
+    
+    BL dibujar_rectangulo
+    
+    MOV X1, 160
+    MOV X2, 260
+    MOV X3, 168
+    MOV X4, 248
+    
+    BL dibujar_rectangulo
+    
+    MOV X1, 158
+    MOV X2, 250
+    MOV X3, 159
+    MOV X4, 257
+    
+    BL dibujar_rectangulo
+    
+    MOV X1, SCREEN_START
+    MOV X2, SCREEN_START
+    MOV X3, SCREEN_END_X
+    MOV X4, 82
+    
+    BL dibujar_rectangulo
+    
+    MOV X1, SCREEN_START
+    MOV X2, 83
+    MOV X3, 223
+    MOV X4, 190
+    
+    BL dibujar_rectangulo
+    
+    MOV X1, 208
+    MOV X2, 191
+    MOV X3, 223
+    MOV X4, 205
+    
+    BL dibujar_rectangulo
+    
+    MOV X1, 212
+    MOV X2, 233
+    MOV X3, 223
+    MOV X4, 206
+    
+    BL dibujar_rectangulo
+    
+    MOV X1, 223
+    MOV X2, 234
+    MOV X3, 215
+    MOV X4, 234
+    
+    BL dibujar_rectangulo
+    
+    MOV X1, 217
+    MOV X2, 238
+    MOV X3, 223
+    MOV X4, 235
+    
+    BL dibujar_rectangulo
+    
+    MOV X1, SCREEN_START
+    MOV X2, 191
+    MOV X3, 18  
+    MOV X4, 230
+    
+    BL dibujar_rectangulo
+    
+    MOV X1, 9
+    MOV X2, 234
+    MOV X3, 18
+    MOV X4, 231
+    
+    BL dibujar_rectangulo
+    
+    MOV X1, 14
+    MOV X2, 238
+    MOV X3, 18
+    MOV X4, 235
+    
+    BL dibujar_rectangulo
+    
+    MOV X1, 32
+    MOV X2, 191
+    MOV X3, 191
+    MOV X4, 205
+    
+    BL dibujar_rectangulo
+
+    MOV X1, 32
+    MOV X2, 206
+    MOV X3, 173
+    MOV X4, 220
+    
+    BL dibujar_rectangulo
+    
+    MOV X1, 32
+    MOV X2, 221
+    MOV X3, 88
+    MOV X4, 230
+    
+    BL dibujar_rectangulo
+    
+    MOV X1, 32
+    MOV X2, 234
+    MOV X3, 81
+    MOV X4, 231
+    
+    BL dibujar_rectangulo
+    
+    MOV X1, 77
+    MOV X2, 235
+    MOV X3, 32
+    MOV X4, 238
+    
+    BL dibujar_rectangulo
+    
+    MOV X1, 32
+    MOV X2, 242
+    MOV X3, 65
+    MOV X4, 239
+    
+    BL dibujar_rectangulo
+    
+    MOV X1, 101
+    MOV X2, 230
+    MOV X3, 173
+    MOV X4, 221
+    
+    BL dibujar_rectangulo
+    
+    MOV X1, 105
+    MOV X2, 231
+    MOV X3, 173
+    MOV X4, 234
+    
+    BL dibujar_rectangulo
+
+    MOV X1, 173
+    MOV X2, 235
+    MOV X3, 112
+    MOV X4, 238
+    
+    BL dibujar_rectangulo
+
+    MOV X1, 121
+    MOV X2, 239
+    MOV X3, 122
+    MOV X4, 242
+    
+    BL dibujar_rectangulo
+    
+    MOV X1, 147
+    MOV X2, 239
+    MOV X3, 168
+    MOV X4, 242
+    
+    BL dibujar_rectangulo
+
+    MOV X1, 224
+    MOV X2, 83
+    MOV X3, 299
+    MOV X4, 131
+    
+    BL dibujar_rectangulo
+
+    MOV X1, 300
+    MOV X2, 83
+    MOV X3, 376
+    MOV X4, 113
+    
+    BL dibujar_rectangulo
+    
+    MOV X1, 373
+    MOV X2, 114
+    MOV X3, 300
+    MOV X4, 116
+    
+    BL dibujar_rectangulo
+
+    MOV X1, 304
+    MOV X2, 117
+    MOV X3, 334
+    MOV X4, 123
+    
+    BL dibujar_rectangulo
+    
+    MOV X1, 346
+    MOV X2, 117
+    MOV X3, 373
+    MOV X4, 173
+    
+    BL dibujar_rectangulo
+    
+    MOV X1, 250
+    MOV X2, 132
+    MOV X3, 275
+    MOV X4, 186
+    
+    BL dibujar_rectangulo
+    
+    MOV X1, 275
+    MOV X2, 187
+    MOV X3, 251
+    MOV X4, 187
+    
+    BL dibujar_rectangulo
+    
+    MOV X1, 224
+    MOV X2, 153
+    MOV X3, 224
+    MOV X4, 132
+    
+    BL dibujar_rectangulo
+
+    MOV X1, 225
+    MOV X2, 151
+    MOV X3, 227
+    MOV X4, 132
+    
+    BL dibujar_rectangulo
+    
+    MOV X1, 228
+    MOV X2, 132
+    MOV X3, 234
+    MOV X4, 134
+    
+    BL dibujar_rectangulo
+    
+    MOV X1, 228
+    MOV X2, 143
+    MOV X3, 231
+    MOV X4, 135
+    
+    BL dibujar_rectangulo
+    
+    MOV X1, 239
+    MOV X2, 134
+    MOV X3, 249
+    MOV X4, 132
+    
+    BL dibujar_rectangulo
+    
+    MOV X1, 242
+    MOV X2, 135
+    MOV X3, 249
+    MOV X4, 135
+    
+    BL dibujar_rectangulo
+    
+    MOV X1, 243
+    MOV X2, 136
+    MOV X3, 249
+    MOV X4, 143
+    
+    BL dibujar_rectangulo
+    
+    MOV X1, 247
+    MOV X2, 144
+    MOV X3, 249
+    MOV X4, 151
+    
+    BL dibujar_rectangulo
+    
+    MOV X1, 276
+    MOV X2, 168
+    MOV X3, 280
+    MOV X4, 132
+    
+    BL dibujar_rectangulo
+    
+    MOV X1, 276
+    MOV X2, 170
+    MOV X3, 277
+    MOV X4, 169
+    
+    BL dibujar_rectangulo
+    
+    MOV X1, 313
+    MOV X2, 169
+    MOV X3, 314
+    MOV X4, 233
+    
+    BL dibujar_rectangulo
+
+    MOV X1, 300
+    MOV X2, 134
+    MOV X3, 319
+    MOV X4, 124
+    
+    BL dibujar_rectangulo
+    
+    MOV X1, 320
+    MOV X2, 124
+    MOV X3, 334
+    MOV X4, 129
+    
+    BL dibujar_rectangulo
+    
+    MOV X1, 324
+    MOV X2, 134
+    MOV X3, 334
+    MOV X4, 130
+    
+    BL dibujar_rectangulo
+    
+    MOV X1, 335
+    MOV X2, 121
+    MOV X3, 345
+    MOV X4, 117
+    
+    BL dibujar_rectangulo
+
+    MOV X1, 339
+    MOV X2, 129
+    MOV X3, 345
+    MOV X4, 122
+    
+    BL dibujar_rectangulo
+    
+    MOV X1, 342
+    MOV X2, 131
+    MOV X3, 345
+    MOV X4, 130
+    
+    BL dibujar_rectangulo
+
+    MOV X1, 343
+    MOV X2, 134
+    MOV X3, 345
+    MOV X4, 132
+    
+    BL dibujar_rectangulo
+
+    MOV X1, 585
+    MOV X2, 113
+    MOV X3, 587
+    MOV X4, 181
+    
+    BL dibujar_rectangulo
+
+    MOV X1, SCREEN_END_X
+    MOV X2, 212
+    MOV X3, SCREEN_END_X
+    MOV X4, 82
+    
+    BL dibujar_rectangulo
+
+    MOV X1, 542
+    MOV X2, 83
+    MOV X3, 572
+    MOV X4, 112
+    
+    BL dibujar_rectangulo
+
+    MOV X1, 639
+    MOV X2, 83
+    MOV X3, 573
+    MOV X4, 99
+    
+    BL dibujar_rectangulo
+    
+    MOV X1, 308
+    MOV X2, 162
+    MOV X3, 314
+    MOV X4, 168
+    
+    BL dibujar_rectangulo
+    
+    MOV X1, 285
+    MOV X2, 162
+    MOV X3, 303
+    MOV X4, 164
+    
+    BL dibujar_rectangulo
+    
+    MOV X1, 281
+    MOV X2, 132
+    MOV X3, 314
+    MOV X4, 161
+    
+    BL dibujar_rectangulo
+    
+    MOV X1, 381
+    MOV X2, 107
+    MOV X3, 395
+    MOV X4, 105
+    
+    BL dibujar_rectangulo
+    
+    MOV X1, 382
+    MOV X2, 109
+    MOV X3, 395
+    MOV X4, 108 
+    
+    BL dibujar_rectangulo
+
+    MOV X1, 377
+    MOV X2, 83
+    MOV X3, 480
+    MOV X4, 104
+    
+    BL dibujar_rectangulo
+    
+    MOV X1, 492
+    MOV X2, 83
+    MOV X3, 541
+    MOV X4, 91
+    
+    BL dibujar_rectangulo
+    
+    MOV X1, 476
+    MOV X2, 105
+    MOV X3, 400
+    MOV X4, 113
+    
+    BL dibujar_rectangulo
+    
+    MOV X1, 404
+    MOV X2, 114
+    MOV X3, 476
+    MOV X4, 121
+    
+    BL dibujar_rectangulo
+    
+    MOV X1, 470
+    MOV X2, 126
+    MOV X3, 476
+    MOV X4, 122
+    
+    BL dibujar_rectangulo
+
+    MOV X1, 477
+    MOV X2, 109
+    MOV X3, 480
+    MOV X4, 105
+    
+    BL dibujar_rectangulo
+
+    MOV X1, 439
+    MOV X2, 190
+    MOV X3, 441
+    MOV X4, 152
+    
+    BL dibujar_rectangulo
+
+    MOV X1, 442
+    MOV X2, 152
+    MOV X3, 461
+    MOV X4, 164
+    
+    BL dibujar_rectangulo
+       
+    MOV X1, 442
+    MOV X2, 165
+    
+    BL dibujar_pixel
+    
+    MOV X1, 435
+    MOV X2, 151
+    MOV X3, 461
+    MOV X4, 122
+    
+    BL dibujar_rectangulo
+
+    MOV X1, 462
+    MOV X2, 126
+    MOV X3, 465
+    MOV X4, 122
+    
+    BL dibujar_rectangulo
+    
+    MOV X1, 431
+    MOV X2, 143
+    MOV X3, 434
+    MOV X4, 141
+    
+    BL dibujar_rectangulo
+
+    MOV X1, 432
+    MOV X2, 140
+    MOV X3, 434
+    MOV X4, 139
+    
+    BL dibujar_rectangulo
+
+    MOV X1, 404
+    MOV X2, 146
+    MOV X3, 426
+    MOV X4, 139
+    
+    BL dibujar_rectangulo
+    
+    MOV X1, 404
+    MOV X2, 138
+    MOV X3, 422
+    MOV X4, 135
+    
+    BL dibujar_rectangulo
+
+    MOV X1, 404
+    MOV X2, 134
+    MOV X3, 434
+    MOV X4, 122
+    
+    BL dibujar_rectangulo
+    
+    MOV X1, 481
+    MOV X2, 99
+    MOV X3, 484
+    MOV X4, 83
+    
+    BL dibujar_rectangulo
+    
+    MOV X1, 485
+    MOV X2, 91
+    MOV X3, 487
+    MOV X4, 83
+    
+    BL dibujar_rectangulo
+    
+    MOV X1, 488
+    MOV X2, 90
+    MOV X3, 488
+    MOV X4, 83
+    
+    BL dibujar_rectangulo
+
+    MOV X1, 496
+    MOV X2, 99
+    MOV X3, 522
+    MOV X4, 92
+    
+    BL dibujar_rectangulo
+    
+    MOV X1, 505
+    MOV X2, 151
+    MOV X3, 511
+    MOV X4, 100
+    
+    BL dibujar_rectangulo
+    
+    MOV X1, 500
+    MOV X2, 109
+    MOV X3, 504
+    MOV X4, 100
+    
+    BL dibujar_rectangulo
+    
+    MOV X1, 499
+    MOV X2, 100
+    MOV X3, 499
+    MOV X4, 101
+    
+    BL dibujar_rectangulo
+
+    MOV X1, 535
+    MOV X2, 99
+    MOV X3, 541
+    MOV X4, 92
+    
+    BL dibujar_rectangulo
+
+    MOV X1, 541
+    MOV X2, 100
+    MOV X3, 538
+    MOV X4, 109
+    
+    BL dibujar_rectangulo
+
+    MOV X1, 638
+    MOV X2, 204
+    MOV X3, 639
+    MOV X4, 205
+    
+    BL dibujar_rectangulo
+    
+    MOV X1, 577
+    MOV X2, 109
+    MOV X3, 580
+    MOV X4, 100
+    
+    BL dibujar_rectangulo
+
+    MOV X1, 581
+    MOV X2, 112
+    MOV X3, 587
+    MOV X4, 100
+    
+    BL dibujar_rectangulo
+    
+    MOV X1, 588
+    MOV X2, 129
+    MOV X3, 639
+    MOV X4, 100
+    
+    BL dibujar_rectangulo
+    
+    MOV X1, 631
+    MOV X2, 203
+    MOV X3, 639
+    MOV X4, 130
+    
+    BL dibujar_rectangulo
+
+    MOV X1, 627
+    MOV X2, 138
+    MOV X3, 630
+    MOV X4, 130
+    
+    BL dibujar_rectangulo
+    
+    MOV X1, 620
+    MOV X2, 134
+    MOV X3, 626
+    MOV X4, 130
+    
+    BL dibujar_rectangulo
+    
+    MOV X1, 619
+    MOV X2, 131
+    MOV X3, 619
+    MOV X4, 130
+    
+    BL dibujar_rectangulo
+    
+    MOV X1, 599  
+    MOV X2, 131
+    MOV X3, 615
+    MOV X4, 130
+    
+    BL dibujar_rectangulo
+    
+    MOV X1, 601
+    MOV X2, 134
+    MOV X3, 614
+    MOV X4, 132
+    
+    BL dibujar_rectangulo
+
+    MOV X1, 588
+    MOV X2, 138
+    MOV X3, 591 
+    MOV X4, 130
+    BL dibujar_rectangulo
+
+    MOV X1, 592
+    MOV X2, 134
+    MOV X3, 595
+    MOV X4, 130
+    BL dibujar_rectangulo
+    
+    MOV X1, 346
+    MOV X2, 174
+    MOV X3, 373
+    MOV X4, 174
+    BL dibujar_rectangulo
+
+    MOV X1, 345
+    MOV X2, 174
+    BL dibujar_pixel
+
+    MOV X1, 345
+    MOV X2, 135
+    MOV X3, 345
+    MOV X4, 173
+    BL dibujar_rectangulo
+    
+    MOV X1, 314
+    MOV X2, 136
+    MOV X3, 315
+    MOV X4, 232
+    BL dibujar_rectangulo
+    
+    MOV X1, 399
+    MOV X2, 113
+    MOV X3, 399
+    MOV X4, 105
+    BL dibujar_rectangulo
+
+    MOV X1, 342
+    MOV X2, 134
+    MOV X3, 342
+    MOV X4, 132
+    BL dibujar_rectangulo
+
+    MOV X1, 341
+    MOV X2, 131
+    MOV X3, 341
+    MOV X4, 130
+    BL dibujar_rectangulo
+
+    MOV X1, 192
+    MOV X2, 191
+    MOV X3, 207
+    MOV X4, 191 
+    BL dibujar_rectangulo
+
+    MOV X1, 210
+    MOV X2, 233
+    MOV X3, 211
+    MOV X4, 206
+    BL dibujar_rectangulo
+    
+    MOV X1, 210
+    MOV X2, 233
+    MOV X3, 211
+    MOV X4, 206
+    BL dibujar_rectangulo
+    
+    MOV X1, 207
+    MOV X2, 205
+    MOV X3, 207
+    MOV X4, 191
+    BL dibujar_rectangulo
+    
+    
+
+    
+    
+    
+    
+    
+
+
+    
+    
+    
+    
+    
+    
+
+    MOV X1, 300
+    MOV X2, 123
+    MOV X3, 303
+    MOV X4, 117
+    BL dibujar_rectangulo
+
+    MOV X1, 300
+    MOV X2, 123
+    MOV X3, 303
+    MOV X4, 117
+    BL dibujar_rectangulo
+
+
+
+    
+
+    
+    
+ 
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+
+    // PUSH(X30)
+    LDR X30, [SP, 40]
+    LDR X7, [SP, 32]
+    LDR X4, [SP, 24]
+    LDR X3, [SP, 16]
+    LDR X2, [SP, 8]
+    LDR X1, [SP] 
+    ADD SP, SP, #48
+RET
+
 
 .endif

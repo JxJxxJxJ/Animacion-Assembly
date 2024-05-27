@@ -24,7 +24,8 @@ capa_1: // Todas las rutinas que dibujen sprites iran aqui,
     /******************************************/
     /*                 FRAME 1                */
     /*                                        */
-        BL lampara_0
+        BL fondo_0
+        BL lampara_0_cielo_3
         BL perro_0
 
     /*             END FRAME 1                */
@@ -49,7 +50,7 @@ capa_1: // Todas las rutinas que dibujen sprites iran aqui,
     /******************************************/
     /*                 FRAME 3                */
     /*                                        */
-        BL lampara_0
+        BL lampara_0_cielo_3
         BL perro_0
     /*             END FRAME 3                */
     /*                                        */
@@ -371,7 +372,7 @@ capa_1: // Todas las rutinas que dibujen sprites iran aqui,
     /******************************************/
     /*                 FRAME 35               */
     /*                                        */
-        BL lampara_0
+        BL lampara_0_cielo_3
         BL perro_0_azul
     /*             END FRAME 35               */
     /*                                        */
@@ -413,7 +414,7 @@ capa_1: // Todas las rutinas que dibujen sprites iran aqui,
     /******************************************/
     /*                 FRAME 39               */
     /*                                        */
-        BL lampara_0
+        BL lampara_0_cielo_3
         BL perro_0
     /*             END FRAME 39               */
     /*                                        */
