@@ -7303,6 +7303,15 @@ hombre_0:
     STR X7, [SP, 32]
     STR X30, [SP, 40]
 
+    //jx agregue bloque negro pierna 
+    
+    MOV X1, 143
+    MOV X2, 457
+    MOV X3, 157
+    MOV X4, 402
+    LDR X7, =BLACK_0
+    BL dibujar_rectangulo
+
     // gaspar
 
     //-----------------------
@@ -7740,13 +7749,18 @@ fondo_0:
     STR X4, [SP, 24]
     STR X7, [SP, 32]
     STR X30, [SP, 40]
-
+    
     MOV X1, SCREEN_START
     MOV X2, 275 
     MOV X3, 18
     MOV X4, 299
     LDR X7, =CIELO_0
     BL dibujar_rectangulo
+
+    // fix px
+    MOV X1, 315
+    MOV X2, 135
+    BL dibujar_pixel
     
     MOV X1, 32
     MOV X2, 275
@@ -7790,10 +7804,43 @@ fondo_0:
     
     BL dibujar_rectangulo
     
-    MOV X1, 173
-    MOV X2, 275
-    MOV X3, 140
-    MOV X4, 299
+    // TODO BUG
+    // MOV X1, 173
+    // MOV X2, 275
+    // MOV X3, 140
+    // MOV X4, 299
+
+    MOV X1, 147
+    MOV X2, 279
+    MOV X3, 174
+    MOV X4, 275
+    BL dibujar_rectangulo
+
+    MOV X1, 150
+    MOV X2, 286
+    MOV X3, 174
+    MOV X4, 280
+    BL dibujar_rectangulo
+
+    MOV X1, 150
+    MOV X2, 290
+    MOV X3, 166
+    MOV X4, 287
+    BL dibujar_rectangulo
+
+    MOV X1, 151
+    MOV X2, 291
+    MOV X3, 166
+    MOV X4, 291
+    BL dibujar_rectangulo
+
+    MOV X1, 154
+    MOV X2, 296
+    MOV X3, 161
+    MOV X4, 292
+    BL dibujar_rectangulo
+
+    // TODO BUG END
     
     BL dibujar_rectangulo
     
@@ -8642,13 +8689,18 @@ fondo_1:
     STR X4, [SP, 24]
     STR X7, [SP, 32]
     STR X30, [SP, 40]
-
+    
     MOV X1, SCREEN_START
     MOV X2, 275 
     MOV X3, 18
     MOV X4, 299
     LDR X7, =CIELO_1
     BL dibujar_rectangulo
+
+    // fix px
+    MOV X1, 315
+    MOV X2, 135
+    BL dibujar_pixel
     
     MOV X1, 32
     MOV X2, 275
@@ -8675,29 +8727,26 @@ fondo_1:
     MOV X2, 275
     MOV X3, 109
     MOV X4, 286
-    
     BL dibujar_rectangulo
     
     MOV X1, 110
     MOV X2, 275
     MOV X3, 111
     MOV X4, 286 
-    
     BL dibujar_rectangulo
     
     MOV X1, 112
     MOV X2, 286
     MOV X3, 114
     MOV X4, 280
-    
     BL dibujar_rectangulo
     
-    MOV X1, 173
-    MOV X2, 275
-    MOV X3, 140
-    MOV X4, 299
-    
-    BL dibujar_rectangulo
+    // // TODO bug 
+    // MOV X1, 173
+    // MOV X2, 275
+    // MOV X3, 140
+    // MOV X4, 299
+    // BL dibujar_rectangulo
     
     MOV X1, SCREEN_START
     MOV X2, 235
@@ -9545,12 +9594,18 @@ fondo_2:
     STR X7, [SP, 32]
     STR X30, [SP, 40]
 
+
     MOV X1, SCREEN_START
     MOV X2, 275 
     MOV X3, 18
     MOV X4, 299
     LDR X7, =CIELO_2
     BL dibujar_rectangulo
+
+    // fix px
+    MOV X1, 315
+    MOV X2, 135
+    BL dibujar_pixel
     
     MOV X1, 32
     MOV X2, 275
@@ -9594,10 +9649,51 @@ fondo_2:
     
     BL dibujar_rectangulo
     
-    MOV X1, 173
-    MOV X2, 275
-    MOV X3, 140
-    MOV X4, 299
+    // TODO BUG
+    // FIX BUG
+    // MOV X1, 173
+    // MOV X2, 275
+    // MOV X3, 140
+    // MOV X4, 299
+
+    MOV X1, 147
+    MOV X2, 279
+    MOV X3, 174
+    MOV X4, 275
+    BL dibujar_rectangulo
+
+    MOV X1, 150
+    MOV X2, 286
+    MOV X3, 174
+    MOV X4, 280
+    BL dibujar_rectangulo
+
+    MOV X1, 150
+    MOV X2, 290
+    MOV X3, 166
+    MOV X4, 287
+    BL dibujar_rectangulo
+
+    MOV X1, 151
+    MOV X2, 291
+    MOV X3, 166
+    MOV X4, 291
+    BL dibujar_rectangulo
+
+    MOV X1, 154
+    MOV X2, 296
+    MOV X3, 161
+    MOV X4, 292
+    BL dibujar_rectangulo
+
+
+
+
+    
+    
+    
+    
+    // FIX BUG
     
     BL dibujar_rectangulo
     
@@ -10447,6 +10543,7 @@ fondo_3:
     STR X7, [SP, 32]
     STR X30, [SP, 40]
 
+
     MOV X1, SCREEN_START
     MOV X2, 275 
     MOV X3, 18
@@ -10454,6 +10551,11 @@ fondo_3:
     LDR X7, =CIELO_3
     BL dibujar_rectangulo
     
+    // fix px
+    MOV X1, 315
+    MOV X2, 135
+    BL dibujar_pixel
+
     MOV X1, 32
     MOV X2, 275
     MOV X3, 88
@@ -10495,12 +10597,46 @@ fondo_3:
     MOV X4, 280
     
     BL dibujar_rectangulo
-    
-    MOV X1, 173
-    MOV X2, 275
-    MOV X3, 140
-    MOV X4, 299
-    
+
+    // TODO BUG
+
+    // MOV X1, 173
+    // MOV X2, 275
+    // MOV X3, 140
+    // MOV X4, 299
+
+    MOV X1, 147
+    MOV X2, 279
+    MOV X3, 174
+    MOV X4, 275
+    BL dibujar_rectangulo
+
+    MOV X1, 150
+    MOV X2, 286
+    MOV X3, 174
+    MOV X4, 280
+    BL dibujar_rectangulo
+
+    MOV X1, 150
+    MOV X2, 290
+    MOV X3, 166
+    MOV X4, 287
+    BL dibujar_rectangulo
+
+    MOV X1, 151
+    MOV X2, 291
+    MOV X3, 166
+    MOV X4, 291
+    BL dibujar_rectangulo
+
+    MOV X1, 154
+    MOV X2, 296
+    MOV X3, 161
+    MOV X4, 292
+    BL dibujar_rectangulo
+
+    // TODO BUG END
+
     BL dibujar_rectangulo
     
     MOV X1, SCREEN_START
