@@ -11859,8 +11859,31 @@ luciernagaf7:
     BL dibujar_rectangulo
 
     // l1
+    MOV X1, 78
+    MOV X2, 134
+    MOV X3, 81
+    MOV X4, 132
+    LDR X7, =WHITE
+    BL dibujar_rectangulo
+    
 
     // l2
+    MOV X1, 108
+    MOV X2, 129
+    MOV X3, 110
+    MOV X4, 131
+    LDR X7, =WHITE
+    BL dibujar_rectangulo
+    
+    MOV X1, 108
+    MOV X2, 131
+    MOV X3, 109
+    MOV X4, 130
+    LDR X7, =0xded687
+    BL dibujar_rectangulo
+    
+    
+    
     
     // PUSH(X30)
     LDR X30, [SP, 40]
