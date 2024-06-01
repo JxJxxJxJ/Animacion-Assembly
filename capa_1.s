@@ -177,7 +177,7 @@ capa_1: // Todas las rutinas que dibujen sprites iran aqui,
     /******************************************/
     /*                 FRAME 14               */
     /*                                        */
-        // BL luciernagaf14
+        BL luciernagaf14
         
     /*             END FRAME 14               */
     /*                                        */
@@ -188,6 +188,8 @@ capa_1: // Todas las rutinas que dibujen sprites iran aqui,
     /******************************************/
     /*                 FRAME 15               */
     /*                                        */
+        BL luciernagaf15
+        
         
     /*             END FRAME 15               */
     /*                                        */
@@ -198,6 +200,8 @@ capa_1: // Todas las rutinas que dibujen sprites iran aqui,
     /******************************************/
     /*                 FRAME 16               */
     /*                                        */
+        BL luciernagaf16
+        
         
     /*             END FRAME 16               */
     /*                                        */
@@ -208,6 +212,8 @@ capa_1: // Todas las rutinas que dibujen sprites iran aqui,
     /******************************************/
     /*                 FRAME 17               */
     /*                                        */
+        BL luciernagaf17
+        
         
     /*             END FRAME 17               */
     /*                                        */
@@ -218,7 +224,8 @@ capa_1: // Todas las rutinas que dibujen sprites iran aqui,
     /******************************************/
     /*                 FRAME 18               */
     /*                                        */
-        
+        BL luciernagaf18
+
     /*             END FRAME 18               */
     /*                                        */
     /******************************************/
