@@ -11836,12 +11836,6 @@ luciernagaf3:
     LDR X7, =0x16a0be
     BL dibujar_rectangulo
     
-   
-    
-    
-    
-    
-    
     
     // PUSH(X30)
     LDR X30, [SP, 40]
@@ -12079,7 +12073,7 @@ luciernagaf7:
     MOV X1, 112
     MOV X2, 126
     MOV X3, 115
-    MOV X4, 122
+    MOV X4, 120
     LDR X7, =0x17a7c6
     BL dibujar_rectangulo
 
@@ -12106,7 +12100,7 @@ luciernagaf7:
     MOV X4, 130
     LDR X7, =0xded687
     BL dibujar_rectangulo
-    
+
     // PUSH(X30)
     LDR X30, [SP, 40]
     LDR X7, [SP, 32]
@@ -12115,7 +12109,6 @@ luciernagaf7:
     LDR X2, [SP, 8]
     LDR X1, [SP] 
     ADD SP, SP, #48
-    
 RET
 
 luciernagaf8:
@@ -12132,7 +12125,7 @@ STR X30, [SP, 40]
     MOV X1, 78 
     MOV X2, 134
     MOV X3, 81
-    MOV X4, 132
+    MOV X4, 131
     LDR X7, =0x17a7c6
     BL dibujar_rectangulo
     
@@ -12198,7 +12191,7 @@ luciernagaf9:
     MOV X1, 105
     MOV X2, 126
     MOV X3, 107
-    MOV X4, 122
+    MOV X4, 121
     LDR X7, =0x17a7c6
     BL dibujar_rectangulo
     
@@ -12264,7 +12257,7 @@ luciernagaf10:
     MOV X1, 104
     MOV X2, 121
     MOV X3, 104
-    MOV X4, 119
+    MOV X4, 118
     LDR X7, =0x17a7c6
     BL dibujar_rectangulo
 
@@ -12317,7 +12310,7 @@ luciernagaf11:
     MOV X1, 97
     MOV X2, 126
     MOV X3, 100
-    MOV X4, 122
+    MOV X4, 121
     LDR X7, =0x3fd3e9
     BL dibujar_rectangulo
 
@@ -12768,7 +12761,6 @@ luciernagaf17:
     MOV X2, 124
     LDR X7, =0x17a7c6
     BL dibujar_pixel
-
     
     // PUSH(X30)
     LDR X30, [SP, 40]
@@ -12789,7 +12781,6 @@ luciernagaf18:
     STR X4, [SP, 24]
     STR X7, [SP, 32]
     STR X30, [SP, 40]
-    
 
     // ll1
     MOV X1, 71
@@ -12854,7 +12845,8 @@ luciernagaf19:
     STR X4, [SP, 24]
     STR X7, [SP, 32]
     STR X30, [SP, 40]
-    // l1
+
+    // ll1
     MOV X1, 66
     MOV X2, 134
     MOV X3, 70
@@ -12862,7 +12854,7 @@ luciernagaf19:
     LDR X7, =0x17a7c6
     BL dibujar_rectangulo
     
-    // l2
+    // ll2
     MOV X1, 97
     MOV X2, 126
     MOV X3, 100
@@ -12871,8 +12863,41 @@ luciernagaf19:
     BL dibujar_rectangulo
        
     // l1 
+    MOV X1, 66
+    MOV X2, 138
+    MOV X3, 70
+    MOV X4, 136
+    LDR X7, =WHITE
+    BL dibujar_rectangulo
 
+    MOV X1, 66
+    MOV X2, 135
+    MOV X3, 70
+    MOV X4, 135
+    LDR X7, =0x3fd3e9
+    BL dibujar_rectangulo
+    
     // l2
+    MOV X1, 101
+    MOV X2, 131
+    MOV X3, 103
+    MOV X4, 127
+    LDR X7, =WHITE
+    BL dibujar_rectangulo
+
+    MOV X1, 100
+    MOV X2, 129
+    MOV X3, 100
+    MOV X4, 127
+    LDR X7, =0x3fd3e9
+    BL dibujar_rectangulo
+    
+    MOV X1, 104
+    MOV X2, 131
+    MOV X3, 104
+    MOV X4, 127
+    LDR X7, =0x3fd3e9
+    BL dibujar_rectangulo
     
     // PUSH(X30)
     LDR X30, [SP, 40]
@@ -12884,6 +12909,2377 @@ luciernagaf19:
     ADD SP, SP, #48
 RET
 
+luciernagaf20:
+    // PUSH(X30)
+    SUB SP, SP, 48
+    STR X1, [SP]
+    STR X2, [SP, 8]
+    STR X3, [SP, 16]
+    STR X4, [SP, 24]
+    STR X7, [SP, 32]
+    STR X30, [SP, 40]
+    
+    // ll1 
+    MOV X1, 66
+    MOV X2, 138
+    MOV X3, 70
+    MOV X4, 136
+    LDR X7, =0x17a7c6
+    BL dibujar_rectangulo
+
+    MOV X1, 66
+    MOV X2, 135
+    MOV X3, 70
+    MOV X4, 135
+    LDR X7, =0x17a7c6
+    BL dibujar_rectangulo
+    
+    // ll2
+    MOV X1, 101
+    MOV X2, 131
+    MOV X3, 103
+    MOV X4, 127
+    LDR X7, =0x17a7c6
+    BL dibujar_rectangulo
+
+    MOV X1, 100
+    MOV X2, 129
+    MOV X3, 100
+    MOV X4, 127
+    LDR X7, =0x17a7c6
+    BL dibujar_rectangulo
+    
+    MOV X1, 104
+    MOV X2, 131
+    MOV X3, 104
+    MOV X4, 127
+    LDR X7, =0x17a7c6
+    BL dibujar_rectangulo
+
+    // l1
+    MOV X1, 71
+    MOV X2, 138
+    MOV X3, 72
+    MOV X4, 135
+    LDR X7, =WHITE
+    BL dibujar_rectangulo
+
+    // l2
+    MOV X1, 105
+    MOV X2, 126
+    MOV X3, 107
+    MOV X4, 122
+    LDR X7, =WHITE
+    BL dibujar_rectangulo
+
+    MOV X1, 104
+    MOV X2, 124
+    LDR X7, =0xded687
+    BL dibujar_pixel
+
+    // PUSH(X30)
+    LDR X30, [SP, 40]
+    LDR X7, [SP, 32]
+    LDR X4, [SP, 24]
+    LDR X3, [SP, 16]
+    LDR X2, [SP, 8]
+    LDR X1, [SP] 
+    ADD SP, SP, #48
+RET
+
+luciernagaf21:
+    // PUSH(X30)
+    SUB SP, SP, 48
+    STR X1, [SP]
+    STR X2, [SP, 8]
+    STR X3, [SP, 16]
+    STR X4, [SP, 24]
+    STR X7, [SP, 32]
+    STR X30, [SP, 40]
+    
+    // l1
+    MOV X1, 71
+    MOV X2, 138
+    MOV X3, 72
+    MOV X4, 135
+    LDR X7, =0x17a7c6
+    BL dibujar_rectangulo
+
+    // l2
+    MOV X1, 105
+    MOV X2, 126
+    MOV X3, 107
+    MOV X4, 122
+    LDR X7, =0x17a7c6
+    BL dibujar_rectangulo
+
+    MOV X1, 104
+    MOV X2, 124
+    LDR X7, =0x17a7c6
+    BL dibujar_pixel
+
+    // l1
+    MOV X1, 73
+    MOV X2, 138
+    MOV X3, 77
+    MOV X4, 136
+    LDR X7, =WHITE
+    BL dibujar_rectangulo
+    
+    MOV X1, 75
+    MOV X2, 135
+    MOV X3, 77
+    MOV X4, 135
+    LDR X7, =WHITE
+    BL dibujar_rectangulo
+
+    // l2
+    MOV X1, 108
+    MOV X2, 121
+    MOV X3, 111
+    MOV X4, 119
+    LDR X7, =WHITE
+    BL dibujar_rectangulo
+
+    MOV X1, 110
+    MOV X2, 118
+    MOV X3, 111
+    MOV X4, 119
+    LDR X7, =WHITE
+    BL dibujar_rectangulo
+
+    // PUSH(X30)
+    LDR X30, [SP, 40]
+    LDR X7, [SP, 32]
+    LDR X4, [SP, 24]
+    LDR X3, [SP, 16]
+    LDR X2, [SP, 8]
+    LDR X1, [SP] 
+    ADD SP, SP, #48
+RET
+
+luciernagaf22:
+    // PUSH(X30)
+    SUB SP, SP, 48
+    STR X1, [SP]
+    STR X2, [SP, 8]
+    STR X3, [SP, 16]
+    STR X4, [SP, 24]
+    STR X7, [SP, 32]
+    STR X30, [SP, 40]
+    
+    // ll1
+    MOV X1, 73
+    MOV X2, 138
+    MOV X3, 77
+    MOV X4, 136
+    LDR X7, =0x17a7c6
+    BL dibujar_rectangulo
+    
+    MOV X1, 75
+    MOV X2, 135
+    MOV X3, 77
+    MOV X4, 135
+    LDR X7, =0x17a7c6
+    BL dibujar_rectangulo
+
+    // ll2
+    MOV X1, 108
+    MOV X2, 121
+    MOV X3, 111
+    MOV X4, 119
+    LDR X7, =0x17a7c6
+    BL dibujar_rectangulo
+
+    MOV X1, 110
+    MOV X2, 118
+    MOV X3, 111
+    MOV X4, 119
+    LDR X7, =0x17a7c6
+    BL dibujar_rectangulo
+    
+    // l1
+    MOV X1, 73
+    MOV X2, 134
+    MOV X3, 77
+    MOV X4, 132
+    LDR X7, =WHITE
+    BL dibujar_rectangulo
+    
+    // l2
+    MOV X1, 112
+    MOV X2, 126
+    MOV X3, 115
+    MOV X4, 122
+    LDR X7, =WHITE
+    BL dibujar_rectangulo
+
+    // PUSH(X30)
+    LDR X30, [SP, 40]
+    LDR X7, [SP, 32]
+    LDR X4, [SP, 24]
+    LDR X3, [SP, 16]
+    LDR X2, [SP, 8]
+    LDR X1, [SP] 
+    ADD SP, SP, #48
+RET
+
+luciernagaf23:
+    // PUSH(X30)
+    SUB SP, SP, 48
+    STR X1, [SP]
+    STR X2, [SP, 8]
+    STR X3, [SP, 16]
+    STR X4, [SP, 24]
+    STR X7, [SP, 32]
+    STR X30, [SP, 40]
+
+    // ll1
+    MOV X1, 73
+    MOV X2, 134
+    MOV X3, 77
+    MOV X4, 132
+    LDR X7, =0x17a7c6
+    BL dibujar_rectangulo
+    
+    // ll2
+    MOV X1, 112
+    MOV X2, 126
+    MOV X3, 115
+    MOV X4, 122
+    LDR X7, =0x17a7c6
+    BL dibujar_rectangulo
+
+    // l1
+    MOV X1, 73
+    MOV X2, 129
+    MOV X3, 77
+    MOV X4, 127
+    LDR X7, =WHITE
+    BL dibujar_rectangulo
+    
+    MOV X1, 75
+    MOV X2, 131
+    MOV X3, 77
+    MOV X4, 130
+    LDR X7, =WHITE
+    BL dibujar_rectangulo
+    
+    // l2
+    MOV X1, 108
+    MOV X2, 129
+    MOV X3, 111
+    MOV X4, 127
+    LDR X7, =WHITE
+    BL dibujar_rectangulo
+    
+    MOV X1, 110
+    MOV X2, 131
+    MOV X3, 111
+    MOV X4, 130
+    LDR X7, =WHITE
+    BL dibujar_rectangulo
+    
+    MOV X1, 108
+    MOV X2, 131
+    MOV X3, 109
+    MOV X4, 130
+    LDR X7, =WHITE
+    BL dibujar_rectangulo
+
+    // PUSH(X30)
+    LDR X30, [SP, 40]
+    LDR X7, [SP, 32]
+    LDR X4, [SP, 24]
+    LDR X3, [SP, 16]
+    LDR X2, [SP, 8]
+    LDR X1, [SP] 
+    ADD SP, SP, #48
+RET
+
+luciernagaf24:
+    // PUSH(X30)
+    SUB SP, SP, 48
+    STR X1, [SP]
+    STR X2, [SP, 8]
+    STR X3, [SP, 16]
+    STR X4, [SP, 24]
+    STR X7, [SP, 32]
+    STR X30, [SP, 40]
+
+    // ll1
+    MOV X1, 73
+    MOV X2, 131
+    MOV X3, 77
+    MOV X4, 127
+    LDR X7, =0x17a7c6
+    BL dibujar_rectangulo
+
+    MOV X1, 108
+    MOV X2, 131
+    MOV X3, 111
+    MOV X4, 127
+    LDR X7, =0x17a7c6
+    BL dibujar_rectangulo
+
+    // ll2
+        // l2
+    MOV X1, 108
+    MOV X2, 129
+    MOV X3, 111
+    MOV X4, 127
+    LDR X7, =0x17a7c6
+    BL dibujar_rectangulo
+    
+    MOV X1, 110
+    MOV X2, 131
+    MOV X3, 111
+    MOV X4, 130
+    LDR X7, =0x17a7c6
+    BL dibujar_rectangulo
+    
+    MOV X1, 108
+    MOV X2, 131
+    MOV X3, 109
+    MOV X4, 130
+    LDR X7, =0x17a7c6
+    BL dibujar_rectangulo
+
+    // l1 
+    MOV X1, 71
+    MOV X2, 131
+    MOV X3, 72
+    MOV X4, 127
+    LDR X7, =WHITE
+    BL dibujar_rectangulo
+
+    // l2
+    MOV X1, 105
+    MOV X2, 126
+    MOV X3, 107
+    MOV X4, 122
+    LDR X7, =WHITE
+    BL dibujar_rectangulo
+
+    MOV X1, 104
+    MOV X2, 124
+    LDR X7, =0xded687
+    BL dibujar_pixel
+
+    // PUSH(X30)
+    LDR X30, [SP, 40]
+    LDR X7, [SP, 32]
+    LDR X4, [SP, 24]
+    LDR X3, [SP, 16]
+    LDR X2, [SP, 8]
+    LDR X1, [SP] 
+    ADD SP, SP, #48
+RET
+
+luciernagaf25:
+    // PUSH(X30)
+    SUB SP, SP, 48
+    STR X1, [SP]
+    STR X2, [SP, 8]
+    STR X3, [SP, 16]
+    STR X4, [SP, 24]
+    STR X7, [SP, 32]
+    STR X30, [SP, 40]
+    
+    // ll1 
+    MOV X1, 71
+    MOV X2, 131
+    MOV X3, 72
+    MOV X4, 127
+    LDR X7, =0x17a7c6
+    BL dibujar_rectangulo
+
+    // ll2
+    MOV X1, 105
+    MOV X2, 126
+    MOV X3, 107
+    MOV X4, 122
+    LDR X7, =0x17a7c6
+    BL dibujar_rectangulo
+
+    MOV X1, 104
+    MOV X2, 124
+    LDR X7, =0x17a7c6
+    BL dibujar_pixel
+
+    // l1
+    MOV X1, 66
+    MOV X2, 131
+    MOV X3, 68
+    MOV X4, 127
+    LDR X7, =WHITE
+    BL dibujar_rectangulo
+
+    MOV X1, 69
+    MOV X2, 129
+    MOV X3, 70
+    MOV X4, 127
+    LDR X7, =WHITE
+    BL dibujar_rectangulo
+    
+    // l2
+    MOV X1, 101
+    MOV X2, 121
+    MOV X3, 103
+    MOV X4, 117
+    LDR X7, =WHITE
+    BL dibujar_rectangulo
+    
+    MOV X1, 104
+    MOV X2, 121
+    MOV X3, 104
+    MOV X4, 119
+    LDR X7, =0xded687
+    BL dibujar_rectangulo
+    
+    // PUSH(X30)
+    LDR X30, [SP, 40]
+    LDR X7, [SP, 32]
+    LDR X4, [SP, 24]
+    LDR X3, [SP, 16]
+    LDR X2, [SP, 8]
+    LDR X1, [SP] 
+    ADD SP, SP, #48
+RET
+
+luciernagaf26:
+    // PUSH(X30)
+    SUB SP, SP, 48
+    STR X1, [SP]
+    STR X2, [SP, 8]
+    STR X3, [SP, 16]
+    STR X4, [SP, 24]
+    STR X7, [SP, 32]
+    STR X30, [SP, 40]
+    
+    
+    // ll1
+    MOV X1, 66
+    MOV X2, 131
+    MOV X3, 68
+    MOV X4, 127
+    LDR X7, =0x17a7c6
+    BL dibujar_rectangulo
+
+    MOV X1, 69
+    MOV X2, 129
+    MOV X3, 70
+    MOV X4, 127
+    LDR X7, =0x17a7c6
+    BL dibujar_rectangulo
+    
+    // ll2
+    MOV X1, 101
+    MOV X2, 121
+    MOV X3, 103
+    MOV X4, 117
+    LDR X7, =0x17a7c6
+    BL dibujar_rectangulo
+    
+    MOV X1, 104
+    MOV X2, 121
+    MOV X3, 104
+    MOV X4, 119
+    LDR X7, =0x17a7c6
+    BL dibujar_rectangulo
+
+    // l1
+    MOV X1, 62
+    MOV X2, 131
+    MOV X3, 65
+    MOV X4, 127
+    LDR X7, =WHITE
+    BL dibujar_rectangulo
+    
+    // l2
+    MOV X1, 97
+    MOV X2, 126
+    MOV X3, 100
+    MOV X4, 122
+    LDR X7, =WHITE
+    BL dibujar_rectangulo
+    
+    // PUSH(X30)
+    LDR X30, [SP, 40]
+    LDR X7, [SP, 32]
+    LDR X4, [SP, 24]
+    LDR X3, [SP, 16]
+    LDR X2, [SP, 8]
+    LDR X1, [SP] 
+    ADD SP, SP, #48
+RET
+
+luciernagaf27:
+    // PUSH(X30)
+    SUB SP, SP, 48
+    STR X1, [SP]
+    STR X2, [SP, 8]
+    STR X3, [SP, 16]
+    STR X4, [SP, 24]
+    STR X7, [SP, 32]
+    STR X30, [SP, 40]
+    
+     
+    // ll1
+    MOV X1, 62
+    MOV X2, 131
+    MOV X3, 65
+    MOV X4, 127
+    LDR X7, =0x17a7c6
+    BL dibujar_rectangulo
+    
+    // ll2
+    MOV X1, 97
+    MOV X2, 126
+    MOV X3, 100
+    MOV X4, 122
+    LDR X7, =0x3fd3e9
+    BL dibujar_rectangulo
+
+    // l1 
+    MOV X1, 62
+    MOV X2, 134
+    MOV X3, 65
+    MOV X4, 132
+    LDR X7, =WHITE
+    BL dibujar_rectangulo
+    
+    MOV X1, 62
+    MOV X2, 131
+    MOV X3, 65
+    MOV X4, 130
+    LDR X7, =0x3fd3e9
+    BL dibujar_rectangulo
+
+    MOV X1, 62
+    MOV X2, 135
+    MOV X3, 65
+    MOV X4, 135
+    LDR X7, =0x3fd3e9
+    BL dibujar_rectangulo
+
+    // l2
+    MOV X1, 101
+    MOV X2, 131
+    MOV X3, 103
+    MOV X4, 127
+    LDR X7, =WHITE
+    BL dibujar_rectangulo
+    
+    MOV X1, 100
+    MOV X2, 129
+    MOV X3, 100
+    MOV X4, 127
+    LDR X7, =0x3fd3e9
+    BL dibujar_rectangulo
+
+    MOV X1, 104
+    MOV X2, 131
+    MOV X3, 104
+    MOV X4, 127
+    LDR X7, =0x3fd3e9
+    BL dibujar_rectangulo
+
+    // PUSH(X30)
+    LDR X30, [SP, 40]
+    LDR X7, [SP, 32]
+    LDR X4, [SP, 24]
+    LDR X3, [SP, 16]
+    LDR X2, [SP, 8]
+    LDR X1, [SP] 
+    ADD SP, SP, #48
+RET
+
+luciernagaf28:
+    // PUSH(X30)
+    SUB SP, SP, 48
+    STR X1, [SP]
+    STR X2, [SP, 8]
+    STR X3, [SP, 16]
+    STR X4, [SP, 24]
+    STR X7, [SP, 32]
+    STR X30, [SP, 40]
+
+    // ll1 
+    MOV X1, 62
+    MOV X2, 134
+    MOV X3, 65
+    MOV X4, 132
+    LDR X7, =0x17a7c6
+    BL dibujar_rectangulo
+    
+    MOV X1, 62
+    MOV X2, 131
+    MOV X3, 65
+    MOV X4, 130
+    LDR X7, =0x17a7c6
+    BL dibujar_rectangulo
+
+    MOV X1, 62
+    MOV X2, 135
+    MOV X3, 65
+    MOV X4, 135
+    LDR X7, =0x17a7c6
+    BL dibujar_rectangulo
+
+    // ll2
+    MOV X1, 101
+    MOV X2, 131
+    MOV X3, 103
+    MOV X4, 127
+    LDR X7, =0x17a7c6
+    BL dibujar_rectangulo
+    
+    MOV X1, 100
+    MOV X2, 129
+    MOV X3, 100
+    MOV X4, 127
+    LDR X7, =0x17a7c6
+    BL dibujar_rectangulo
+
+    MOV X1, 104
+    MOV X2, 131
+    MOV X3, 104
+    MOV X4, 127
+    LDR X7, =0x17a7c6
+    BL dibujar_rectangulo
+
+    // l1
+    MOV X1, 66
+    MOV X2, 134
+    MOV X3, 70
+    MOV X4, 132
+    LDR X7, =WHITE
+    BL dibujar_rectangulo
+
+    // l2
+    MOV X1, 105
+    MOV X2, 126
+    MOV X3, 107
+    MOV X4, 122
+    LDR X7, =WHITE
+    BL dibujar_rectangulo
+
+    MOV X1, 104
+    MOV X2, 124
+    LDR X7, =0xded687
+    BL dibujar_pixel
+    
+    // PUSH(X30)
+    LDR X30, [SP, 40]
+    LDR X7, [SP, 32]
+    LDR X4, [SP, 24]
+    LDR X3, [SP, 16]
+    LDR X2, [SP, 8]
+    LDR X1, [SP] 
+    ADD SP, SP, #48
+RET
+
+luciernagaf29:
+    // PUSH(X30)
+    SUB SP, SP, 48
+    STR X1, [SP]
+    STR X2, [SP, 8]
+    STR X3, [SP, 16]
+    STR X4, [SP, 24]
+    STR X7, [SP, 32]
+    STR X30, [SP, 40]
+    
+    // ll1
+    MOV X1, 66
+    MOV X2, 134
+    MOV X3, 70
+    MOV X4, 132
+    LDR X7, =0x17a7c6
+    BL dibujar_rectangulo
+
+    // ll2
+    MOV X1, 105
+    MOV X2, 126
+    MOV X3, 107
+    MOV X4, 122
+    LDR X7, =0x17a7c6
+    BL dibujar_rectangulo
+
+    MOV X1, 104
+    MOV X2, 124
+    LDR X7, =0x17a7c6
+    BL dibujar_pixel
+
+    // l1
+    MOV X1, 71
+    MOV X2, 134
+    MOV X3, 72
+    MOV X4, 132
+    LDR X7, =WHITE
+    BL dibujar_rectangulo
+    
+    MOV X1, 108
+    MOV X2, 121
+    MOV X3, 111
+    MOV X4, 119
+    LDR X7, =WHITE
+    BL dibujar_rectangulo
+
+    // l2
+    MOV X1, 110
+    MOV X2, 118
+    MOV X3, 111
+    MOV X4, 117
+    LDR X7, =WHITE
+    BL dibujar_rectangulo
+    
+    // PUSH(X30)
+    LDR X30, [SP, 40]
+    LDR X7, [SP, 32]
+    LDR X4, [SP, 24]
+    LDR X3, [SP, 16]
+    LDR X2, [SP, 8]
+    LDR X1, [SP] 
+    ADD SP, SP, #48
+RET
+
+luciernagaf30:
+    // PUSH(X30)
+    SUB SP, SP, 48
+    STR X1, [SP]
+    STR X2, [SP, 8]
+    STR X3, [SP, 16]
+    STR X4, [SP, 24]
+    STR X7, [SP, 32]
+    STR X30, [SP, 40]
+    
+    // ll1
+    MOV X1, 71
+    MOV X2, 134
+    MOV X3, 72
+    MOV X4, 132
+    LDR X7, =0x17a7c6
+    BL dibujar_rectangulo
+    
+    MOV X1, 108
+    MOV X2, 121
+    MOV X3, 111
+    MOV X4, 119
+    LDR X7, =0x17a7c6
+    BL dibujar_rectangulo
+
+    // ll2
+    MOV X1, 110
+    MOV X2, 118
+    MOV X3, 111
+    MOV X4, 117
+    LDR X7, =0x17a7c6
+    BL dibujar_rectangulo
+
+    // l1
+    MOV X1, 73
+    MOV X2, 134
+    MOV X3, 77
+    MOV X4, 132
+    LDR X7, =WHITE
+    BL dibujar_rectangulo
+    
+    // l2
+    MOV X1, 112
+    MOV X2, 126
+    MOV X3, 115
+    MOV X4, 122
+    LDR X7, =WHITE
+    BL dibujar_rectangulo
+    
+    // PUSH(X30)
+    LDR X30, [SP, 40]
+    LDR X7, [SP, 32]
+    LDR X4, [SP, 24]
+    LDR X3, [SP, 16]
+    LDR X2, [SP, 8]
+    LDR X1, [SP] 
+    ADD SP, SP, #48
+RET
+
+luciernagaf31:
+    // PUSH(X30)
+    SUB SP, SP, 48
+    STR X1, [SP]
+    STR X2, [SP, 8]
+    STR X3, [SP, 16]
+    STR X4, [SP, 24]
+    STR X7, [SP, 32]
+    STR X30, [SP, 40]
+    
+    // ll1
+    MOV X1, 73
+    MOV X2, 134
+    MOV X3, 77
+    MOV X4, 132
+    LDR X7, =0x17a7c6
+    BL dibujar_rectangulo
+    
+    // ll2
+    MOV X1, 112
+    MOV X2, 126
+    MOV X3, 115
+    MOV X4, 122
+    LDR X7, =0x17a7c6
+    BL dibujar_rectangulo
+    
+    // l1
+    MOV X1, 73  
+    MOV X2, 129
+    MOV X3, 77
+    MOV X4, 127
+    LDR X7, =WHITE
+    BL dibujar_rectangulo
+
+    MOV X1, 75
+    MOV X2, 131
+    MOV X3, 77
+    MOV X4, 130
+    LDR X7, =WHITE
+    BL dibujar_rectangulo
+    
+    // l2
+    MOV X1, 108
+    MOV X2, 131
+    MOV X3, 111
+    MOV X4, 127
+    LDR X7, =WHITE
+    BL dibujar_rectangulo
+    
+    MOV X1, 108
+    MOV X2, 131
+    MOV X3, 109
+    MOV X4, 130
+    LDR X7, =0xded687
+    BL dibujar_rectangulo
+
+    // PUSH(X30)
+    LDR X30, [SP, 40]
+    LDR X7, [SP, 32]
+    LDR X4, [SP, 24]
+    LDR X3, [SP, 16]
+    LDR X2, [SP, 8]
+    LDR X1, [SP] 
+    ADD SP, SP, #48
+RET
+
+luciernagaf32:
+    // PUSH(X30)
+    SUB SP, SP, 48
+    STR X1, [SP]
+    STR X2, [SP, 8]
+    STR X3, [SP, 16]
+    STR X4, [SP, 24]
+    STR X7, [SP, 32]
+    STR X30, [SP, 40]
+    
+    // ll1
+    MOV X1, 73  
+    MOV X2, 129
+    MOV X3, 77
+    MOV X4, 127
+    LDR X7, =0x17a7c6
+    BL dibujar_rectangulo
+
+    MOV X1, 75
+    MOV X2, 131
+    MOV X3, 77
+    MOV X4, 130
+    LDR X7, =0x17a7c6
+    BL dibujar_rectangulo
+    
+    // ll2
+    MOV X1, 108
+    MOV X2, 131
+    MOV X3, 111
+    MOV X4, 127
+    LDR X7, =0x17a7c6
+    BL dibujar_rectangulo
+    
+    MOV X1, 108
+    MOV X2, 131
+    MOV X3, 109
+    MOV X4, 130
+    LDR X7, =0x17a7c6
+    BL dibujar_rectangulo
+
+    // l1
+    MOV X1, 71
+    MOV X2, 131
+    MOV X3, 72
+    MOV X4, 127
+    LDR X7, =WHITE
+    BL dibujar_rectangulo
+    
+    // l2
+    MOV X1, 105
+    MOV X2, 126
+    MOV X3, 107
+    MOV X4, 122
+    LDR X7, =WHITE
+    BL dibujar_rectangulo
+
+    MOV X1, 104
+    MOV X2, 124
+    LDR X7, =0xded687
+    BL dibujar_pixel
+    
+    // PUSH(X30)
+    LDR X30, [SP, 40]
+    LDR X7, [SP, 32]
+    LDR X4, [SP, 24]
+    LDR X3, [SP, 16]
+    LDR X2, [SP, 8]
+    LDR X1, [SP] 
+    ADD SP, SP, #48
+RET
+
+luciernagaf33:
+    // PUSH(X30)
+    SUB SP, SP, 48
+    STR X1, [SP]
+    STR X2, [SP, 8]
+    STR X3, [SP, 16]
+    STR X4, [SP, 24]
+    STR X7, [SP, 32]
+    STR X30, [SP, 40]
+    
+    // ll1
+    MOV X1, 71
+    MOV X2, 131
+    MOV X3, 72
+    MOV X4, 127
+    LDR X7, =0x17a7c6
+    BL dibujar_rectangulo
+    
+    // ll2
+    MOV X1, 105
+    MOV X2, 126
+    MOV X3, 107
+    MOV X4, 122
+    LDR X7, =0x17a7c6
+    BL dibujar_rectangulo
+
+    MOV X1, 104
+    MOV X2, 124
+    LDR X7, =0x17a7c6
+    BL dibujar_pixel
+
+    // l1
+    MOV X1, 66
+    MOV X2, 131
+    MOV X3, 68
+    MOV X4, 127
+    LDR X7, =WHITE
+    BL dibujar_rectangulo
+    
+    MOV X1, 69
+    MOV X2, 129
+    MOV X3, 70
+    MOV X4, 127
+    LDR X7, =WHITE
+    BL dibujar_rectangulo
+    
+    // l2
+    MOV X1, 101
+    MOV X2, 121
+    MOV X3, 103
+    MOV X4, 117
+    LDR X7, =WHITE
+    BL dibujar_rectangulo
+    
+    MOV X1, 104
+    MOV X2, 121
+    MOV X3, 104
+    MOV X4, 119
+    LDR X7, =0xded687
+    BL dibujar_rectangulo
+    
+    // PUSH(X30)
+    LDR X30, [SP, 40]
+    LDR X7, [SP, 32]
+    LDR X4, [SP, 24]
+    LDR X3, [SP, 16]
+    LDR X2, [SP, 8]
+    LDR X1, [SP] 
+    ADD SP, SP, #48
+RET
+
+luciernagaf34:
+    // PUSH(X30)
+    SUB SP, SP, 48
+    STR X1, [SP]
+    STR X2, [SP, 8]
+    STR X3, [SP, 16]
+    STR X4, [SP, 24]
+    STR X7, [SP, 32]
+    STR X30, [SP, 40]
+    
+    // ll1
+    MOV X1, 66
+    MOV X2, 131
+    MOV X3, 68
+    MOV X4, 127
+    LDR X7, =0x17a7c6
+    BL dibujar_rectangulo
+    
+    MOV X1, 69
+    MOV X2, 129
+    MOV X3, 70
+    MOV X4, 127
+    LDR X7, =0x17a7c6
+    BL dibujar_rectangulo
+    
+    // ll2
+    MOV X1, 101
+    MOV X2, 121
+    MOV X3, 103
+    MOV X4, 117
+    LDR X7, =0x17a7c6
+    BL dibujar_rectangulo
+    
+    MOV X1, 104
+    MOV X2, 121
+    MOV X3, 104
+    MOV X4, 119
+    LDR X7, =0x17a7c6
+    BL dibujar_rectangulo
+
+    // l1
+    MOV X1, 62
+    MOV X2, 131
+    MOV X3, 65
+    MOV X4, 127
+    LDR X7, =WHITE
+    BL dibujar_rectangulo
+    
+    // l2
+    MOV X1, 97
+    MOV X2, 126
+    MOV X3, 100
+    MOV X4, 122
+    LDR X7, =WHITE
+    BL dibujar_rectangulo
+    
+    // PUSH(X30)
+    LDR X30, [SP, 40]
+    LDR X7, [SP, 32]
+    LDR X4, [SP, 24]
+    LDR X3, [SP, 16]
+    LDR X2, [SP, 8]
+    LDR X1, [SP] 
+    ADD SP, SP, #48
+RET
+
+luciernagaf35:
+    // PUSH(X30)
+    SUB SP, SP, 48
+    STR X1, [SP]
+    STR X2, [SP, 8]
+    STR X3, [SP, 16]
+    STR X4, [SP, 24]
+    STR X7, [SP, 32]
+    STR X30, [SP, 40]
+    
+    // ll1
+    MOV X1, 62
+    MOV X2, 131
+    MOV X3, 65
+    MOV X4, 127
+    LDR X7, =0x17a7c6
+    BL dibujar_rectangulo
+    
+    // ll2
+    MOV X1, 97
+    MOV X2, 126
+    MOV X3, 100
+    MOV X4, 122
+    LDR X7, =0x17a7c6
+    BL dibujar_rectangulo
+
+    // l1
+    MOV X1, 62
+    MOV X2, 134
+    MOV X3, 65
+    MOV X4, 132
+    LDR X7, =0x006f99
+    BL dibujar_rectangulo
+
+    MOV X1, 62
+    MOV X2, 135
+    MOV X3, 65
+    MOV X4, 135
+    LDR X7, =0x1494af
+    BL dibujar_rectangulo
+
+    MOV X1, 62
+    MOV X2, 131
+    MOV X3, 65
+    MOV X4, 130
+    LDR X7, =0x16a0be
+    BL dibujar_rectangulo
+    
+    // l2
+    MOV X1, 101
+    MOV X2, 131
+    MOV X3, 103
+    MOV X4, 130
+    LDR X7, =0x006f99
+    BL dibujar_rectangulo
+    
+    MOV X1, 101
+    MOV X2, 129
+    MOV X3, 103
+    MOV X4, 127
+    LDR X7, =0x00506f
+    BL dibujar_rectangulo
+
+    // PUSH(X30)
+    LDR X30, [SP, 40]
+    LDR X7, [SP, 32]
+    LDR X4, [SP, 24]
+    LDR X3, [SP, 16]
+    LDR X2, [SP, 8]
+    LDR X1, [SP] 
+    ADD SP, SP, #48
+RET
+
+luciernagaf36:
+    // PUSH(X30)
+    SUB SP, SP, 48
+    STR X1, [SP]
+    STR X2, [SP, 8]
+    STR X3, [SP, 16]
+    STR X4, [SP, 24]
+    STR X7, [SP, 32]
+    STR X30, [SP, 40]
+    
+    // l1
+    MOV X1, 62
+    MOV X2, 134
+    MOV X3, 65
+    MOV X4, 132
+    LDR X7, =0x17a7c6
+    BL dibujar_rectangulo
+
+    MOV X1, 62
+    MOV X2, 135
+    MOV X3, 65
+    MOV X4, 135
+    LDR X7, =0x17a7c6
+    BL dibujar_rectangulo
+
+    MOV X1, 62
+    MOV X2, 131
+    MOV X3, 65
+    MOV X4, 130
+    LDR X7, =0x17a7c6
+    BL dibujar_rectangulo
+    
+    // l2
+    MOV X1, 101
+    MOV X2, 131
+    MOV X3, 103
+    MOV X4, 130
+    LDR X7, =0x17a7c6
+    BL dibujar_rectangulo
+    
+    MOV X1, 101
+    MOV X2, 129
+    MOV X3, 103
+    MOV X4, 127
+    LDR X7, =0x17a7c6
+    BL dibujar_rectangulo
+
+    // l1
+    MOV X1, 66
+    MOV X2, 134
+    MOV X3, 68
+    MOV X4, 132
+    LDR X7, =0x006f99
+    BL dibujar_rectangulo
+
+    // l2
+    MOV X1, 105
+    MOV X2, 126
+    MOV X3, 107
+    MOV X4, 122
+    LDR X7, =0x00506f
+    BL dibujar_rectangulo
+    
+    // PUSH(X30)
+    LDR X30, [SP, 40]
+    LDR X7, [SP, 32]
+    LDR X4, [SP, 24]
+    LDR X3, [SP, 16]
+    LDR X2, [SP, 8]
+    LDR X1, [SP] 
+    ADD SP, SP, #48
+RET
+
+luciernagaf37:
+    // PUSH(X30)
+    SUB SP, SP, 48
+    STR X1, [SP]
+    STR X2, [SP, 8]
+    STR X3, [SP, 16]
+    STR X4, [SP, 24]
+    STR X7, [SP, 32]
+    STR X30, [SP, 40]
+
+    // ll1
+    MOV X1, 66
+    MOV X2, 134
+    MOV X3, 68
+    MOV X4, 132
+    LDR X7, =0x17a7c6
+    BL dibujar_rectangulo
+
+    // ll2
+    MOV X1, 105
+    MOV X2, 126
+    MOV X3, 107
+    MOV X4, 122
+    LDR X7, =0x17a7c6
+    BL dibujar_rectangulo
+
+    // l1
+    MOV X1, 71
+    MOV X2, 134
+    MOV X3, 72
+    MOV X4, 132
+    LDR X7, =WHITE
+    BL dibujar_rectangulo
+    
+    MOV X1, 69
+    MOV X2, 134
+    MOV X3, 70
+    MOV X4, 132
+    LDR X7, =0x3fd3e9
+    BL dibujar_rectangulo
+
+    MOV X1, 71
+    MOV X2, 135
+    MOV X3, 72
+    MOV X4, 135
+    LDR X7, =0x3fd3e9
+    BL dibujar_rectangulo
+    
+    MOV X1, 71
+    MOV X2, 131
+    MOV X3, 72
+    MOV X4, 130
+    LDR X7, =0x3fd3e9
+    BL dibujar_rectangulo
+    
+    MOV X1, 73
+    MOV X2, 134
+    MOV X3, 74  
+    MOV X4, 132
+    LDR X7, =0x3fd3e9
+    BL dibujar_rectangulo
+
+    // l2
+    MOV X1, 108
+    MOV X2, 121
+    MOV X3, 111
+    MOV X4, 117
+    LDR X7, =WHITE
+    BL dibujar_rectangulo
+    
+    MOV X1, 108
+    MOV X2, 118
+    MOV X3, 109
+    MOV X4, 117
+    LDR X7, =0x3fd3e9
+    BL dibujar_rectangulo
+    
+    // PUSH(X30)
+    LDR X30, [SP, 40]
+    LDR X7, [SP, 32]
+    LDR X4, [SP, 24]
+    LDR X3, [SP, 16]
+    LDR X2, [SP, 8]
+    LDR X1, [SP] 
+    ADD SP, SP, #48
+RET
+
+luciernagaf38:
+    // PUSH(X30)
+    SUB SP, SP, 48
+    STR X1, [SP]
+    STR X2, [SP, 8]
+    STR X3, [SP, 16]
+    STR X4, [SP, 24]
+    STR X7, [SP, 32]
+    STR X30, [SP, 40]
+    
+    // ll1
+    MOV X1, 71
+    MOV X2, 134
+    MOV X3, 72
+    MOV X4, 132
+    LDR X7, =0x17a7c6
+    BL dibujar_rectangulo
+    
+    MOV X1, 69
+    MOV X2, 134
+    MOV X3, 70
+    MOV X4, 132
+    LDR X7, =0x17a7c6
+    BL dibujar_rectangulo
+
+    MOV X1, 71
+    MOV X2, 135
+    MOV X3, 72
+    MOV X4, 135
+    LDR X7, =0x17a7c6
+    BL dibujar_rectangulo
+    
+    MOV X1, 71
+    MOV X2, 131
+    MOV X3, 72
+    MOV X4, 130
+    LDR X7, =0x17a7c6
+    BL dibujar_rectangulo
+    
+    MOV X1, 73
+    MOV X2, 134
+    MOV X3, 74  
+    MOV X4, 132
+    LDR X7, =0x17a7c6
+    BL dibujar_rectangulo
+
+    // ll2
+    MOV X1, 108
+    MOV X2, 121
+    MOV X3, 111
+    MOV X4, 117
+    LDR X7, =0x17a7c6
+    BL dibujar_rectangulo
+    
+    MOV X1, 108
+    MOV X2, 118
+    MOV X3, 109
+    MOV X4, 117
+    LDR X7, =0x17a7c6
+    BL dibujar_rectangulo
+
+    // l1
+    MOV X1, 75
+    MOV X2, 134
+    MOV X3, 77
+    MOV X4, 132
+    LDR X7, =WHITE
+    BL dibujar_rectangulo
+    
+    MOV X1, 73
+    MOV X2, 134
+    MOV X3, 74
+    MOV X4, 132
+    LDR X7, =0x3fd3e9
+    BL dibujar_rectangulo
+
+    // l2
+    MOV X1, 112
+    MOV X2, 126
+    MOV X3, 115
+    MOV X4, 122
+    LDR X7, =WHITE
+    BL dibujar_rectangulo
+
+    // PUSH(X30)
+    LDR X30, [SP, 40]
+    LDR X7, [SP, 32]
+    LDR X4, [SP, 24]
+    LDR X3, [SP, 16]
+    LDR X2, [SP, 8]
+    LDR X1, [SP] 
+    ADD SP, SP, #48
+RET
+
+luciernagaf39:
+    // PUSH(X30)
+    SUB SP, SP, 48
+    STR X1, [SP]
+    STR X2, [SP, 8]
+    STR X3, [SP, 16]
+    STR X4, [SP, 24]
+    STR X7, [SP, 32]
+    STR X30, [SP, 40]
+    
+    // ll1
+    MOV X1, 75
+    MOV X2, 134
+    MOV X3, 77
+    MOV X4, 132
+    LDR X7, =0x17a7c6
+    BL dibujar_rectangulo
+    
+    MOV X1, 73
+    MOV X2, 134
+    MOV X3, 74
+    MOV X4, 132
+    LDR X7, =0x17a7c6
+    BL dibujar_rectangulo
+
+    // ll2
+    MOV X1, 112
+    MOV X2, 126
+    MOV X3, 115
+    MOV X4, 122
+    LDR X7, =0x17a7c6
+    BL dibujar_rectangulo
+
+    // l1
+    MOV X1, 75
+    MOV X2, 129
+    MOV X3, 77
+    MOV X4, 127
+    LDR X7, =0x006f99
+    BL dibujar_rectangulo
+    
+    MOV X1, 75
+    MOV X2, 131
+    MOV X3, 77
+    MOV X4, 130
+    LDR X7, =0x1289a3
+    BL dibujar_rectangulo
+    
+    // l2
+    MOV X1, 110
+    MOV X2, 129
+    MOV X3, 111
+    MOV X4, 127
+    LDR X7, =0x006f99
+    BL dibujar_rectangulo
+    
+    MOV X1, 108
+    MOV X2, 129
+    MOV X3, 109
+    MOV X4, 127
+    LDR X7, =0x1289a3
+    BL dibujar_rectangulo
+    
+    MOV X1, 110
+    MOV X2, 131
+    MOV X3, 111
+    MOV X4, 130
+    LDR X7, =0x1289a3
+    BL dibujar_rectangulo
+
+    MOV X1, 108
+    MOV X2, 131
+    MOV X3, 109
+    MOV X4, 130
+    LDR X7, =0x1494af
+    BL dibujar_rectangulo
+    
+    // PUSH(X30)
+    LDR X30, [SP, 40]
+    LDR X7, [SP, 32]
+    LDR X4, [SP, 24]
+    LDR X3, [SP, 16]
+    LDR X2, [SP, 8]
+    LDR X1, [SP] 
+    ADD SP, SP, #48
+RET
+
+luciernagaf40:
+    // PUSH(X30)
+    SUB SP, SP, 48
+    STR X1, [SP]
+    STR X2, [SP, 8]
+    STR X3, [SP, 16]
+    STR X4, [SP, 24]
+    STR X7, [SP, 32]
+    STR X30, [SP, 40]
+    
+    // ll1
+    MOV X1, 75
+    MOV X2, 129
+    MOV X3, 77
+    MOV X4, 127
+    LDR X7, =0x17a7c6
+    BL dibujar_rectangulo
+    
+    MOV X1, 75
+    MOV X2, 131
+    MOV X3, 77
+    MOV X4, 130
+    LDR X7, =0x17a7c6
+    BL dibujar_rectangulo
+    
+    // ll2
+    MOV X1, 110
+    MOV X2, 129
+    MOV X3, 111
+    MOV X4, 127
+    LDR X7, =0x17a7c6
+    BL dibujar_rectangulo
+    
+    MOV X1, 108
+    MOV X2, 129
+    MOV X3, 109
+    MOV X4, 127
+    LDR X7, =0x17a7c6
+    BL dibujar_rectangulo
+    
+    MOV X1, 110
+    MOV X2, 131
+    MOV X3, 111
+    MOV X4, 130
+    LDR X7, =0x17a7c6
+    BL dibujar_rectangulo
+
+    MOV X1, 108
+    MOV X2, 131
+    MOV X3, 109
+    MOV X4, 130
+    LDR X7, =0x17a7c6
+    BL dibujar_rectangulo
+
+    // l1 
+    MOV X1, 71
+    MOV X2, 129
+    MOV X3, 72
+    MOV X4, 127
+    LDR X7, =0x006f99
+    BL dibujar_rectangulo
+    
+    MOV X1, 71
+    MOV X2, 131
+    MOV X3, 72
+    MOV X4, 130
+    LDR X7, =0x1289a3
+    BL dibujar_rectangulo
+    
+    MOV X1, 69
+    MOV X2, 131
+    MOV X3, 70
+    MOV X4, 127
+    LDR X7, =0x16a0be
+    BL dibujar_rectangulo
+    
+    MOV X1, 73
+    MOV X2, 131
+    MOV X3, 74
+    MOV X4, 130
+    LDR X7, =0x16a0be
+    BL dibujar_rectangulo
+    
+    MOV X1, 73
+    MOV X2, 129
+    MOV X3, 74
+    MOV X4, 127
+    LDR X7, =0x1494af
+    BL dibujar_rectangulo
+
+    // l2
+    MOV X1, 105
+    MOV X2, 126
+    MOV X3, 107
+    MOV X4, 124
+    LDR X7, =0x006f99
+    BL dibujar_rectangulo
+    
+    MOV X1, 105
+    MOV X2, 123
+    MOV X3, 107
+    MOV X4, 122
+    LDR X7, =0x006f99
+    BL dibujar_rectangulo
+    
+    MOV X1, 104
+    MOV X2, 126
+    MOV X3, 104
+    MOV X4, 122
+    LDR X7, =0x1494af
+    BL dibujar_rectangulo
+    
+    MOV X1, 108
+    MOV X2, 126
+    MOV X3, 109
+    MOV X4, 122
+    LDR X7, =0x16a0be
+    BL dibujar_rectangulo
+    
+    // PUSH(X30)
+    LDR X30, [SP, 40]
+    LDR X7, [SP, 32]
+    LDR X4, [SP, 24]
+    LDR X3, [SP, 16]
+    LDR X2, [SP, 8]
+    LDR X1, [SP] 
+    ADD SP, SP, #48
+RET
+
+luciernagaf41:
+    // PUSH(X30)
+    SUB SP, SP, 48
+    STR X1, [SP]
+    STR X2, [SP, 8]
+    STR X3, [SP, 16]
+    STR X4, [SP, 24]
+    STR X7, [SP, 32]
+    STR X30, [SP, 40]
+    
+    // ll1 
+    MOV X1, 71
+    MOV X2, 129
+    MOV X3, 72
+    MOV X4, 127
+    LDR X7, =0x17a7c6
+    BL dibujar_rectangulo
+    
+    MOV X1, 71
+    MOV X2, 131
+    MOV X3, 72
+    MOV X4, 130
+    LDR X7, =0x17a7c6
+    BL dibujar_rectangulo
+    
+    MOV X1, 69
+    MOV X2, 131
+    MOV X3, 70
+    MOV X4, 127
+    LDR X7, =0x17a7c6
+    BL dibujar_rectangulo
+    
+    MOV X1, 73
+    MOV X2, 131
+    MOV X3, 74
+    MOV X4, 130
+    LDR X7, =0x17a7c6
+    BL dibujar_rectangulo
+    
+    MOV X1, 73
+    MOV X2, 129
+    MOV X3, 74
+    MOV X4, 127
+    LDR X7, =0x17a7c6
+    BL dibujar_rectangulo
+
+    // ll2
+    MOV X1, 105
+    MOV X2, 126
+    MOV X3, 107
+    MOV X4, 124
+    LDR X7, =0x17a7c6
+    BL dibujar_rectangulo
+    
+    MOV X1, 105
+    MOV X2, 123
+    MOV X3, 107
+    MOV X4, 122
+    LDR X7, =0x17a7c6
+    BL dibujar_rectangulo
+    
+    MOV X1, 104
+    MOV X2, 126
+    MOV X3, 104
+    MOV X4, 122
+    LDR X7, =0x17a7c6
+    BL dibujar_rectangulo
+    
+    MOV X1, 108
+    MOV X2, 126
+    MOV X3, 109
+    MOV X4, 122
+    LDR X7, =0x17a7c6
+    BL dibujar_rectangulo
+
+    // l1
+    MOV X1, 100
+    MOV X2, 121
+    MOV X3, 103
+    MOV X4, 117
+    LDR X7, =0x006f99
+    BL dibujar_rectangulo
+
+    // l2
+    MOV X1, 66
+    MOV X2, 127
+    MOV X3, 68
+    MOV X4, 129
+    LDR X7, =0x006f99
+    BL dibujar_rectangulo
+    
+    MOV X1, 66
+    MOV X2, 131
+    MOV X3, 68
+    MOV X4, 130
+    LDR X7, =0x1289a3
+    BL dibujar_rectangulo
+    
+    MOV X1, 69  
+    MOV X2, 129
+    MOV X3, 70
+    MOV X4, 127
+    LDR X7, =0x1289a3
+    BL dibujar_rectangulo
+
+    MOV X1, 69
+    MOV X2, 131
+    MOV X3, 70
+    MOV X4, 130
+    LDR X7, =0x1494af
+    BL dibujar_rectangulo
+    
+    // PUSH(X30)
+    LDR X30, [SP, 40]
+    LDR X7, [SP, 32]
+    LDR X4, [SP, 24]
+    LDR X3, [SP, 16]
+    LDR X2, [SP, 8]
+    LDR X1, [SP] 
+    ADD SP, SP, #48
+RET
+
+luciernagaf42:
+    // PUSH(X30)
+    SUB SP, SP, 48
+    STR X1, [SP]
+    STR X2, [SP, 8]
+    STR X3, [SP, 16]
+    STR X4, [SP, 24]
+    STR X7, [SP, 32]
+    STR X30, [SP, 40]
+    
+    // ll1
+    MOV X1, 66
+    MOV X2, 131
+    MOV X3, 70
+    MOV X4, 127
+    LDR X7, =0x17a7c6
+    BL dibujar_rectangulo
+
+    // ll2
+    MOV X1, 101
+    MOV X2, 126
+    MOV X3, 107
+    MOV X4, 117
+    LDR X7, =0x17a7c6
+    BL dibujar_rectangulo
+    
+    // l1
+    MOV X1, 62
+    MOV X2, 129
+    MOV X3, 65
+    MOV X4, 127
+    LDR X7, =0x006f99
+    BL dibujar_rectangulo
+
+    MOV X1, 62
+    MOV X2, 131
+    MOV X3, 63
+    MOV X4, 130
+    LDR X7, =0x1494af
+    BL dibujar_rectangulo
+    
+    MOV X1, 64
+    MOV X2, 131
+    MOV X3, 65
+    MOV X4, 130
+    LDR X7, =0x1494af
+    BL dibujar_rectangulo
+    
+    // PUSH(X30)
+    LDR X30, [SP, 40]
+    LDR X7, [SP, 32]
+    LDR X4, [SP, 24]
+    LDR X3, [SP, 16]
+    LDR X2, [SP, 8]
+    LDR X1, [SP] 
+    ADD SP, SP, #48
+RET
+
+luciernagaf43:
+    // PUSH(X30)
+    SUB SP, SP, 48
+    STR X1, [SP]
+    STR X2, [SP, 8]
+    STR X3, [SP, 16]
+    STR X4, [SP, 24]
+    STR X7, [SP, 32]
+    STR X30, [SP, 40]
+    
+    // ll1
+    MOV X1, 62
+    MOV X2, 129
+    MOV X3, 65
+    MOV X4, 127
+    LDR X7, =0x17a7c6
+    BL dibujar_rectangulo
+
+    MOV X1, 62
+    MOV X2, 131
+    MOV X3, 63
+    MOV X4, 130
+    LDR X7, =0x17a7c6
+    BL dibujar_rectangulo
+    
+    MOV X1, 64
+    MOV X2, 131
+    MOV X3, 65
+    MOV X4, 130
+    LDR X7, =0x17a7c6
+    BL dibujar_rectangulo
+    
+    // l1
+    MOV X1, 62
+    MOV X2, 134
+    MOV X3, 65
+    MOV X4, 132
+    LDR X7, =0x006f99
+    BL dibujar_rectangulo
+    
+    MOV X1, 62
+    MOV X2, 131
+    MOV X3, 65
+    MOV X4, 130
+    LDR X7, =0x16a0be
+    BL dibujar_rectangulo
+    
+    MOV X1, 62
+    MOV X2, 135
+    MOV X3, 65
+    MOV X4, 135
+    LDR X7, =0x1494af
+    BL dibujar_rectangulo
+    
+    // PUSH(X30)
+    LDR X30, [SP, 40]
+    LDR X7, [SP, 32]
+    LDR X4, [SP, 24]
+    LDR X3, [SP, 16]
+    LDR X2, [SP, 8]
+    LDR X1, [SP] 
+    ADD SP, SP, #48
+RET
+
+luciernagaf44:
+    // PUSH(X30)
+    SUB SP, SP, 48
+    STR X1, [SP]
+    STR X2, [SP, 8]
+    STR X3, [SP, 16]
+    STR X4, [SP, 24]
+    STR X7, [SP, 32]
+    STR X30, [SP, 40]
+    
+    // ll1
+    MOV X1, 62
+    MOV X2, 134
+    MOV X3, 65
+    MOV X4, 122
+    LDR X7, =0x17a7c6
+    BL dibujar_rectangulo
+    
+    MOV X1, 62
+    MOV X2, 131
+    MOV X3, 65
+    MOV X4, 130
+    LDR X7, =0x17a7c6
+    BL dibujar_rectangulo
+    
+    MOV X1, 62
+    MOV X2, 135
+    MOV X3, 65
+    MOV X4, 135
+    LDR X7, =0x17a7c6
+    BL dibujar_rectangulo
+
+    // l1
+    MOV X1, 66
+    MOV X2, 134
+    MOV X3, 68
+    MOV X4, 132
+    LDR X7, =0x006f99
+    BL dibujar_rectangulo
+    
+    MOV X1, 69
+    MOV X2, 134
+    MOV X3, 70
+    MOV X4, 132
+    LDR X7, =0x1289a3
+    BL dibujar_rectangulo
+    
+    MOV X1, 66
+    MOV X2, 135
+    MOV X3, 68
+    MOV X4, 135
+    LDR X7, =0x1494af
+    BL dibujar_rectangulo
+
+    // PUSH(X30)
+    LDR X30, [SP, 40]
+    LDR X7, [SP, 32]
+    LDR X4, [SP, 24]
+    LDR X3, [SP, 16]
+    LDR X2, [SP, 8]
+    LDR X1, [SP] 
+    ADD SP, SP, #48
+RET
+
+luciernagaf45:
+    // PUSH(X30)
+    SUB SP, SP, 48
+    STR X1, [SP]
+    STR X2, [SP, 8]
+    STR X3, [SP, 16]
+    STR X4, [SP, 24]
+    STR X7, [SP, 32]
+    STR X30, [SP, 40]
+    
+    // ll1
+    MOV X1, 66
+    MOV X2, 134
+    MOV X3, 68
+    MOV X4, 132
+    LDR X7, =0x17a7c6
+    BL dibujar_rectangulo
+    
+    MOV X1, 69
+    MOV X2, 134
+    MOV X3, 70
+    MOV X4, 132
+    LDR X7, =0x17a7c6
+    BL dibujar_rectangulo
+    
+    MOV X1, 66
+    MOV X2, 135
+    MOV X3, 68
+    MOV X4, 135
+    LDR X7, =0x17a7c6
+    BL dibujar_rectangulo
+
+    // l1
+    MOV X1, 71
+    MOV X2, 134
+    MOV X3, 72
+    MOV X4, 132
+    LDR X7, =0x006f99
+    BL dibujar_rectangulo
+    
+    MOV X1, 71
+    MOV X2, 135
+    MOV X3, 72
+    MOV X4, 135
+    LDR X7, =0x1494af
+    BL dibujar_rectangulo
+    
+    MOV X1, 73
+    MOV X2, 134
+    MOV X3, 74
+    MOV X4, 132
+    LDR X7, =0x1494af
+    BL dibujar_rectangulo
+    
+    // PUSH(X30)
+    LDR X30, [SP, 40]
+    LDR X7, [SP, 32]
+    LDR X4, [SP, 24]
+    LDR X3, [SP, 16]
+    LDR X2, [SP, 8]
+    LDR X1, [SP] 
+    ADD SP, SP, #48
+RET
+
+luciernagaf46:
+    // PUSH(X30)
+    SUB SP, SP, 48
+    STR X1, [SP]
+    STR X2, [SP, 8]
+    STR X3, [SP, 16]
+    STR X4, [SP, 24]
+    STR X7, [SP, 32]
+    STR X30, [SP, 40]
+    
+    // ll1
+    MOV X1, 71
+    MOV X2, 134
+    MOV X3, 72
+    MOV X4, 132
+    LDR X7, =0x16a0be
+    BL dibujar_rectangulo
+    
+    MOV X1, 71
+    MOV X2, 135
+    MOV X3, 72
+    MOV X4, 135
+    LDR X7, =0x16a0be
+    BL dibujar_rectangulo
+    
+    MOV X1, 73
+    MOV X2, 134
+    MOV X3, 74
+    MOV X4, 132
+    LDR X7, =0x16a0be
+    BL dibujar_rectangulo
+    
+    // l1
+    MOV X1, 75
+    MOV X2, 134
+    MOV X3, 77
+    MOV X4, 132
+    LDR X7, =0x006f99
+    BL dibujar_rectangulo
+    
+    MOV X1, 73
+    MOV X2, 134
+    MOV X3, 74
+    MOV X4, 132
+    LDR X7, =0x1289a3
+    BL dibujar_rectangulo
+    
+    MOV X1, 75
+    MOV X2, 131
+    MOV X3, 77
+    MOV X4, 130
+    LDR X7, =0x16a0be
+    BL dibujar_rectangulo
+    
+    MOV X1, 73
+    MOV X2, 135
+    MOV X3, 77
+    MOV X4, 135
+    LDR X7, =0x16a0be
+    BL dibujar_rectangulo
+
+    MOV X1, 78
+    MOV X2, 134
+    MOV X3, 78
+    MOV X4, 132
+    LDR X7, =0x16a0be
+    BL dibujar_rectangulo
+    
+    // PUSH(X30)
+    LDR X30, [SP, 40]
+    LDR X7, [SP, 32]
+    LDR X4, [SP, 24]
+    LDR X3, [SP, 16]
+    LDR X2, [SP, 8]
+    LDR X1, [SP] 
+    ADD SP, SP, #48
+RET
+
+luciernagaf47:
+    // PUSH(X30)
+    SUB SP, SP, 48
+    STR X1, [SP]
+    STR X2, [SP, 8]
+    STR X3, [SP, 16]
+    STR X4, [SP, 24]
+    STR X7, [SP, 32]
+    STR X30, [SP, 40]
+    
+    // ll1
+    MOV X1, 75
+    MOV X2, 134
+    MOV X3, 77
+    MOV X4, 132
+    LDR X7, =0x16a0be
+    BL dibujar_rectangulo
+    
+    MOV X1, 73
+    MOV X2, 134
+    MOV X3, 74
+    MOV X4, 132
+    LDR X7, =0x16a0be
+    BL dibujar_rectangulo
+    
+    MOV X1, 75
+    MOV X2, 131
+    MOV X3, 77
+    MOV X4, 130
+    LDR X7, =0x16a0be
+    BL dibujar_rectangulo
+    
+    MOV X1, 73
+    MOV X2, 135
+    MOV X3, 77
+    MOV X4, 135
+    LDR X7, =0x16a0be
+    BL dibujar_rectangulo
+
+    MOV X1, 78
+    MOV X2, 134
+    MOV X3, 78
+    MOV X4, 132
+    LDR X7, =0x16a0be
+    BL dibujar_rectangulo
+
+    // l1
+    MOV X1, 78
+    MOV X2, 131
+    MOV X3, 81  
+    MOV X4, 130 
+    LDR X7, =0x1289a3
+    BL dibujar_rectangulo
+
+    MOV X1, 78
+    MOV X2, 129
+    MOV X3, 78
+    MOV X4, 127
+    LDR X7, =0x1289a3
+    BL dibujar_rectangulo
+    
+    MOV X1, 79
+    MOV X2, 129
+    MOV X3, 81
+    MOV X4, 127
+    LDR X7, =0x006f99
+    BL dibujar_rectangulo
+    
+    // PUSH(X30)
+    LDR X30, [SP, 40]
+    LDR X7, [SP, 32]
+    LDR X4, [SP, 24]
+    LDR X3, [SP, 16]
+    LDR X2, [SP, 8]
+    LDR X1, [SP] 
+    ADD SP, SP, #48
+RET
+
+luciernagaf48:
+    // PUSH(X30)
+    SUB SP, SP, 48
+    STR X1, [SP]
+    STR X2, [SP, 8]
+    STR X3, [SP, 16]
+    STR X4, [SP, 24]
+    STR X7, [SP, 32]
+    STR X30, [SP, 40]
+    
+    // ll1
+    MOV X1, 78
+    MOV X2, 131
+    MOV X3, 81  
+    MOV X4, 130 
+    LDR X7, =0x16a0be
+    BL dibujar_rectangulo
+
+    MOV X1, 78
+    MOV X2, 129
+    MOV X3, 78
+    MOV X4, 127
+    LDR X7, =0x16a0be
+    BL dibujar_rectangulo
+    
+    MOV X1, 79
+    MOV X2, 129
+    MOV X3, 81
+    MOV X4, 127
+    LDR X7, =0x16a0be
+    BL dibujar_rectangulo
+    
+    // PUSH(X30)
+    LDR X30, [SP, 40]
+    LDR X7, [SP, 32]
+    LDR X4, [SP, 24]
+    LDR X3, [SP, 16]
+    LDR X2, [SP, 8]
+    LDR X1, [SP] 
+    ADD SP, SP, #48
+RET
+
+luciernagaf84:
+    // PUSH(X30)
+    SUB SP, SP, 48
+    STR X1, [SP]
+    STR X2, [SP, 8]
+    STR X3, [SP, 16]
+    STR X4, [SP, 24]
+    STR X7, [SP, 32]
+    STR X30, [SP, 40]
+    
+    // l1
+    MOV X1, 77
+    MOV X2, 127
+    MOV X3, 75
+    MOV X4, 129
+    LDR X7, =0x006f99
+    BL dibujar_rectangulo
+
+    MOV X1, 75
+    MOV X2, 129
+    MOV X3, 77
+    MOV X4, 127
+    LDR X7, =0x006f99
+    BL dibujar_rectangulo
+
+    MOV X1, 73
+    MOV X2, 131
+    MOV X3, 74
+    MOV X4, 127
+    LDR X7, =0x1494af
+    BL dibujar_rectangulo
+
+    MOV X1, 75
+    MOV X2, 131
+    MOV X3, 77
+    MOV X4, 130
+    LDR X7, =0x1289a3
+    BL dibujar_rectangulo
+    
+    // PUSH(X30)
+    LDR X30, [SP, 40]
+    LDR X7, [SP, 32]
+    LDR X4, [SP, 24]
+    LDR X3, [SP, 16]
+    LDR X2, [SP, 8]
+    LDR X1, [SP] 
+    ADD SP, SP, #48
+RET
+
+luciernagaf85:
+    // PUSH(X30)
+    SUB SP, SP, 48
+    STR X1, [SP]
+    STR X2, [SP, 8]
+    STR X3, [SP, 16]
+    STR X4, [SP, 24]
+    STR X7, [SP, 32]
+    STR X30, [SP, 40]
+
+    // ll1
+    MOV X1, 77
+    MOV X2, 127
+    MOV X3, 75
+    MOV X4, 129
+    LDR X7, =0x17a7c6
+    BL dibujar_rectangulo
+
+    MOV X1, 75
+    MOV X2, 129
+    MOV X3, 77
+    MOV X4, 127
+    LDR X7, =0x17a7c6
+    BL dibujar_rectangulo
+
+    MOV X1, 73
+    MOV X2, 131
+    MOV X3, 74
+    MOV X4, 127
+    LDR X7, =0x17a7c6
+    BL dibujar_rectangulo
+
+    MOV X1, 75
+    MOV X2, 131
+    MOV X3, 77
+    MOV X4, 130
+    LDR X7, =0x17a7c6
+    BL dibujar_rectangulo
+    
+    // l1
+    MOV X1, 75
+    MOV X2, 134
+    MOV X3, 77
+    MOV X4, 132
+    LDR X7, =0x006f99
+    BL dibujar_rectangulo
+
+    MOV X1, 73
+    MOV X2, 134
+    MOV X3, 74
+    MOV X4, 132
+    LDR X7, =0x1494af
+    BL dibujar_rectangulo
+
+    MOV X1, 75
+    MOV X2, 125
+    MOV X3, 77
+    MOV X4, 135
+    LDR X7, =0x1494af
+    BL dibujar_rectangulo
+    
+    // PUSH(X30)
+    LDR X30, [SP, 40]
+    LDR X7, [SP, 32]
+    LDR X4, [SP, 24]
+    LDR X3, [SP, 16]
+    LDR X2, [SP, 8]
+    LDR X1, [SP] 
+    ADD SP, SP, #48
+RET
+
+luciernagaf86:
+    // PUSH(X30)
+    SUB SP, SP, 48
+    STR X1, [SP]
+    STR X2, [SP, 8]
+    STR X3, [SP, 16]
+    STR X4, [SP, 24]
+    STR X7, [SP, 32]
+    STR X30, [SP, 40]
+    
+    // ll1
+    MOV X1, 75
+    MOV X2, 134
+    MOV X3, 77
+    MOV X4, 132
+    LDR X7, =0x17a7c6
+    BL dibujar_rectangulo
+
+    MOV X1, 73
+    MOV X2, 134
+    MOV X3, 74
+    MOV X4, 132
+    LDR X7, =0x17a7c6
+    BL dibujar_rectangulo
+
+    MOV X1, 75
+    MOV X2, 125
+    MOV X3, 77
+    MOV X4, 135
+    LDR X7, =0x17a7c6
+    BL dibujar_rectangulo
+
+    // l1
+    MOV X1, 66
+    MOV X2, 134
+    MOV X3, 68
+    MOV X4, 132
+    LDR X7, =0x006f99
+    BL dibujar_rectangulo
+
+    MOV X1, 66
+    MOV X2, 131
+    MOV X3, 68
+    MOV X4, 130
+    LDR X7, =0x1494af
+    BL dibujar_rectangulo
+
+    MOV X1, 69
+    MOV X2, 134
+    MOV X3, 70
+    MOV X4, 132
+    LDR X7, =0x1494af
+    BL dibujar_rectangulo
+
+    MOV X1, 66
+    MOV X2, 135
+    MOV X3, 70
+    MOV X4, 135
+    LDR X7, =0x1494af
+    BL dibujar_rectangulo
+
+    // PUSH(X30)
+    LDR X30, [SP, 40]
+    LDR X7, [SP, 32]
+    LDR X4, [SP, 24]
+    LDR X3, [SP, 16]
+    LDR X2, [SP, 8]
+    LDR X1, [SP] 
+    ADD SP, SP, #48
+RET
 
 
 celularUP_1:
@@ -13495,8 +15891,7 @@ celularUP_0:
     LDR X2, [SP, 8]
     LDR X1, [SP] 
     ADD SP, SP, #48
-    
-    RET
+RET
 
 .endif
 
