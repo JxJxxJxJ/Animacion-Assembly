@@ -15549,6 +15549,15 @@ celularUP_1:
     LDR X7, =DARKOLIVEGREEN
     BL dibujar_rectangulo
 
+    MOV X1, 154
+    MOV X2, 294
+    MOV X3, 156
+    MOV X4, 295
+    LDR X7, =STEELBLUE_2
+    BL dibujar_rectangulo
+    
+    
+
     // PUSH(X30)
     LDR X30, [SP, 40]
     LDR X7, [SP, 32]
@@ -15903,15 +15912,835 @@ brazoUP_1:
     STR X7, [SP, 32]
     STR X30, [SP, 40]
     
-    MOV X1, x1_cord
-    MOV X2, y1_cord
-    MOV X3, x2_cord
-    MOV X4, y2_cord
+    MOV X1, 157
+    MOV X2, 304
+    MOV X3, 159
+    MOV X4, 307
     LDR X7, =BLACK_2
     BL dibujar_rectangulo
     
+    MOV X1, 157
+    MOV X2, 312
+    MOV X3, 160
+    MOV X4, 328
+    LDR X7, =BLACK_2
+    BL dibujar_rectangulo
+
+    MOV X1, 161
+    MOV X2, 308
+    MOV X3, 163
+    MOV X4, 325
+    LDR X7, =BLACK_2
+    BL dibujar_rectangulo
+    
+    MOV X1, 164
+    MOV X2, 313
+    MOV X3, 165
+    MOV X4, 323
+    LDR X7, =BLACK_2
+    BL dibujar_rectangulo
+
+    MOV X1, 161
+    MOV X2, 302
+    MOV X3, 167
+    MOV X4, 303
+    LDR X7, =BLACK_2
+    BL dibujar_rectangulo
+
+    MOV X1, 157
+    MOV X2, 308
+    MOV X3, 159
+    MOV X4, 311
+    LDR X7, =DARKSLATEGRAY_2
+    BL dibujar_rectangulo
+    
+    MOV X1, 160
+    MOV X2, 304
+    MOV X3, 160
+    MOV X4, 311
+    LDR X7, =DARKSLATEGRAY_2
+    BL dibujar_rectangulo
+
+    MOV X1, 164
+    MOV X2, 312
+    MOV X3, 165
+    MOV X4, 312
+    LDR X7, =DARKSLATEGRAY_2
+    BL dibujar_rectangulo
+
+    MOV X1, 161
+    MOV X2, 307
+    MOV X3, 163
+    MOV X4, 307
+    LDR X7, =DIMGRAY
+    BL dibujar_rectangulo
+    
+    MOV X1, 164
+    MOV X2, 308
+    MOV X3, 165
+    MOV X4, 311
+    LDR X7, =DIMGRAY
+    BL dibujar_rectangulo
+    
+    MOV X1, 166
+    MOV X2, 312
+    MOV X3, 167
+    MOV X4, 312
+    LDR X7, =DIMGRAY
+    BL dibujar_rectangulo
+    
+    MOV X1, 168
+    MOV X2, 301
+    MOV X3, 169
+    MOV X4, 311
+    LDR X7, =DIMGRAY
+    BL dibujar_rectangulo
+
+    MOV X1, 168
+    MOV X2, 312
+    MOV X3, 169
+    MOV X4, 312
+    LDR X7, =DARKSLATEGRAY_1
+    BL dibujar_rectangulo
+    
+    MOV X1, 166
+    MOV X2, 304
+    MOV X3, 167
+    MOV X4, 311
+    LDR X7, =DARKOLIVEGREEN
+    BL dibujar_rectangulo
+    
+    MOV X1, 164
+    MOV X2, 304
+    MOV X3, 165
+    MOV X4, 307
+    LDR X7, =DARKOLIVEGREEN
+    BL dibujar_rectangulo
+    
+    MOV X1, 161
+    MOV X2, 304
+    MOV X3, 163
+    MOV X4, 306
+    LDR X7, =DARKOLIVEGREEN
+    BL dibujar_rectangulo
+
+    MOV X1, 154
+    MOV X2, 296
+    MOV X3, 156
+    MOV X4, 303
+    LDR X7, =BLACK_0
+    BL dibujar_rectangulo
+    
+    MOV X1, 157
+    MOV X2, 301
+    MOV X3, 160
+    MOV X4, 303
+    LDR X7, =BLACK_0
+    BL dibujar_rectangulo
+
+    MOV X1, 161
+    MOV X2, 301
+    MOV X3, 167
+    MOV X4, 301
+    LDR X7, =BLACK_0
+    BL dibujar_rectangulo
+
+    MOV X1, 153
+    MOV X2, 296
+    MOV X3, 153
+    MOV X4, 334
+    LDR X7, =BLACK_2
+    BL dibujar_rectangulo
+
+    MOV X1, 154
+    MOV X2, 304
+    MOV X3, 156
+    MOV X4, 333
+    LDR X7, =BLACK_2
+    BL dibujar_rectangulo
+
+
+    // PUSH(X30)
+    LDR X30, [SP, 40]
+    LDR X7, [SP, 32]
+    LDR X4, [SP, 24]
+    LDR X3, [SP, 16]
+    LDR X2, [SP, 8]
+    LDR X1, [SP] 
+    ADD SP, SP, #48
+    
+    RET
+
+brazoUP_0:
+    // PUSH(X30)
+    SUB SP, SP, 48
+    STR X1, [SP]
+    STR X2, [SP, 8]
+    STR X3, [SP, 16]
+    STR X4, [SP, 24]
+    STR X7, [SP, 32]
+    STR X30, [SP, 40]
+    
+    MOV X1, 157
+    MOV X2, 304
+    MOV X3, 159
+    MOV X4, 307
+    LDR X7, =BLACK_0
+    BL dibujar_rectangulo
+    
+    MOV X1, 157
+    MOV X2, 312
+    MOV X3, 160
+    MOV X4, 328
+    LDR X7, =BLACK_0
+    BL dibujar_rectangulo
+
+    MOV X1, 161
+    MOV X2, 308
+    MOV X3, 163
+    MOV X4, 325
+    LDR X7, =BLACK_0
+    BL dibujar_rectangulo
+    
+    MOV X1, 164
+    MOV X2, 313
+    MOV X3, 165
+    MOV X4, 323
+    LDR X7, =BLACK_0
+    BL dibujar_rectangulo
+
+    MOV X1, 161
+    MOV X2, 302
+    MOV X3, 167
+    MOV X4, 303
+    LDR X7, =BLACK_0
+    BL dibujar_rectangulo
+
+    MOV X1, 157
+    MOV X2, 308
+    MOV X3, 159
+    MOV X4, 311
+    LDR X7, =BLACK_0
+    BL dibujar_rectangulo
+    
+    MOV X1, 160
+    MOV X2, 304
+    MOV X3, 160
+    MOV X4, 311
+    LDR X7, =BLACK_0
+    BL dibujar_rectangulo
+
+    MOV X1, 164
+    MOV X2, 312
+    MOV X3, 165
+    MOV X4, 312
+    LDR X7, =BLACK_0
+    BL dibujar_rectangulo
+
+    MOV X1, 161
+    MOV X2, 307
+    MOV X3, 163
+    MOV X4, 307
+    LDR X7, =BLACK_0
+    BL dibujar_rectangulo
+    
+    MOV X1, 164
+    MOV X2, 308
+    MOV X3, 165
+    MOV X4, 311
+    LDR X7, =BLACK_0
+    BL dibujar_rectangulo
+    
+    MOV X1, 166
+    MOV X2, 312
+    MOV X3, 167
+    MOV X4, 312
+    LDR X7, =BLACK_0
+    BL dibujar_rectangulo
+    
+    MOV X1, 168
+    MOV X2, 301
+    MOV X3, 169
+    MOV X4, 311
+    LDR X7, =BLACK_0
+    BL dibujar_rectangulo
+
+    MOV X1, 168
+    MOV X2, 312
+    MOV X3, 169
+    MOV X4, 312
+    LDR X7, =BLACK_0
+    BL dibujar_rectangulo
+    
+    MOV X1, 166
+    MOV X2, 304
+    MOV X3, 167
+    MOV X4, 311
+    LDR X7, =BLACK_0
+    BL dibujar_rectangulo
+    
+    MOV X1, 164
+    MOV X2, 304
+    MOV X3, 165
+    MOV X4, 307
+    LDR X7, =BLACK_0
+    BL dibujar_rectangulo
+    
+    MOV X1, 161
+    MOV X2, 304
+    MOV X3, 163
+    MOV X4, 306
+    LDR X7, =BLACK_0
+    BL dibujar_rectangulo
+
+    MOV X1, 154
+    MOV X2, 296
+    MOV X3, 156
+    MOV X4, 303
+    LDR X7, =BLACK_0
+    BL dibujar_rectangulo
+    
+    MOV X1, 157
+    MOV X2, 301
+    MOV X3, 160
+    MOV X4, 303
+    LDR X7, =BLACK_0
+    BL dibujar_rectangulo
+
+    MOV X1, 161
+    MOV X2, 301
+    MOV X3, 167
+    MOV X4, 301
+    LDR X7, =BLACK_0
+    BL dibujar_rectangulo
+
+    MOV X1, 153
+    MOV X2, 296
+    MOV X3, 153
+    MOV X4, 334
+    LDR X7, =BLACK_0
+    BL dibujar_rectangulo
+
+    MOV X1, 154
+    MOV X2, 304
+    MOV X3, 156
+    MOV X4, 333
+    LDR X7, =BLACK_0
+    BL dibujar_rectangulo
+
+
+    // PUSH(X30)
+    LDR X30, [SP, 40]
+    LDR X7, [SP, 32]
+    LDR X4, [SP, 24]
+    LDR X3, [SP, 16]
+    LDR X2, [SP, 8]
+    LDR X1, [SP] 
+    ADD SP, SP, #48
+    
+    RET
+
+
+celularDOWN_1:
+    // PUSH(X30)
+    SUB SP, SP, 48
+    STR X1, [SP]
+    STR X2, [SP, 8]
+    STR X3, [SP, 16]
+    STR X4, [SP, 24]
+    STR X7, [SP, 32]
+    STR X30, [SP, 40]
+    
+    // debemos primero borrar celularUP_1 y luego dibujar
+    MOV X1, 161
+    MOV X2, 286
+    MOV X3, 165
+    MOV X4, 290
+    LDR X7, =CIELO_3
+    BL dibujar_rectangulo
+
+    MOV X1, 164
+    MOV X2, 286
+    MOV X3, 165
+    MOV X4, 290
+    LDR X7, =CIELO_0
+    BL dibujar_rectangulo
+
+    MOV X1, 161
+    MOV X2, 290
+    MOV X3, 163
+    MOV X4, 290
+    LDR X7, =CIELO_0
+    BL dibujar_rectangulo
+
+    MOV X1, 157
+    MOV X2, 290
+    MOV X3, 160
+    MOV X4, 293
+    LDR X7, =CIELO_3
+    BL dibujar_rectangulo
+    
+    MOV X1, 157
+    MOV X2, 294
+    MOV X3, 160
+    MOV X4, 295
+    LDR X7, =STEELBLUE_2
+    BL dibujar_rectangulo
+    
+    MOV X1, 164
+    MOV X2, 282
+    MOV X3, 172
+    MOV X4, 285
+    LDR X7, =CIELO_3
+    BL dibujar_rectangulo
+    
+    MOV X1, 173
+    MOV X2, 282
+    MOV X3, 180
+    MOV X4, 285
+    LDR X7, =STEELBLUE_2
+    BL dibujar_rectangulo
+    
+    MOV X1, 179
+    MOV X2, 286
+    MOV X3, 180
+    MOV X4, 293
+    LDR X7, =FONDO_VARANDA_0
+    BL dibujar_rectangulo
+    
+    MOV X1, 174
+    MOV X2, 294
+    MOV X3, 176
+    MOV X4, 295
+    LDR X7, =CIELO_1
+    BL dibujar_rectangulo
+    
+    MOV X1, 175
+    MOV X2, 296
+    MOV X3, 176
+    MOV X4, 298
+    LDR X7, =BLACK_1
+    BL dibujar_rectangulo
+    
+    MOV X1, 177
+    MOV X2, 294
+    MOV X3, 180
+    MOV X4, 295
+    LDR X7, =DARKSLATEGRAY_3
+    BL dibujar_rectangulo
     
 
+    //dibujando
+    MOV X1, 166
+    MOV X2, 286
+    MOV X3, 178
+    MOV X4, 289
+    LDR X7, =BLACK_0
+    BL dibujar_rectangulo
+    
+    MOV X1, 177
+    MOV X2, 290
+    MOV X3, 178
+    MOV X4, 293
+    LDR X7, =BLACK_0
+    BL dibujar_rectangulo
+
+    MOV X1, 161
+    MOV X2, 291
+    MOV X3, 163
+    MOV X4, 293
+    LDR X7, =BLACK_0
+    BL dibujar_rectangulo
+
+    MOV X1, 154
+    MOV X2, 296
+    MOV X3, 159
+    MOV X4, 298
+    LDR X7, =BLACK_0
+    BL dibujar_rectangulo
+
+    MOV X1, 154
+    MOV X2, 299
+    MOV X3, 156
+    MOV X4, 303
+    LDR X7, =BLACK_0
+    BL dibujar_rectangulo
+
+    MOV X1, 157
+    MOV X2, 304
+    MOV X3, 163
+    MOV X4, 306
+    LDR X7, =BLACK_0
+    BL dibujar_rectangulo
+
+    MOV X1, 157
+    MOV X2, 307
+    MOV X3, 159
+    MOV X4, 307
+    LDR X7, =BLACK_0
+    BL dibujar_rectangulo
+
+    MOV X1, 174
+    MOV X2, 296
+    MOV X3, 174
+    MOV X4, 298
+    LDR X7, =BLACK_0
+    BL dibujar_rectangulo
+
+    MOV X1, 166
+    MOV X2, 291
+    MOV X3, 176
+    MOV X4, 293
+    LDR X7, =WHITE
+    BL dibujar_rectangulo
+
+    MOV X1, 166
+    MOV X2, 294
+    MOV X3, 172
+    MOV X4, 298
+    LDR X7, =WHITE
+    BL dibujar_rectangulo
+    
+    MOV X1, 161
+    MOV X2, 296
+    MOV X3, 165
+    MOV X4, 303
+    LDR X7, =WHITE
+    BL dibujar_rectangulo
+
+    MOV X1, 159
+    MOV X2, 299
+    MOV X3, 160
+    MOV X4, 303
+    LDR X7, =WHITE
+    BL dibujar_rectangulo
+
+    MOV X1, 157
+    MOV X2, 301
+    MOV X3, 158
+    MOV X4, 303
+    LDR X7, =WHITE
+    BL dibujar_rectangulo
+
+    MOV X1, 157
+    MOV X2, 299
+    MOV X3, 158
+    MOV X4, 300
+    LDR X7, =KHAKI
+    BL dibujar_rectangulo
+
+    MOV X1, 161
+    MOV X2, 294
+    MOV X3, 165
+    MOV X4, 295
+    LDR X7, =KHAKI
+    BL dibujar_rectangulo
+
+    MOV X1, 173
+    MOV X2, 294
+    MOV X3, 173
+    MOV X4, 295
+    LDR X7, =KHAKI
+    BL dibujar_rectangulo
+
+    MOV X1, 164
+    MOV X2, 291
+    MOV X3, 165
+    MOV X4, 293
+    LDR X7, =DARKOLIVEGREEN
+    BL dibujar_rectangulo
+    
+    MOV X1, 166
+    MOV X2, 290
+    MOV X3, 176
+    MOV X4, 290
+    LDR X7, =DARKOLIVEGREEN
+    BL dibujar_rectangulo
+
+    MOV X1, 173
+    MOV X2, 296
+    MOV X3, 173
+    MOV X4, 298
+    LDR X7, =DARKOLIVEGREEN
+    BL dibujar_rectangulo
+    
+    MOV X1, 160
+    MOV X2, 296
+    MOV X3, 160
+    MOV X4, 298
+    LDR X7, =DIMGRAY
+    BL dibujar_rectangulo
+
+    // efectos del celular en la cara
+
+    MOV X1, 142
+    MOV X2, 261
+    MOV X3, 145
+    MOV X4, 271
+    LDR X7, =KHAKI
+    BL dibujar_rectangulo
+    
+    MOV X1, 142
+    MOV X2, 260
+    MOV X3, 145
+    MOV X4, 260
+    LDR X7, =DARKOLIVEGREEN
+    BL dibujar_rectangulo
+    
+    MOV X1, 142
+    MOV X2, 272
+    MOV X3, 145
+    MOV X4, 273
+    LDR X7, =DARKOLIVEGREEN
+    BL dibujar_rectangulo
+
+    MOV X1, 154
+    MOV X2, 294
+    MOV X3, 156
+    MOV X4, 295
+    LDR X7, =STEELBLUE_2
+    BL dibujar_rectangulo
+    
+    // PUSH(X30)
+    LDR X30, [SP, 40]
+    LDR X7, [SP, 32]
+    LDR X4, [SP, 24]
+    LDR X3, [SP, 16]
+    LDR X2, [SP, 8]
+    LDR X1, [SP] 
+    ADD SP, SP, #48
+    
+    RET
+
+celularDOWN_0:
+    // PUSH(X30)
+    SUB SP, SP, 48
+    STR X1, [SP]
+    STR X2, [SP, 8]
+    STR X3, [SP, 16]
+    STR X4, [SP, 24]
+    STR X7, [SP, 32]
+    STR X30, [SP, 40]
+    
+    // debemos primero borrar celularUP_1 y luego dibujar
+    MOV X1, 161
+    MOV X2, 286
+    MOV X3, 165
+    MOV X4, 290
+    LDR X7, =BLACK_0
+    BL dibujar_rectangulo
+
+    MOV X1, 164
+    MOV X2, 286
+    MOV X3, 165
+    MOV X4, 290
+    LDR X7, =BLACK_0
+    BL dibujar_rectangulo
+
+    MOV X1, 161
+    MOV X2, 290
+    MOV X3, 163
+    MOV X4, 290
+    LDR X7, =BLACK_0
+    BL dibujar_rectangulo
+
+    MOV X1, 157
+    MOV X2, 290
+    MOV X3, 160
+    MOV X4, 293
+    LDR X7, =BLACK_0
+    BL dibujar_rectangulo
+    
+    MOV X1, 157
+    MOV X2, 294
+    MOV X3, 160
+    MOV X4, 295
+    LDR X7, =BLACK_0
+    BL dibujar_rectangulo
+    
+    MOV X1, 164
+    MOV X2, 282
+    MOV X3, 172
+    MOV X4, 285
+    LDR X7, =BLACK_0
+    BL dibujar_rectangulo
+    
+    MOV X1, 173
+    MOV X2, 282
+    MOV X3, 180
+    MOV X4, 285
+    LDR X7, =BLACK_0
+    BL dibujar_rectangulo
+    
+    MOV X1, 179
+    MOV X2, 286
+    MOV X3, 180
+    MOV X4, 293
+    LDR X7, =BLACK_0
+    BL dibujar_rectangulo
+    
+    MOV X1, 174
+    MOV X2, 294
+    MOV X3, 176
+    MOV X4, 295
+    LDR X7, =BLACK_0
+    BL dibujar_rectangulo
+    
+    MOV X1, 175
+    MOV X2, 296
+    MOV X3, 176
+    MOV X4, 298
+    LDR X7, =BLACK_0
+    BL dibujar_rectangulo
+    
+    MOV X1, 177
+    MOV X2, 294
+    MOV X3, 180
+    MOV X4, 295
+    LDR X7, =BLACK_0
+    BL dibujar_rectangulo
+    
+
+    //dibujando
+    MOV X1, 166
+    MOV X2, 286
+    MOV X3, 178
+    MOV X4, 289
+    LDR X7, =BLACK_0
+    BL dibujar_rectangulo
+    
+    MOV X1, 177
+    MOV X2, 290
+    MOV X3, 178
+    MOV X4, 293
+    LDR X7, =BLACK_0
+    BL dibujar_rectangulo
+
+    MOV X1, 161
+    MOV X2, 291
+    MOV X3, 163
+    MOV X4, 293
+    LDR X7, =BLACK_0
+    BL dibujar_rectangulo
+
+    MOV X1, 154
+    MOV X2, 296
+    MOV X3, 159
+    MOV X4, 298
+    LDR X7, =BLACK_0
+    BL dibujar_rectangulo
+
+    MOV X1, 154
+    MOV X2, 299
+    MOV X3, 156
+    MOV X4, 303
+    LDR X7, =BLACK_0
+    BL dibujar_rectangulo
+
+    MOV X1, 157
+    MOV X2, 304
+    MOV X3, 163
+    MOV X4, 306
+    LDR X7, =BLACK_0
+    BL dibujar_rectangulo
+
+    MOV X1, 157
+    MOV X2, 307
+    MOV X3, 159
+    MOV X4, 307
+    LDR X7, =BLACK_0
+    BL dibujar_rectangulo
+
+    MOV X1, 174
+    MOV X2, 296
+    MOV X3, 174
+    MOV X4, 298
+    LDR X7, =BLACK_0
+    BL dibujar_rectangulo
+
+    MOV X1, 166
+    MOV X2, 291
+    MOV X3, 176
+    MOV X4, 293
+    LDR X7, =BLACK_0
+    BL dibujar_rectangulo
+
+    MOV X1, 166
+    MOV X2, 294
+    MOV X3, 172
+    MOV X4, 298
+    LDR X7, =BLACK_0
+    BL dibujar_rectangulo
+    
+    MOV X1, 161
+    MOV X2, 296
+    MOV X3, 165
+    MOV X4, 303
+    LDR X7, =BLACK_0
+    BL dibujar_rectangulo
+
+    MOV X1, 159
+    MOV X2, 299
+    MOV X3, 160
+    MOV X4, 303
+    LDR X7, =BLACK_0
+    BL dibujar_rectangulo
+
+    MOV X1, 157
+    MOV X2, 301
+    MOV X3, 158
+    MOV X4, 303
+    LDR X7, =BLACK_0
+    BL dibujar_rectangulo
+
+    MOV X1, 157
+    MOV X2, 299
+    MOV X3, 158
+    MOV X4, 300
+    LDR X7, =BLACK_0
+    BL dibujar_rectangulo
+
+    MOV X1, 161
+    MOV X2, 294
+    MOV X3, 165
+    MOV X4, 295
+    LDR X7, =BLACK_0
+    BL dibujar_rectangulo
+
+    MOV X1, 173
+    MOV X2, 294
+    MOV X3, 173
+    MOV X4, 295
+    LDR X7, =BLACK_0
+    BL dibujar_rectangulo
+
+    MOV X1, 164
+    MOV X2, 291
+    MOV X3, 165
+    MOV X4, 293
+    LDR X7, =BLACK_0
+    BL dibujar_rectangulo
+    
+    MOV X1, 166
+    MOV X2, 290
+    MOV X3, 176
+    MOV X4, 290
+    LDR X7, =BLACK_0
+    BL dibujar_rectangulo
+
+    MOV X1, 173
+    MOV X2, 296
+    MOV X3, 173
+    MOV X4, 298
+    LDR X7, =BLACK_0
+    BL dibujar_rectangulo
+    
+    MOV X1, 160
+    MOV X2, 296
+    MOV X3, 160
+    MOV X4, 298
+    LDR X7, =BLACK_0
+    BL dibujar_rectangulo
 
     
     // PUSH(X30)
@@ -15925,8 +16754,171 @@ brazoUP_1:
     
     RET
 
+brazoDOWN_1:
+    // PUSH(X30)
+    SUB SP, SP, 48
+    STR X1, [SP]
+    STR X2, [SP, 8]
+    STR X3, [SP, 16]
+    STR X4, [SP, 24]
+    STR X7, [SP, 32]
+    STR X30, [SP, 40]
+    
+    MOV X1, 166
+    MOV X2, 299
+    MOV X3, 172
+    MOV X4, 303
+    LDR X7, =KHAKI
+    BL dibujar_rectangulo
+
+    MOV X1, 166
+    MOV X2, 304
+    MOV X3, 167
+    MOV X4, 307
+    LDR X7, =KHAKI
+    BL dibujar_rectangulo
+    
+    MOV X1, 173
+    MOV X2, 299
+    MOV X3, 173
+    MOV X4, 303
+    LDR X7, =DIMGRAY
+    BL dibujar_rectangulo
+
+    MOV X1, 170
+    MOV X2, 307
+    MOV X3, 172
+    MOV X4, 307
+    LDR X7, =DIMGRAY
+    BL dibujar_rectangulo
+    
+    MOV X1, 168
+    MOV X2, 308
+    MOV X3, 169
+    MOV X4, 315
+    LDR X7, =DIMGRAY
+    BL dibujar_rectangulo
+
+    MOV X1, 161
+    MOV X2, 312
+    MOV X3, 165
+    MOV X4, 312
+    LDR X7, =DIMGRAY
+    BL dibujar_rectangulo
+
+    MOV X1, 164
+    MOV X2, 313
+    MOV X3, 165
+    MOV X4, 315
+    LDR X7, =DIMGRAY
+    BL dibujar_rectangulo
+    
+    MOV X1, 166
+    MOV X2, 316
+    MOV X3, 167
+    MOV X4, 317
+    LDR X7, =DARKSLATEGRAY_1
+    BL dibujar_rectangulo
+    
+    MOV X1, 173
+    MOV X2, 304
+    MOV X3, 173
+    MOV X4, 307
+    LDR X7, =DARKSLATEGRAY_1
+    BL dibujar_rectangulo
+
+    MOV X1, 161
+    MOV X2, 307
+    MOV X3, 163
+    MOV X4, 307
+    LDR X7, =DARKSLATEGRAY_1
+    BL dibujar_rectangulo
+
+    MOV X1, 168
+    MOV X2, 304
+    MOV X3, 172
+    MOV X4, 306
+    LDR X7, =DARKOLIVEGREEN
+    BL dibujar_rectangulo
+
+    MOV X1, 168
+    MOV X2, 307
+    MOV X3, 169
+    MOV X4, 307
+    LDR X7, =DARKOLIVEGREEN
+    BL dibujar_rectangulo
+    
+    MOV X1, 166
+    MOV X2, 308
+    MOV X3, 167
+    MOV X4, 315
+    LDR X7, =DARKOLIVEGREEN
+    BL dibujar_rectangulo
+
+    MOV X1, 164
+    MOV X2, 304
+    MOV X3, 165
+    MOV X4, 311
+    LDR X7, =DARKOLIVEGREEN
+    BL dibujar_rectangulo
+
+    MOV X1, 161
+    MOV X2, 308
+    MOV X3, 163
+    MOV X4, 311
+    LDR X7, =DARKOLIVEGREEN
+    BL dibujar_rectangulo
+
+    MOV X1, 160
+    MOV X2, 308
+    MOV X3, 160
+    MOV X4, 315
+    LDR X7, =DARKSLATEGRAY_2
+    BL dibujar_rectangulo
+
+    MOV X1, 159
+    MOV X2, 312
+    MOV X3, 159
+    MOV X4, 315
+    LDR X7, =DARKSLATEGRAY_2
+    BL dibujar_rectangulo
+    
+    MOV X1, 157
+    MOV X2, 313
+    MOV X3, 158
+    MOV X4, 315
+    LDR X7, =DARKSLATEGRAY_2
+    BL dibujar_rectangulo
+
+    MOV X1, 160
+    MOV X2, 307
+    LDR X7, =BLACK_2
+    BL dibujar_pixel
+    
+    MOV X1, 164
+    MOV X2, 316
+    MOV X3, 165
+    MOV X4, 323
+    LDR X7, =BLACK_2
+    BL dibujar_rectangulo
+    
+    MOV X1, 161
+    MOV X2, 313
+    MOV X3, 163
+    MOV X4, 325
+    LDR X7, =BLACK_2
+    BL dibujar_rectangulo
 
 
-
+    // PUSH(X30)
+    LDR X30, [SP, 40]
+    LDR X7, [SP, 32]
+    LDR X4, [SP, 24]
+    LDR X3, [SP, 16]
+    LDR X2, [SP, 8]
+    LDR X1, [SP] 
+    ADD SP, SP, #48
+    
+    RET
 .endif
 

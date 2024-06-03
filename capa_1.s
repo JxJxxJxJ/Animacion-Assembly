@@ -30,6 +30,7 @@ capa_1: // Todas las rutinas que dibujen sprites iran aqui,
         BL hombre_0
         BL luciernagaf1
         BL celularUP_1
+        BL brazoUP_0
 
     /*             END FRAME 1                */
     /*                                        */
@@ -44,7 +45,9 @@ capa_1: // Todas las rutinas que dibujen sprites iran aqui,
         BL lampara_1
         BL perro_1
         BL hombre_1
+        BL celularUP_1
         BL luciernagaf2
+        BL brazoUP_1
         
     /*             END FRAME 2                */
     /*                                        */
@@ -58,7 +61,9 @@ capa_1: // Todas las rutinas que dibujen sprites iran aqui,
         BL lampara_0_fondo_3
         BL perro_0
         BL hombre_0
+        BL celularUP_1
         BL luciernagaf3
+        BL brazoUP_0
     /*             END FRAME 3                */
     /*                                        */
     /******************************************/
@@ -71,7 +76,9 @@ capa_1: // Todas las rutinas que dibujen sprites iran aqui,
         BL lampara_1
         BL perro_1
         BL hombre_1
+        BL celularUP_1
         BL luciernagaf4
+        BL brazoUP_1
         
     /*             END FRAME 4                */
     /*                                        */
@@ -290,7 +297,8 @@ capa_1: // Todas las rutinas que dibujen sprites iran aqui,
     /*                 FRAME 24               */
     /*                                        */
         BL luciernagaf24
-    //    BL celularDOWN_1
+        BL celularDOWN_1
+        BL brazoDOWN_1
     /*             END FRAME 24               */
     /*                                        */
     /******************************************/
@@ -301,7 +309,8 @@ capa_1: // Todas las rutinas que dibujen sprites iran aqui,
     /*                 FRAME 25               */
     /*                                        */
         BL luciernagaf25
-    //    BL celularDOWN_0
+        BL celularDOWN_0
+        BL hombre_1
     /*             END FRAME 25               */
     /*                                        */
     /******************************************/
@@ -313,6 +322,8 @@ capa_1: // Todas las rutinas que dibujen sprites iran aqui,
     /*                                        */
         BL luciernagaf26
         BL celularUP_0
+        BL hombre_1
+        BL brazoUP_1
     /*             END FRAME 26               */
     /*                                        */
     /******************************************/
@@ -345,7 +356,8 @@ capa_1: // Todas las rutinas que dibujen sprites iran aqui,
     /*                 FRAME 29               */
     /*                                        */
         BL luciernagaf29
-        BL celularUP_0    
+        BL celularUP_0
+        Bl hombre_1    
     /*             END FRAME 29               */
     /*                                        */
     /******************************************/
@@ -389,7 +401,8 @@ capa_1: // Todas las rutinas que dibujen sprites iran aqui,
     /*                 FRAME 33               */
     /*                                        */
        BL luciernagaf33
-       BL celularUP_0    
+       BL celularUP_0
+       BL hombre_1    
     /*             END FRAME 33               */
     /*                                        */
     /******************************************/
@@ -415,6 +428,7 @@ capa_1: // Todas las rutinas que dibujen sprites iran aqui,
         BL perro_0_azul
         BL hombre_0
         BL celularUP_1
+        BL brazoUP_0
     /*             END FRAME 35               */
     /*                                        */
     /******************************************/
@@ -440,6 +454,7 @@ capa_1: // Todas las rutinas que dibujen sprites iran aqui,
         BL perro_1
         BL hombre_1
         BL celularUP_1
+        BL brazoUP_1
     /*             END FRAME 37               */
     /*                                        */
     /******************************************/
@@ -451,6 +466,7 @@ capa_1: // Todas las rutinas que dibujen sprites iran aqui,
     /*                                        */
         BL luciernagaf38
         BL celularUP_0    
+        BL hombre_1
     /*             END FRAME 38               */
     /*                                        */
     /******************************************/
@@ -465,6 +481,7 @@ capa_1: // Todas las rutinas que dibujen sprites iran aqui,
         BL perro_0
         BL hombre_0
         BL celularUP_0
+        BL brazoUP_0
     /*             END FRAME 39               */
     /*                                        */
     /******************************************/
@@ -543,6 +560,7 @@ capa_1: // Todas las rutinas que dibujen sprites iran aqui,
         BL fondo_2
         BL lampara_0_fondo_2
         BL hombre_0
+        BL celularUP_1
         BL luciernagaf46
     /*             END FRAME 46               */
     /*                                        */
@@ -578,6 +596,7 @@ capa_1: // Todas las rutinas que dibujen sprites iran aqui,
         BL fondo_1
         BL lampara_0_fondo_1
         BL hombre_0
+        BL celularUP_1
         
     /*             END FRAME 49               */
     /*                                        */
@@ -621,6 +640,7 @@ capa_1: // Todas las rutinas que dibujen sprites iran aqui,
         BL fondo_0
         BL lampara_0_fondo_0
         BL hombre_0
+        BL celularUP_1
     /*             END FRAME 53               */
     /*                                        */
     /******************************************/
@@ -813,6 +833,7 @@ capa_1: // Todas las rutinas que dibujen sprites iran aqui,
         BL fondo_1
         BL lampara_0_fondo_1
         BL hombre_0
+        BL celularUP_1
     /*             END FRAME 72               */
     /*                                        */
     /******************************************/
@@ -865,6 +886,7 @@ capa_1: // Todas las rutinas que dibujen sprites iran aqui,
         BL fondo_2
         BL lampara_0_fondo_2
         BL hombre_0
+        BL celularUP_1
     /*             END FRAME 77               */
     /*                                        */
     /******************************************/
@@ -907,6 +929,7 @@ capa_1: // Todas las rutinas que dibujen sprites iran aqui,
         BL fondo_3
         BL lampara_0_fondo_3
         BL hombre_0
+        BL celularUP_1
     /*             END FRAME 81               */
     /*                                        */
     /******************************************/
