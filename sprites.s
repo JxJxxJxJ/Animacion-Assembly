@@ -16909,7 +16909,1574 @@ brazoDOWN_1:
     LDR X7, =BLACK_2
     BL dibujar_rectangulo
 
+    MOV X1, 166
+    MOV X2, 313
+    MOV X3, 169
+    MOV X4, 319
+    LDR X7, =BLACK_3
+    BL dibujar_rectangulo
+    
+    
 
+    // PUSH(X30)
+    LDR X30, [SP, 40]
+    LDR X7, [SP, 32]
+    LDR X4, [SP, 24]
+    LDR X3, [SP, 16]
+    LDR X2, [SP, 8]
+    LDR X1, [SP] 
+    ADD SP, SP, #48
+    
+    RET
+
+
+
+varanda_1:
+    // PUSH(X30)
+    SUB SP, SP, 48
+    STR X1, [SP]
+    STR X2, [SP, 8]
+    STR X3, [SP, 16]
+    STR X4, [SP, 24]
+    STR X7, [SP, 32]
+    STR X30, [SP, 40]
+    
+    
+    MOV X1, 188
+    MOV X2, 308
+    MOV X3, 222
+    MOV X4, 311
+    LDR X7, =CIELO_3
+    BL dibujar_rectangulo
+
+    MOV X1, 85
+    MOV X2, 348
+    MOV X3, 87
+    MOV X4, 358
+    LDR X7, =CIELO_3
+    BL dibujar_rectangulo
+    
+    MOV X1, 84
+    MOV X2, 382
+    MOV X3, 87
+    MOV X4, 385
+    LDR X7, =CIELO_3
+    BL dibujar_rectangulo
+    
+    MOV X1, 81
+    MOV X2, 308
+    MOV X3, 91
+    MOV X4, 311
+    LDR X7, =CIELO_3
+    BL dibujar_rectangulo
+
+    MOV X1, 65
+    MOV X2, 308
+    MOV X3, 67
+    MOV X4, 311
+    LDR X7, =CIELO_3
+    BL dibujar_rectangulo
+
+    MOV X1, 206
+    MOV X2, 351
+    MOV X3, 210
+    MOV X4, 352
+    LDR X7, =CIELO_3
+    BL dibujar_rectangulo
+
+    MOV X1, 210
+    MOV X2, 353
+    MOV X3, 210
+    MOV X4, 355
+    LDR X7, =CIELO_3
+    BL dibujar_rectangulo
+
+    MOV X1, 227
+    MOV X2, 308
+    MOV X3, 229
+    MOV X4, 311
+    LDR X7, =CIELO_3
+    BL dibujar_rectangulo
+
+
+    MOV X1, 238
+    MOV X2, 338
+    MOV X3, 241
+    MOV X4, 437
+    LDR X7, =BLACK_1
+    BL dibujar_rectangulo
+    
+
+    MOV X1, 242
+    MOV X2, 343
+    MOV X3, 245
+    MOV X4, 432
+    LDR X7, =BLACK_1
+    BL dibujar_rectangulo
+    
+    MOV X1, 242
+    MOV X2, 433
+    MOV X3, 244
+    MOV X4, 433
+    LDR X7, =BLACK_1
+    BL dibujar_rectangulo
+
+    MOV X1, 235
+    MOV X2, 404
+    MOV X3, 237
+    MOV X4, 441
+    LDR X7, =BLACK_1
+    BL dibujar_rectangulo
+
+    MOV X1, 235
+    MOV X2, 334
+    MOV X3, 237
+    MOV X4, 385
+    LDR X7, =BLACK_1
+    BL dibujar_rectangulo
+
+    MOV X1, 227
+    MOV X2, 322
+    MOV X3, 276
+    MOV X4, 325
+    LDR X7, =BLACK_1
+    BL dibujar_rectangulo
+
+    MOV X1, 231
+    MOV X2, 313
+    MOV X3, 276
+    MOV X4, 320
+    LDR X7, =BLACK_1
+    BL dibujar_rectangulo
+
+    MOV X1, 249
+    MOV X2, 308
+    MOV X3, 276
+    MOV X4, 312
+    LDR X7, =BLACK_1
+    BL dibujar_rectangulo
+
+    MOV X1, 242
+    MOV X2, 312
+    MOV X3, 248
+    MOV X4, 312
+    LDR X7, =BLACK_1
+    BL dibujar_rectangulo
+
+    MOV X1, 235
+    MOV X2, 312
+    MOV X3, 237
+    MOV X4, 312
+    LDR X7, =BLACK_1
+    BL dibujar_rectangulo
+
+    MOV X1, 216
+    MOV X2, 430
+    MOV X3, 234
+    MOV X4, 441
+    LDR X7, =BLACK_1
+    BL dibujar_rectangulo
+
+    MOV X1, 127
+    MOV X2, 430
+    MOV X3, 137
+    MOV X4, 441
+    LDR X7, =BLACK_1
+    BL dibujar_rectangulo
+
+    MOV X1, 166
+    MOV X2, 430
+    MOV X3, 172
+    MOV X4, 441
+    LDR X7, =BLACK_1
+    BL dibujar_rectangulo
+
+    MOV X1, 161
+    MOV X2, 430
+    MOV X3, 165
+    MOV X4, 437
+    LDR X7, =BLACK_1
+    BL dibujar_rectangulo
+
+    MOV X1, 46
+    MOV X2, 430
+    MOV X3, 110
+    MOV X4, 441
+    LDR X7, =BLACK_1
+    BL dibujar_rectangulo
+
+    MOV X1, 85
+    MOV X2, 412
+    MOV X3, 87
+    MOV X4, 429
+    LDR X7, =BLACK_1
+    BL dibujar_rectangulo
+
+    MOV X1, 57
+    MOV X2, 346
+    MOV X3, 64
+    MOV X4, 449
+    LDR X7, =BLACK_1
+    BL dibujar_rectangulo
+
+    MOV X1, 54
+    MOV X2, 338
+    MOV X3, 56
+    MOV X4, 446
+    LDR X7, =BLACK_1
+    BL dibujar_rectangulo
+
+    MOV X1, 50
+    MOV X2, 334
+    MOV X3, 53
+    MOV X4, 429
+    LDR X7, =BLACK_1
+    BL dibujar_rectangulo
+
+    MOV X1, 42
+    MOV X2, 312
+    MOV X3, 48
+    MOV X4, 328
+    LDR X7, =BLACK_1
+    BL dibujar_rectangulo
+
+    MOV X1, 49
+    MOV X2, 313
+    MOV X3, 53
+    MOV X4, 328
+    LDR X7, =BLACK_1
+    BL dibujar_rectangulo
+
+    MOV X1, 54
+    MOV X2, 326
+    MOV X3, 91
+    MOV X4, 328
+    LDR X7, =BLACK_1
+    BL dibujar_rectangulo
+    
+    MOV X1, 161
+    MOV X2, 326
+    MOV X3, 272
+    MOV X4, 328
+    LDR X7, =BLACK_1
+    BL dibujar_rectangulo
+    
+    MOV X1, 177
+    MOV X2, 343
+    MOV X3, 180
+    MOV X4, 359
+    LDR X7, =BLACK_1
+    BL dibujar_rectangulo
+
+    MOV X1, 177
+    MOV X2, 368
+    MOV X3, 180
+    MOV X4, 377
+    LDR X7, =BLACK_1
+    BL dibujar_rectangulo
+
+    MOV X1, 177
+    MOV X2, 386
+    MOV X3, 178
+    MOV X4, 399
+    LDR X7, =BLACK_1
+    BL dibujar_rectangulo
+
+    MOV X1, 179
+    MOV X2, 386
+    MOV X3, 180
+    MOV X4, 397
+    LDR X7, =BLACK_1
+    BL dibujar_rectangulo
+
+    MOV X1, 177
+    MOV X2, 408
+    MOV X3, 180
+    MOV X4, 411
+    LDR X7, =BLACK_1
+    BL dibujar_rectangulo
+
+    MOV X1, 218
+    MOV X2, 321
+    MOV X3, 222
+    MOV X4, 325
+    LDR X7, =BLACK_1
+    BL dibujar_rectangulo
+
+    MOV X1, 223
+    MOV X2, 313
+    MOV X3, 226
+    MOV X4, 320
+    LDR X7, =BLACK_1
+    BL dibujar_rectangulo
+
+    MOV X1, 89
+    MOV X2, 373
+    MOV X3, 91
+    MOV X4, 377
+    LDR X7, =BLACK_1
+    BL dibujar_rectangulo
+
+    MOV X1, 89
+    MOV X2, 403
+    MOV X3, 91
+    MOV X4, 407
+    LDR X7, =BLACK_1
+    BL dibujar_rectangulo
+
+    MOV X1, 88
+    MOV X2, 420
+    MOV X3, 91
+    MOV X4, 429
+    LDR X7, =BLACK_1
+    BL dibujar_rectangulo
+
+    MOV X1, 88
+    MOV X2, 408
+    MOV X3, 88
+    MOV X4, 411
+    LDR X7, =BLACK_1
+    BL dibujar_rectangulo
+
+    MOV X1, 88
+    MOV X2, 334
+    MOV X3, 88
+    MOV X4, 337
+    LDR X7, =BLACK_1
+    BL dibujar_rectangulo
+
+    MOV X1, 166
+    MOV X2, 313
+    MOV X3, 222
+    MOV X4, 320
+    LDR X7, =FONDO_VARANDA_0
+    BL dibujar_rectangulo
+
+    MOV X1, 166
+    MOV X2, 321
+    MOV X3, 217
+    MOV X4, 325
+    LDR X7, =FONDO_VARANDA_0
+    BL dibujar_rectangulo
+
+    MOV X1, 223
+    MOV X2, 321
+    MOV X3, 226
+    MOV X4, 325
+    LDR X7, =FONDO_VARANDA_0
+    BL dibujar_rectangulo
+    
+    MOV X1, 227
+    MOV X2, 313
+    MOV X3, 230
+    MOV X4, 320
+    LDR X7, =FONDO_VARANDA_0
+    BL dibujar_rectangulo
+
+    MOV X1, 242
+    MOV X2, 308
+    MOV X3, 248
+    MOV X4, 311
+    LDR X7, =FONDO_VARANDA_0
+    BL dibujar_rectangulo
+    
+    MOV X1, 234
+    MOV X2, 308
+    MOV X3, 237
+    MOV X4, 311
+    LDR X7, =FONDO_VARANDA_0
+    BL dibujar_rectangulo
+
+    MOV X1, 238
+    MOV X2, 312
+    MOV X3, 241
+    MOV X4, 312
+    LDR X7, =FONDO_VARANDA_0
+    BL dibujar_rectangulo
+
+    MOV X1, 231
+    MOV X2, 312
+    MOV X3, 234
+    MOV X4, 312
+    LDR X7, =FONDO_VARANDA_0
+    BL dibujar_rectangulo
+
+    MOV X1, 223
+    MOV X2, 312
+    MOV X3, 224
+    MOV X4, 312
+    LDR X7, =FONDO_VARANDA_0
+    BL dibujar_rectangulo
+
+    MOV X1, 54
+    MOV X2, 313
+    MOV X3, 91
+    MOV X4, 325
+    LDR X7, =FONDO_VARANDA_0
+    BL dibujar_rectangulo
+
+
+    MOV X1, 207
+    MOV X2, 353
+    MOV X3, 209
+    MOV X4, 355
+    LDR X7, =DARKTURQUOISE
+    BL dibujar_rectangulo
+    
+    MOV X1, 207
+    MOV X2, 356
+    MOV X3, 209
+    MOV X4, 358
+    LDR X7, =CIELO_3
+    BL dibujar_rectangulo
+    
+    MOV X1, 210
+    MOV X2, 356
+    MOV X3, 210
+    MOV X4, 359
+    LDR X7, =CIELO_1
+    BL dibujar_rectangulo
+    
+    MOV X1, 207
+    MOV X2, 359
+    MOV X3, 210
+    MOV X4, 359
+    LDR X7, =CIELO_1
+    BL dibujar_rectangulo
+    
+    MOV X1, 207
+    MOV X2, 338
+    MOV X3, 210
+    MOV X4, 350
+    LDR X7, =DARKSLATEGRAY_3
+    BL dibujar_rectangulo
+    
+    MOV X1, 207
+    MOV X2, 360
+    MOV X3, 210
+    MOV X4, 363
+    LDR X7, =DARKSLATEGRAY_3
+    BL dibujar_rectangulo
+
+    MOV X1, 207
+    MOV X2, 368
+    MOV X3, 210
+    MOV X4, 377
+    LDR X7, =DARKSLATEGRAY_3
+    BL dibujar_rectangulo
+
+    MOV X1, 85
+    MOV X2, 360
+    MOV X3, 87
+    MOV X4, 372
+    LDR X7, =DARKSLATEGRAY_3
+    BL dibujar_rectangulo
+
+    MOV X1, 85
+    MOV X2, 387
+    MOV X3, 87
+    MOV X4, 394
+    LDR X7, =DARKSLATEGRAY_3
+    BL dibujar_rectangulo
+
+    MOV X1, 85
+    MOV X2, 403
+    MOV X3, 87
+    MOV X4, 407
+    LDR X7, =DARKSLATEGRAY_3
+    BL dibujar_rectangulo
+
+    MOV X1, 85
+    MOV X2, 378
+    MOV X3, 87
+    MOV X4, 380
+    LDR X7, =DARKSLATEGRAY_3
+    BL dibujar_rectangulo
+
+    MOV X1, 85
+    MOV X2, 338
+    MOV X3, 87
+    MOV X4, 345
+    LDR X7, =DARKSLATEGRAY_3
+    BL dibujar_rectangulo
+
+    MOV X1, 70
+    MOV X2, 312
+    MOV X3, 80
+    MOV X4, 312
+    LDR X7, =DARKSLATEGRAY_3
+    BL dibujar_rectangulo
+
+    MOV X1, 61
+    MOV X2, 312
+    MOV X3, 64
+    MOV X4, 312
+    LDR X7, =DARKSLATEGRAY_3
+    BL dibujar_rectangulo
+
+    MOV X1, 50
+    MOV X2, 308
+    MOV X3, 60
+    MOV X4, 311
+    LDR X7, =DARKSLATEGRAY_3
+    BL dibujar_rectangulo
+
+    MOV X1, 42
+    MOV X2, 308
+    MOV X3, 49
+    MOV X4, 311
+    LDR X7, =FONDO_VARANDA_0
+    BL dibujar_rectangulo
+    
+    MOV X1, 49
+    MOV X2, 312
+    MOV X3, 60
+    MOV X4, 312
+    LDR X7, =FONDO_VARANDA_0
+    BL dibujar_rectangulo
+    
+    MOV X1, 177
+    MOV X2, 360
+    MOV X3, 180
+    MOV X4, 367
+    LDR X7, =FONDO_VARANDA_0
+    BL dibujar_rectangulo
+
+    MOV X1, 177
+    MOV X2, 378
+    MOV X3, 180
+    MOV X4, 381
+    LDR X7, =FONDO_VARANDA_0
+    BL dibujar_rectangulo
+
+    MOV X1, 207
+    MOV X2, 334
+    MOV X3, 210
+    MOV X4, 337
+    LDR X7, =FONDO_VARANDA_0
+    BL dibujar_rectangulo
+
+    MOV X1, 207
+    MOV X2, 364
+    MOV X3, 210
+    MOV X4, 367
+    LDR X7, =FONDO_VARANDA_0
+    BL dibujar_rectangulo
+
+    MOV X1, 207
+    MOV X2, 378
+    MOV X3, 210
+    MOV X4, 380
+    LDR X7, =FONDO_VARANDA_0
+    BL dibujar_rectangulo
+
+    MOV X1, 85
+    MOV X2, 373
+    MOV X3, 87
+    MOV X4, 377
+    LDR X7, =FONDO_VARANDA_0
+    BL dibujar_rectangulo
+
+    MOV X1, 85
+    MOV X2, 395
+    MOV X3, 87
+    MOV X4, 402
+    LDR X7, =FONDO_VARANDA_0
+    BL dibujar_rectangulo
+
+    MOV X1, 85
+    MOV X2, 408
+    MOV X3, 87
+    MOV X4, 411
+    LDR X7, =FONDO_VARANDA_0
+    BL dibujar_rectangulo
+
+    MOV X1, 85
+    MOV X2, 334
+    MOV X3, 87
+    MOV X4, 337
+    LDR X7, =FONDO_VARANDA_0
+    BL dibujar_rectangulo
+
+    MOV X1, 88
+    MOV X2, 387
+    MOV X3, 88
+    MOV X4, 407
+    LDR X7, =FONDO_VARANDA_0
+    BL dibujar_rectangulo
+
+    MOV X1, 88
+    MOV X2, 360
+    MOV X3, 88
+    MOV X4, 380
+    LDR X7, =FONDO_VARANDA_0
+    BL dibujar_rectangulo
+
+    MOV X1, 88
+    MOV X2, 338
+    MOV X3, 88
+    MOV X4, 345
+    LDR X7, =FONDO_VARANDA_0
+    BL dibujar_rectangulo
+
+    MOV X1, 85
+    MOV X2, 346
+    MOV X3, 87
+    MOV X4, 347
+    LDR X7, =CIELO_0
+    BL dibujar_rectangulo
+    
+    MOV X1, 85
+    MOV X2, 359
+    MOV X3, 87
+    MOV X4, 359
+    LDR X7, =CIELO_0
+    BL dibujar_rectangulo
+
+    MOV X1, 88
+    MOV X2, 348
+    MOV X3, 88
+    MOV X4, 357
+    LDR X7, =STEELBLUE_2
+    BL dibujar_rectangulo
+    
+    MOV X1, 88
+    MOV X2, 346
+    MOV X3, 88
+    MOV X4, 347
+    LDR X7, =DARKSLATEGRAY_3
+    BL dibujar_rectangulo
+
+    MOV X1, 88
+    MOV X2, 358
+    MOV X3, 88
+    MOV X4, 359
+    LDR X7, =DARKSLATEGRAY_3
+    BL dibujar_rectangulo
+    
+    
+    MOV X1, 88
+    MOV X2, 381
+    MOV X3, 88
+    MOV X4, 386
+    LDR X7, =STEELBLUE_2
+    BL dibujar_rectangulo
+    
+    MOV X1, 85
+    MOV X2, 386
+    MOV X3, 87
+    MOV X4, 386
+    LDR X7, =STEELBLUE_2
+    BL dibujar_rectangulo
+
+    MOV X1, 85
+    MOV X2, 381
+    MOV X3, 87
+    MOV X4, 381
+    LDR X7, =CIELO_0
+    BL dibujar_rectangulo
+    
+    MOV X1, 70
+    MOV X2, 308
+    MOV X3, 80
+    MOV X4, 311
+    LDR X7, =STEELBLUE_2
+    BL dibujar_rectangulo
+    
+    MOV X1, 81
+    MOV X2, 312
+    MOV X3, 91
+    MOV X4, 312
+    LDR X7, =STEELBLUE_2
+    BL dibujar_rectangulo
+    
+    MOV X1, 61
+    MOV X2, 308
+    MOV X3, 64
+    MOV X4, 311
+    LDR X7, =STEELBLUE_2
+    BL dibujar_rectangulo
+
+    MOV X1, 65
+    MOV X2, 312
+    MOV X3, 67
+    MOV X4, 312
+    LDR X7, =STEELBLUE_2
+    BL dibujar_rectangulo
+
+    MOV X1, 68
+    MOV X2, 308
+    MOV X3, 69
+    MOV X4, 311
+    LDR X7, =CIELO_2
+    BL dibujar_rectangulo
+    
+    MOV X1, 68
+    MOV X2, 312
+    MOV X3, 69
+    MOV X4, 312
+    LDR X7, =DETALLE_VENTANA_0
+    BL dibujar_rectangulo
+    
+    MOV X1, 177
+    MOV X2, 308
+    MOV X3, 187
+    MOV X4, 311
+    LDR X7, =STEELBLUE_2
+    BL dibujar_rectangulo
+    
+    MOV X1, 188
+    MOV X2, 312
+    MOV X3, 222
+    MOV X4, 312
+    LDR X7, =STEELBLUE_2
+    BL dibujar_rectangulo
+    
+    
+    MOV X1, 223
+    MOV X2, 308
+    MOV X3, 226
+    MOV X4, 311
+    LDR X7, =DARKSLATEGRAY_3
+    BL dibujar_rectangulo
+    
+    MOV X1, 231
+    MOV X2, 308
+    MOV X3, 233
+    MOV X4, 311
+    LDR X7, =DARKSLATEGRAY_3
+    BL dibujar_rectangulo
+
+    MOV X1, 238
+    MOV X2, 308
+    MOV X3, 241
+    MOV X4, 311
+    LDR X7, =DARKSLATEGRAY_3
+    BL dibujar_rectangulo
+
+
+    MOV X1, 225
+    MOV X2, 312
+    MOV X3, 226
+    MOV X4, 312
+    LDR X7, =DARKSLATEGRAY_3
+    BL dibujar_rectangulo
+
+    MOV X1, 227
+    MOV X2, 312
+    MOV X3, 230
+    MOV X4, 312
+    LDR X7, =STEELBLUE_2
+    BL dibujar_rectangulo
+    
+    MOV X1, 230
+    MOV X2, 308
+    MOV X3, 230
+    MOV X4, 311
+    LDR X7, =CIELO_0
+    BL dibujar_rectangulo
+    
+    MOV X1, 170
+    MOV X2, 308
+    MOV X3, 176
+    MOV X4, 311
+    LDR X7, =DARKSLATEGRAY_3
+    BL dibujar_rectangulo
+    
+    MOV X1, 177
+    MOV X2, 312
+    MOV X3, 187
+    MOV X4, 312
+    LDR X7, =DARKSLATEGRAY_3
+    BL dibujar_rectangulo
+
+    MOV X1, 170
+    MOV X2, 312
+    MOV X3, 176
+    MOV X4, 312
+    LDR X7, =FONDO_VARANDA_0
+    BL dibujar_rectangulo
+    
+    
+    // PUSH(X30)
+    LDR X30, [SP, 40]
+    LDR X7, [SP, 32]
+    LDR X4, [SP, 24]
+    LDR X3, [SP, 16]
+    LDR X2, [SP, 8]
+    LDR X1, [SP] 
+    ADD SP, SP, #48
+    
+    RET
+
+
+varanda_0:
+    // PUSH(X30)
+    SUB SP, SP, 48
+    STR X1, [SP]
+    STR X2, [SP, 8]
+    STR X3, [SP, 16]
+    STR X4, [SP, 24]
+    STR X7, [SP, 32]
+    STR X30, [SP, 40]
+    
+    
+    MOV X1, 188
+    MOV X2, 308
+    MOV X3, 222
+    MOV X4, 311
+    LDR X7, =BLACK_0
+    BL dibujar_rectangulo
+
+    MOV X1, 85
+    MOV X2, 348
+    MOV X3, 87
+    MOV X4, 358
+    LDR X7, =BLACK_0
+    BL dibujar_rectangulo
+    
+    MOV X1, 84
+    MOV X2, 382
+    MOV X3, 87
+    MOV X4, 385
+    LDR X7, =BLACK_0
+    BL dibujar_rectangulo
+    
+    MOV X1, 81
+    MOV X2, 308
+    MOV X3, 91
+    MOV X4, 311
+    LDR X7, =BLACK_0
+    BL dibujar_rectangulo
+
+    MOV X1, 65
+    MOV X2, 308
+    MOV X3, 67
+    MOV X4, 311
+    LDR X7, =BLACK_0
+    BL dibujar_rectangulo
+
+    MOV X1, 206
+    MOV X2, 351
+    MOV X3, 210
+    MOV X4, 352
+    LDR X7, =BLACK_0
+    BL dibujar_rectangulo
+
+    MOV X1, 210
+    MOV X2, 353
+    MOV X3, 210
+    MOV X4, 355
+    LDR X7, =BLACK_0
+    BL dibujar_rectangulo
+
+    MOV X1, 227
+    MOV X2, 308
+    MOV X3, 229
+    MOV X4, 311
+    LDR X7, =BLACK_0
+    BL dibujar_rectangulo
+
+
+    MOV X1, 238
+    MOV X2, 338
+    MOV X3, 241
+    MOV X4, 437
+    LDR X7, =BLACK_0
+    BL dibujar_rectangulo
+    
+
+    MOV X1, 242
+    MOV X2, 343
+    MOV X3, 245
+    MOV X4, 432
+    LDR X7, =BLACK_0
+    BL dibujar_rectangulo
+    
+    MOV X1, 242
+    MOV X2, 433
+    MOV X3, 244
+    MOV X4, 433
+    LDR X7, =BLACK_0
+    BL dibujar_rectangulo
+
+    MOV X1, 235
+    MOV X2, 404
+    MOV X3, 237
+    MOV X4, 441
+    LDR X7, =BLACK_0
+    BL dibujar_rectangulo
+
+    MOV X1, 235
+    MOV X2, 334
+    MOV X3, 237
+    MOV X4, 385
+    LDR X7, =BLACK_0
+    BL dibujar_rectangulo
+
+    MOV X1, 227
+    MOV X2, 322
+    MOV X3, 276
+    MOV X4, 325
+    LDR X7, =BLACK_0
+    BL dibujar_rectangulo
+
+    MOV X1, 231
+    MOV X2, 313
+    MOV X3, 276
+    MOV X4, 320
+    LDR X7, =BLACK_0
+    BL dibujar_rectangulo
+
+    MOV X1, 249
+    MOV X2, 308
+    MOV X3, 276
+    MOV X4, 312
+    LDR X7, =BLACK_0
+    BL dibujar_rectangulo
+
+    MOV X1, 242
+    MOV X2, 312
+    MOV X3, 248
+    MOV X4, 312
+    LDR X7, =BLACK_0
+    BL dibujar_rectangulo
+
+    MOV X1, 235
+    MOV X2, 312
+    MOV X3, 237
+    MOV X4, 312
+    LDR X7, =BLACK_0
+    BL dibujar_rectangulo
+
+    MOV X1, 216
+    MOV X2, 430
+    MOV X3, 234
+    MOV X4, 441
+    LDR X7, =BLACK_0
+    BL dibujar_rectangulo
+
+    MOV X1, 127
+    MOV X2, 430
+    MOV X3, 137
+    MOV X4, 441
+    LDR X7, =BLACK_0
+    BL dibujar_rectangulo
+
+    MOV X1, 166
+    MOV X2, 430
+    MOV X3, 172
+    MOV X4, 441
+    LDR X7, =BLACK_0
+    BL dibujar_rectangulo
+
+    MOV X1, 161
+    MOV X2, 430
+    MOV X3, 165
+    MOV X4, 437
+    LDR X7, =BLACK_0
+    BL dibujar_rectangulo
+
+    MOV X1, 46
+    MOV X2, 430
+    MOV X3, 110
+    MOV X4, 441
+    LDR X7, =BLACK_0
+    BL dibujar_rectangulo
+
+    MOV X1, 85
+    MOV X2, 412
+    MOV X3, 87
+    MOV X4, 429
+    LDR X7, =BLACK_0
+    BL dibujar_rectangulo
+
+    MOV X1, 57
+    MOV X2, 346
+    MOV X3, 64
+    MOV X4, 449
+    LDR X7, =BLACK_0
+    BL dibujar_rectangulo
+
+    MOV X1, 54
+    MOV X2, 338
+    MOV X3, 56
+    MOV X4, 446
+    LDR X7, =BLACK_0
+    BL dibujar_rectangulo
+
+    MOV X1, 50
+    MOV X2, 334
+    MOV X3, 53
+    MOV X4, 429
+    LDR X7, =BLACK_0
+    BL dibujar_rectangulo
+
+    MOV X1, 42
+    MOV X2, 312
+    MOV X3, 48
+    MOV X4, 328
+    LDR X7, =BLACK_0
+    BL dibujar_rectangulo
+
+    MOV X1, 49
+    MOV X2, 313
+    MOV X3, 53
+    MOV X4, 328
+    LDR X7, =BLACK_0
+    BL dibujar_rectangulo
+
+    MOV X1, 54
+    MOV X2, 326
+    MOV X3, 91
+    MOV X4, 328
+    LDR X7, =BLACK_0
+    BL dibujar_rectangulo
+    
+    MOV X1, 161
+    MOV X2, 326
+    MOV X3, 272
+    MOV X4, 328
+    LDR X7, =BLACK_0
+    BL dibujar_rectangulo
+    
+    MOV X1, 177
+    MOV X2, 343
+    MOV X3, 180
+    MOV X4, 359
+    LDR X7, =BLACK_0
+    BL dibujar_rectangulo
+
+    MOV X1, 177
+    MOV X2, 368
+    MOV X3, 180
+    MOV X4, 377
+    LDR X7, =BLACK_0
+    BL dibujar_rectangulo
+
+    MOV X1, 177
+    MOV X2, 386
+    MOV X3, 178
+    MOV X4, 399
+    LDR X7, =BLACK_0
+    BL dibujar_rectangulo
+
+    MOV X1, 179
+    MOV X2, 386
+    MOV X3, 180
+    MOV X4, 397
+    LDR X7, =BLACK_0
+    BL dibujar_rectangulo
+
+    MOV X1, 177
+    MOV X2, 408
+    MOV X3, 180
+    MOV X4, 411
+    LDR X7, =BLACK_0
+    BL dibujar_rectangulo
+
+    MOV X1, 218
+    MOV X2, 321
+    MOV X3, 222
+    MOV X4, 325
+    LDR X7, =BLACK_0
+    BL dibujar_rectangulo
+
+    MOV X1, 223
+    MOV X2, 313
+    MOV X3, 226
+    MOV X4, 320
+    LDR X7, =BLACK_0
+    BL dibujar_rectangulo
+
+    MOV X1, 89
+    MOV X2, 373
+    MOV X3, 91
+    MOV X4, 377
+    LDR X7, =BLACK_0
+    BL dibujar_rectangulo
+
+    MOV X1, 89
+    MOV X2, 403
+    MOV X3, 91
+    MOV X4, 407
+    LDR X7, =BLACK_0
+    BL dibujar_rectangulo
+
+    MOV X1, 88
+    MOV X2, 420
+    MOV X3, 91
+    MOV X4, 429
+    LDR X7, =BLACK_0
+    BL dibujar_rectangulo
+
+    MOV X1, 88
+    MOV X2, 408
+    MOV X3, 88
+    MOV X4, 411
+    LDR X7, =BLACK_0
+    BL dibujar_rectangulo
+
+    MOV X1, 88
+    MOV X2, 334
+    MOV X3, 88
+    MOV X4, 337
+    LDR X7, =BLACK_0
+    BL dibujar_rectangulo
+
+    MOV X1, 166
+    MOV X2, 313
+    MOV X3, 222
+    MOV X4, 320
+    LDR X7, =BLACK_0
+    BL dibujar_rectangulo
+
+    MOV X1, 166
+    MOV X2, 321
+    MOV X3, 217
+    MOV X4, 325
+    LDR X7, =BLACK_0
+    BL dibujar_rectangulo
+
+    MOV X1, 223
+    MOV X2, 321
+    MOV X3, 226
+    MOV X4, 325
+    LDR X7, =BLACK_0
+    BL dibujar_rectangulo
+    
+    MOV X1, 227
+    MOV X2, 313
+    MOV X3, 230
+    MOV X4, 320
+    LDR X7, =BLACK_0
+    BL dibujar_rectangulo
+
+    MOV X1, 242
+    MOV X2, 308
+    MOV X3, 248
+    MOV X4, 311
+    LDR X7, =BLACK_0
+    BL dibujar_rectangulo
+    
+    MOV X1, 234
+    MOV X2, 308
+    MOV X3, 237
+    MOV X4, 311
+    LDR X7, =BLACK_0
+    BL dibujar_rectangulo
+
+    MOV X1, 238
+    MOV X2, 312
+    MOV X3, 241
+    MOV X4, 312
+    LDR X7, =BLACK_0
+    BL dibujar_rectangulo
+
+    MOV X1, 231
+    MOV X2, 312
+    MOV X3, 234
+    MOV X4, 312
+    LDR X7, =BLACK_0
+    BL dibujar_rectangulo
+
+    MOV X1, 223
+    MOV X2, 312
+    MOV X3, 224
+    MOV X4, 312
+    LDR X7, =BLACK_0
+    BL dibujar_rectangulo
+
+    MOV X1, 54
+    MOV X2, 313
+    MOV X3, 91
+    MOV X4, 325
+    LDR X7, =BLACK_0
+    BL dibujar_rectangulo
+
+
+    MOV X1, 207
+    MOV X2, 353
+    MOV X3, 209
+    MOV X4, 355
+    LDR X7, =BLACK_0
+    BL dibujar_rectangulo
+    
+    MOV X1, 207
+    MOV X2, 356
+    MOV X3, 209
+    MOV X4, 358
+    LDR X7, =BLACK_0
+    BL dibujar_rectangulo
+    
+    MOV X1, 210
+    MOV X2, 356
+    MOV X3, 210
+    MOV X4, 359
+    LDR X7, =BLACK_0
+    BL dibujar_rectangulo
+    
+    MOV X1, 207
+    MOV X2, 359
+    MOV X3, 210
+    MOV X4, 359
+    LDR X7, =BLACK_0
+    BL dibujar_rectangulo
+    
+    MOV X1, 207
+    MOV X2, 338
+    MOV X3, 210
+    MOV X4, 350
+    LDR X7, =BLACK_0
+    BL dibujar_rectangulo
+    
+    MOV X1, 207
+    MOV X2, 360
+    MOV X3, 210
+    MOV X4, 363
+    LDR X7, =BLACK_0
+    BL dibujar_rectangulo
+
+    MOV X1, 207
+    MOV X2, 368
+    MOV X3, 210
+    MOV X4, 377
+    LDR X7, =BLACK_0
+    BL dibujar_rectangulo
+
+    MOV X1, 85
+    MOV X2, 360
+    MOV X3, 87
+    MOV X4, 372
+    LDR X7, =BLACK_0
+    BL dibujar_rectangulo
+
+    MOV X1, 85
+    MOV X2, 387
+    MOV X3, 87
+    MOV X4, 394
+    LDR X7, =BLACK_0
+    BL dibujar_rectangulo
+
+    MOV X1, 85
+    MOV X2, 403
+    MOV X3, 87
+    MOV X4, 407
+    LDR X7, =BLACK_0
+    BL dibujar_rectangulo
+
+    MOV X1, 85
+    MOV X2, 378
+    MOV X3, 87
+    MOV X4, 380
+    LDR X7, =BLACK_0
+    BL dibujar_rectangulo
+
+    MOV X1, 85
+    MOV X2, 338
+    MOV X3, 87
+    MOV X4, 345
+    LDR X7, =BLACK_0
+    BL dibujar_rectangulo
+
+    MOV X1, 70
+    MOV X2, 312
+    MOV X3, 80
+    MOV X4, 312
+    LDR X7, =BLACK_0
+    BL dibujar_rectangulo
+
+    MOV X1, 61
+    MOV X2, 312
+    MOV X3, 64
+    MOV X4, 312
+    LDR X7, =BLACK_0
+    BL dibujar_rectangulo
+
+    MOV X1, 50
+    MOV X2, 308
+    MOV X3, 60
+    MOV X4, 311
+    LDR X7, =BLACK_0
+    BL dibujar_rectangulo
+
+    MOV X1, 42
+    MOV X2, 308
+    MOV X3, 49
+    MOV X4, 311
+    LDR X7, =BLACK_0
+    BL dibujar_rectangulo
+    
+    MOV X1, 49
+    MOV X2, 312
+    MOV X3, 60
+    MOV X4, 312
+    LDR X7, =BLACK_0
+    BL dibujar_rectangulo
+    
+    MOV X1, 177
+    MOV X2, 360
+    MOV X3, 180
+    MOV X4, 367
+    LDR X7, =BLACK_0
+    BL dibujar_rectangulo
+
+    MOV X1, 177
+    MOV X2, 378
+    MOV X3, 180
+    MOV X4, 381
+    LDR X7, =BLACK_0
+    BL dibujar_rectangulo
+
+    MOV X1, 207
+    MOV X2, 334
+    MOV X3, 210
+    MOV X4, 337
+    LDR X7, =BLACK_0
+    BL dibujar_rectangulo
+
+    MOV X1, 207
+    MOV X2, 364
+    MOV X3, 210
+    MOV X4, 367
+    LDR X7, =BLACK_0
+    BL dibujar_rectangulo
+
+    MOV X1, 207
+    MOV X2, 378
+    MOV X3, 210
+    MOV X4, 380
+    LDR X7, =BLACK_0
+    BL dibujar_rectangulo
+
+    MOV X1, 85
+    MOV X2, 373
+    MOV X3, 87
+    MOV X4, 377
+    LDR X7, =BLACK_0
+    BL dibujar_rectangulo
+
+    MOV X1, 85
+    MOV X2, 395
+    MOV X3, 87
+    MOV X4, 402
+    LDR X7, =BLACK_0
+    BL dibujar_rectangulo
+
+    MOV X1, 85
+    MOV X2, 408
+    MOV X3, 87
+    MOV X4, 411
+    LDR X7, =BLACK_0
+    BL dibujar_rectangulo
+
+    MOV X1, 85
+    MOV X2, 334
+    MOV X3, 87
+    MOV X4, 337
+    LDR X7, =BLACK_0
+    BL dibujar_rectangulo
+
+    MOV X1, 88
+    MOV X2, 387
+    MOV X3, 88
+    MOV X4, 407
+    LDR X7, =BLACK_0
+    BL dibujar_rectangulo
+
+    MOV X1, 88
+    MOV X2, 360
+    MOV X3, 88
+    MOV X4, 380
+    LDR X7, =BLACK_0
+    BL dibujar_rectangulo
+
+    MOV X1, 88
+    MOV X2, 338
+    MOV X3, 88
+    MOV X4, 345
+    LDR X7, =BLACK_0
+    BL dibujar_rectangulo
+
+    MOV X1, 85
+    MOV X2, 346
+    MOV X3, 87
+    MOV X4, 347
+    LDR X7, =BLACK_0
+    BL dibujar_rectangulo
+    
+    MOV X1, 85
+    MOV X2, 359
+    MOV X3, 87
+    MOV X4, 359
+    LDR X7, =BLACK_0
+    BL dibujar_rectangulo
+
+    MOV X1, 88
+    MOV X2, 348
+    MOV X3, 88
+    MOV X4, 357
+    LDR X7, =BLACK_0
+    BL dibujar_rectangulo
+    
+    MOV X1, 88
+    MOV X2, 346
+    MOV X3, 88
+    MOV X4, 347
+    LDR X7, =BLACK_0
+    BL dibujar_rectangulo
+
+    MOV X1, 88
+    MOV X2, 358
+    MOV X3, 88
+    MOV X4, 359
+    LDR X7, =BLACK_0
+    BL dibujar_rectangulo
+    
+    
+    MOV X1, 88
+    MOV X2, 381
+    MOV X3, 88
+    MOV X4, 386
+    LDR X7, =BLACK_0
+    BL dibujar_rectangulo
+    
+    MOV X1, 85
+    MOV X2, 386
+    MOV X3, 87
+    MOV X4, 386
+    LDR X7, =BLACK_0
+    BL dibujar_rectangulo
+
+    MOV X1, 85
+    MOV X2, 381
+    MOV X3, 87
+    MOV X4, 381
+    LDR X7, =BLACK_0
+    BL dibujar_rectangulo
+    
+    MOV X1, 70
+    MOV X2, 308
+    MOV X3, 80
+    MOV X4, 311
+    LDR X7, =BLACK_0
+    BL dibujar_rectangulo
+    
+    MOV X1, 81
+    MOV X2, 312
+    MOV X3, 91
+    MOV X4, 312
+    LDR X7, =BLACK_0
+    BL dibujar_rectangulo
+    
+    MOV X1, 61
+    MOV X2, 308
+    MOV X3, 64
+    MOV X4, 311
+    LDR X7, =BLACK_0
+    BL dibujar_rectangulo
+
+    MOV X1, 65
+    MOV X2, 312
+    MOV X3, 67
+    MOV X4, 312
+    LDR X7, =BLACK_0
+    BL dibujar_rectangulo
+
+    MOV X1, 68
+    MOV X2, 308
+    MOV X3, 69
+    MOV X4, 311
+    LDR X7, =BLACK_0
+    BL dibujar_rectangulo
+    
+    MOV X1, 68
+    MOV X2, 312
+    MOV X3, 69
+    MOV X4, 312
+    LDR X7, =BLACK_0
+    BL dibujar_rectangulo
+    
+    MOV X1, 177
+    MOV X2, 308
+    MOV X3, 187
+    MOV X4, 311
+    LDR X7, =BLACK_0
+    BL dibujar_rectangulo
+    
+    MOV X1, 188
+    MOV X2, 312
+    MOV X3, 222
+    MOV X4, 312
+    LDR X7, =BLACK_0
+    BL dibujar_rectangulo
+    
+    
+    MOV X1, 223
+    MOV X2, 308
+    MOV X3, 226
+    MOV X4, 311
+    LDR X7, =BLACK_0
+    BL dibujar_rectangulo
+    
+    MOV X1, 231
+    MOV X2, 308
+    MOV X3, 233
+    MOV X4, 311
+    LDR X7, =BLACK_0
+    BL dibujar_rectangulo
+
+    MOV X1, 238
+    MOV X2, 308
+    MOV X3, 241
+    MOV X4, 311
+    LDR X7, =BLACK_0
+    BL dibujar_rectangulo
+
+
+    MOV X1, 225
+    MOV X2, 312
+    MOV X3, 226
+    MOV X4, 312
+    LDR X7, =BLACK_0
+    BL dibujar_rectangulo
+
+    MOV X1, 227
+    MOV X2, 312
+    MOV X3, 230
+    MOV X4, 312
+    LDR X7, =BLACK_0
+    BL dibujar_rectangulo
+    
+    MOV X1, 230
+    MOV X2, 308
+    MOV X3, 230
+    MOV X4, 311
+    LDR X7, =BLACK_0
+    BL dibujar_rectangulo
+    
+    MOV X1, 170
+    MOV X2, 308
+    MOV X3, 176
+    MOV X4, 311
+    LDR X7, =BLACK_0
+    BL dibujar_rectangulo
+    
+    MOV X1, 177
+    MOV X2, 312
+    MOV X3, 187
+    MOV X4, 312
+    LDR X7, =BLACK_0
+    BL dibujar_rectangulo
+
+    MOV X1, 170
+    MOV X2, 312
+    MOV X3, 176
+    MOV X4, 312
+    LDR X7, =BLACK_0
+    BL dibujar_rectangulo
+    
+    
     // PUSH(X30)
     LDR X30, [SP, 40]
     LDR X7, [SP, 32]

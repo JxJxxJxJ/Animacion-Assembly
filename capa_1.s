@@ -31,6 +31,7 @@ capa_1: // Todas las rutinas que dibujen sprites iran aqui,
         BL luciernagaf1
         BL celularUP_1
         BL brazoUP_0
+        BL varanda_0
 
     /*             END FRAME 1                */
     /*                                        */
@@ -48,6 +49,7 @@ capa_1: // Todas las rutinas que dibujen sprites iran aqui,
         BL celularUP_1
         BL luciernagaf2
         BL brazoUP_1
+        BL varanda_1
         
     /*             END FRAME 2                */
     /*                                        */
@@ -64,6 +66,7 @@ capa_1: // Todas las rutinas que dibujen sprites iran aqui,
         BL celularUP_1
         BL luciernagaf3
         BL brazoUP_0
+        BL varanda_0
     /*             END FRAME 3                */
     /*                                        */
     /******************************************/
@@ -79,6 +82,7 @@ capa_1: // Todas las rutinas que dibujen sprites iran aqui,
         BL celularUP_1
         BL luciernagaf4
         BL brazoUP_1
+        BL varanda_1
         
     /*             END FRAME 4                */
     /*                                        */
@@ -429,6 +433,7 @@ capa_1: // Todas las rutinas que dibujen sprites iran aqui,
         BL hombre_0
         BL celularUP_1
         BL brazoUP_0
+        BL varanda_0
     /*             END FRAME 35               */
     /*                                        */
     /******************************************/
@@ -455,6 +460,7 @@ capa_1: // Todas las rutinas que dibujen sprites iran aqui,
         BL hombre_1
         BL celularUP_1
         BL brazoUP_1
+        BL varanda_1
     /*             END FRAME 37               */
     /*                                        */
     /******************************************/
@@ -482,6 +488,7 @@ capa_1: // Todas las rutinas que dibujen sprites iran aqui,
         BL hombre_0
         BL celularUP_0
         BL brazoUP_0
+        BL varanda_0
     /*             END FRAME 39               */
     /*                                        */
     /******************************************/
