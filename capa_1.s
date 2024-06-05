@@ -549,6 +549,7 @@ capa_1:
     /*                 FRAME 44               */
     /*                                        */
         BL luciernagaf44
+
         
     /*             END FRAME 44               */
     /*                                        */
@@ -560,6 +561,8 @@ capa_1:
     /*                 FRAME 45               */
     /*                                        */
         BL luciernagaf45
+        BL grupo_1_0
+        BL grupo_2_0
         
     /*             END FRAME 45               */
     /*                                        */
@@ -575,6 +578,7 @@ capa_1:
         BL hombre_0
         BL celularUP_1
         BL luciernagaf46
+        BL grupo_5_0
     /*             END FRAME 46               */
     /*                                        */
     /******************************************/
@@ -585,7 +589,8 @@ capa_1:
     /*                 FRAME 47               */
     /*                                        */
         BL luciernagaf47
-        
+        BL grupo_3_0
+        BL grupo_4_0
     /*             END FRAME 47               */
     /*                                        */
     /******************************************/
@@ -596,6 +601,7 @@ capa_1:
     /*                 FRAME 48               */
     /*                                        */
         BL luciernagaf48
+        BL grupo_6_0
         
     /*             END FRAME 48               */
     /*                                        */
@@ -847,6 +853,9 @@ capa_1:
         BL lampara_0_fondo_1
         BL hombre_0
         BL celularUP_1
+        BL grupo_1_1
+        BL grupo_2_1
+        BL grupo_5_1
     /*             END FRAME 72               */
     /*                                        */
     /******************************************/
@@ -866,7 +875,8 @@ capa_1:
     /******************************************/
     /*                 FRAME 74               */
     /*                                        */
-        
+        BL grupo_2_0
+        BL grupo_5_0
     /*             END FRAME 74               */
     /*                                        */
     /******************************************/
@@ -876,7 +886,8 @@ capa_1:
     /******************************************/
     /*                 FRAME 75               */
     /*                                        */
-        
+        BL grupo_2_1
+        BL grupo_5_1
     /*             END FRAME 75               */
     /*                                        */
     /******************************************/
@@ -886,7 +897,7 @@ capa_1:
     /******************************************/
     /*                 FRAME 76               */
     /*                                        */
-        
+        BL grupo_3_1
     /*             END FRAME 76               */
     /*                                        */
     /******************************************/
@@ -900,6 +911,8 @@ capa_1:
         BL lampara_0_fondo_2
         BL hombre_0
         BL celularUP_1
+        BL grupo_4_1
+        BL grupo_6_1
     /*             END FRAME 77               */
     /*                                        */
     /******************************************/
@@ -1013,4 +1026,9 @@ capa_1:
 RET
 
 
+
 .endif
+
+
+
+
