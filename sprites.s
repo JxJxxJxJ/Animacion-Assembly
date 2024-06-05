@@ -18489,3 +18489,558 @@ varanda_0:
     RET
 .endif
 
+/*
+
+
+//----------------------
+//GRUPO 1 DESDE EL FRAME 72 hasta el 44
+//----------------------
+// ventanas de la base
+// hago los cuadrados celestes (ventanas)
+MOV X1, 423
+MOV X2, 225
+MOV X3, 455
+MOV X4, 256
+LDR X7, =KHAKI
+BL dibujar_rectangulo
+
+// ventanas edif 2
+// hago los cuadrados celestes (ventanas)
+MOV X1, 537
+MOV X2, 126
+MOV X3, 579
+MOV X4, 167
+LDR X7, =KHAKI
+BL dibujar_rectangulo
+
+
+MOV X1, 537
+MOV X2, 178
+MOV X3, 567
+MOV X4, 182
+LDR X7, =KHAKI
+BL dibujar_rectangulo
+
+
+//------------------------
+//GRUPO 2    DESDE EL FRAME 72 al 73 (74 apagon) 75 hasta el 44  
+//-----------------------
+// ventanas edif 1
+
+// hago los cuadrados celestes (ventanas)
+MOV X1, 476
+MOV X2, 178
+MOV X3, 505
+MOV X4, 221
+LDR X7, =KHAKI
+BL dibujar_rectangulo
+// ventanas edif 3
+// hago los cuadrados celestes (ventanas)
+MOV X1, 576
+MOV X2, 208
+MOV X3, 636
+MOV X4, 241
+LDR X7, =KHAKI
+BL dibujar_rectangulo
+
+MOV X1, 587
+MOV X2, 247
+MOV X3, 594
+MOV X4, 254
+LDR X7, =KHAKI
+BL dibujar_rectangulo
+
+MOV X1, 589
+MOV X2, 255
+MOV X3, 593
+MOV X4, 256
+LDR X7, =KHAKI
+BL dibujar_rectangulo
+
+MOV X1, 587
+MOV X2, 187
+MOV X3, 590
+MOV X4, 194
+LDR X7, =KHAKI
+BL dibujar_rectangulo
+
+MOV X1, 595
+MOV X2, 187
+MOV X3, 599
+MOV X4, 194
+LDR X7, =KHAKI
+BL dibujar_rectangulo
+
+MOV X1, 602
+MOV X2, 186
+MOV X3, 606
+MOV X4, 194
+LDR X7, =KHAKI
+BL dibujar_rectangulo
+
+MOV X1, 611
+MOV X2, 186
+MOV X3, 614
+MOV X4, 194
+LDR X7, =KHAKI
+BL dibujar_rectangulo
+
+
+
+
+//----------------------------
+//GRUPO 3  DESDE EL FRAME 76 hasta el 46
+//---------------------------
+
+
+
+
+
+//DESDE EL FRAME 76 hasta el 47 
+
+//EDIFICIOS MEDIOS
+//VENTANAS EDIFICIO 1 torre mas alta
+MOV X1, 282
+MOV X2, 174
+MOV X3, 288
+MOV X4, 178
+LDR X7, =KHAKI
+BL dibujar_rectangulo
+
+MOV X1, 281
+MOV X2, 176
+MOV X3, 281
+MOV X4, 178
+LDR X7, =KHAKI
+BL dibujar_rectangulo
+
+MOV X1, 293
+MOV X2, 174
+MOV X3, 299
+MOV X4, 178
+LDR X7, =KHAKI
+BL dibujar_rectangulo
+
+MOV X1, 282
+MOV X2, 184
+MOV X3, 288
+MOV X4, 187
+LDR X7, =KHAKI
+BL dibujar_rectangulo
+
+MOV X1, 293
+MOV X2, 191
+MOV X3, 299
+MOV X4, 195
+LDR X7, =KHAKI
+BL dibujar_rectangulo
+
+MOV X1, 282
+MOV X2, 191
+MOV X3, 288
+MOV X4, 195
+LDR X7, =KHAKI
+BL dibujar_rectangulo
+
+MOV X1, 288
+MOV X2, 201
+MOV X3, 282
+MOV X4, 205
+LDR X7, =KHAKI
+BL dibujar_rectangulo
+
+MOV X1, 293
+MOV X2, 201
+MOV X3, 299
+MOV X4, 205
+LDR X7, =KHAKI
+BL dibujar_rectangulo
+
+MOV X1, 282
+MOV X2, 209
+MOV X3, 288
+MOV X4, 212
+LDR X7, =KHAKI
+BL dibujar_rectangulo
+
+MOV X1, 281
+MOV X2, 210
+MOV X3, 281
+MOV X4, 212
+LDR X7, =KHAKI
+BL dibujar_rectangulo
+
+MOV X1, 293
+MOV X2, 209
+MOV X3, 299
+MOV X4, 212
+LDR X7, =KHAKI
+BL dibujar_rectangulo
+
+MOV X1, 282
+MOV X2, 218
+MOV X3, 288
+MOV X4, 222
+LDR X7, =KHAKI
+BL dibujar_rectangulo
+
+MOV X1, 299
+MOV X2, 222
+MOV X3, 293
+MOV X4, 218
+LDR X7, =KHAKI
+BL dibujar_rectangulo
+
+MOV X1, 282
+MOV X2, 226
+MOV X3, 288
+MOV X4, 230
+LDR X7, =KHAKI
+BL dibujar_rectangulo
+
+//VENTANAS torre alta edificio 2
+
+MOV X1, 400
+MOV X2, 162
+MOV X3, 408
+MOV X4, 165
+LDR X7, =KHAKI
+BL dibujar_rectangulo
+
+MOV X1, 411
+MOV X2, 162
+MOV X3, 419
+MOV X4, 165
+LDR X7, =KHAKI
+BL dibujar_rectangulo
+
+MOV X1, 424
+MOV X2, 162
+MOV X3, 430
+MOV X4, 165
+LDR X7, =KHAKI
+BL dibujar_rectangulo
+
+MOV X1, 400
+MOV X2, 169
+MOV X3, 408
+MOV X4, 173
+LDR X7, =KHAKI
+BL dibujar_rectangulo
+
+MOV X1, 411
+MOV X2, 169
+MOV X3, 419
+MOV X4, 173
+LDR X7, =KHAKI
+BL dibujar_rectangulo
+
+MOV X1, 424
+MOV X2, 169
+MOV X3, 430
+MOV X4, 173
+LDR X7, =KHAKI
+BL dibujar_rectangulo
+
+MOV X1, 400
+MOV X2, 179
+MOV X3, 408
+MOV X4, 183
+LDR X7, =KHAKI
+BL dibujar_rectangulo
+
+MOV X1, 411
+MOV X2, 179
+MOV X3, 419 
+MOV X4, 183
+LDR X7, =KHAKI
+BL dibujar_rectangulo
+
+MOV X1, 400
+MOV X2, 206
+MOV X3, 408
+MOV X4, 208
+LDR X7, =KHAKI
+BL dibujar_rectangulo
+
+MOV X1, 411
+MOV X2, 206
+MOV X3, 419
+MOV X4, 208
+LDR X7, =KHAKI
+BL dibujar_rectangulo
+
+MOV X1, 424
+MOV X2, 206
+MOV X3, 430
+MOV X4, 208
+LDR X7, =KHAKI
+BL dibujar_rectangulo
+
+MOV X1, 400
+MOV X2, 213
+MOV X3, 408
+MOV X4, 217
+LDR X7, =KHAKI
+BL dibujar_rectangulo
+
+MOV X1, 411
+MOV X2, 213
+MOV X3, 419
+MOV X4, 217
+LDR X7, =KHAKI
+BL dibujar_rectangulo
+
+//-----------------------------------
+//GRUPO 4 Desde el frame 77 hasta el frame 46
+//----------------------------------
+
+
+ //Ventanas Edificio 1 torre del medio
+
+    MOV X1, 263
+    MOV X2, 209
+    MOV X3, 264
+    MOV X4, 212
+    LDR X7, =KHAKI
+    BL dibujar_rectangulo
+
+    MOV X1, 270
+    MOV X2, 209
+    MOV X3, 273
+    MOV X4, 212
+    LDR X7, =KHAKI
+    BL dibujar_rectangulo
+
+    MOV X1, 263
+    MOV X2, 218
+    MOV X3, 264
+    MOV X4, 222
+    LDR X7, =KHAKI
+    BL dibujar_rectangulo
+
+    MOV X1, 263
+    MOV X2, 226
+    MOV X3, 264
+    MOV X4, 230
+    LDR X7, =KHAKI
+    BL dibujar_rectangulo
+
+    MOV X1, 270
+    MOV X2, 231
+    MOV X3, 273
+    MOV X4, 234
+    LDR X7, =KHAKI
+    BL dibujar_rectangulo
+
+    MOV X1, 263
+    MOV X2, 240
+    MOV X3, 264
+    MOV X4, 242
+    LDR X7, =KHAKI
+    BL dibujar_rectangulo
+
+
+//Ventanas Edificio 1 torre baja
+
+MOV X1, 247
+MOV X2, 223
+MOV X3, 253
+MOV X4, 225
+LDR X7, =KHAKI
+BL dibujar_rectangulo
+
+MOV X1, 247
+MOV X2, 231
+MOV X3, 253
+MOV X4, 234
+LDR X7, =KHAKI
+BL dibujar_rectangulo
+
+MOV X1, 247
+MOV X2, 240
+MOV X3, 253
+MOV X4, 242
+LDR X7, =KHAKI
+BL dibujar_rectangulo
+
+
+//--------------------------------
+//GRUPO 5    desde el Frame 72 al 73 (74 apagon) 75  hasta el 45
+//-------------------------------
+
+
+
+
+//Ventanas TORRE BAJA edificio 2
+
+MOV X1, 324
+MOV X2, 206
+MOV X3, 330
+MOV X4, 208
+LDR X7, =KHAKI
+BL dibujar_rectangulo
+
+MOV X1, 335
+MOV X2, 206
+MOV X3, 342
+MOV X4, 208
+LDR X7, =KHAKI
+BL dibujar_rectangulo
+
+MOV X1, 346
+MOV X2, 206
+MOV X3, 353
+MOV X4, 208
+LDR X7, =KHAKI
+BL dibujar_rectangulo
+
+MOV X1, 361
+MOV X2, 206
+MOV X3, 369
+MOV X4, 208
+LDR X7, =KHAKI
+BL dibujar_rectangulo
+
+MOV X1, 374
+MOV X2, 206
+MOV X3, 380
+MOV X4, 208
+LDR X7, =KHAKI
+BL dibujar_rectangulo
+
+MOV X1, 324
+MOV X2, 218
+MOV X3, 330
+MOV X4, 222
+LDR X7, =KHAKI
+BL dibujar_rectangulo
+
+MOV X1, 335
+MOV X2, 218
+MOV X3, 343
+MOV X4, 222
+LDR X7, =KHAKI
+BL dibujar_rectangulo
+
+MOV X1, 346
+MOV X2, 218
+MOV X3, 353
+MOV X4, 222
+LDR X7, =KHAKI
+BL dibujar_rectangulo
+
+MOV X1, 324
+MOV X2, 226
+MOV X3, 330
+MOV X4, 230
+LDR X7, =KHAKI
+BL dibujar_rectangulo
+
+MOV X1, 335
+MOV X2, 226
+MOV X3, 342
+MOV X4, 230
+LDR X7, =KHAKI
+BL dibujar_rectangulo
+
+MOV X1, 346
+MOV X2, 226
+MOV X3, 353
+MOV X4, 230
+LDR X7, =KHAKI
+BL dibujar_rectangulo
+
+MOV X1, 359
+MOV X2, 226
+MOV X3, 365
+MOV X4, 230
+LDR X7, =KHAKI
+BL dibujar_rectangulo
+
+MOV X1, 335
+MOV X2, 235
+MOV X3, 342
+MOV X4, 239
+LDR X7, =KHAKI
+BL dibujar_rectangulo
+
+MOV X1, 346
+MOV X2, 235
+MOV X3, 353
+MOV X4, 239
+LDR X7, =KHAKI
+BL dibujar_rectangulo
+
+MOV X1, 359
+MOV X2, 235
+MOV X3, 365
+MOV X4, 239
+LDR X7, =KHAKI
+BL dibujar_rectangulo
+
+
+//----------------------------------
+//GRUPO 6 Desde el FRAME Desde el Frame 77 hasta el 47
+//----------------------------------
+
+//VENTANAS EDIFICIO 3
+MOV X1, 466
+MOV X2, 132
+MOV X3, 472
+MOV X4, 134
+LDR X7, =KHAKI
+BL
+
+ MOV X1, 477
+  MOV X2, 132
+  MOV X3, 484
+  MOV X4, 134
+  LDR X7, =KHAKI
+  BL dibujar_rectangulo
+
+  MOV X1, 489
+  MOV X2, 132
+  MOV X3, 495
+  MOV X4, 134
+  LDR X7, =KHAKI
+  BL dibujar_rectangulo
+  
+  
+  MOV X1, 466
+  MOV X2, 139
+  MOV X3, 472
+  MOV X4, 143
+  LDR X7, =KHAKI
+  BL dibujar_rectangulo
+  
+  MOV X1, 477
+  MOV X2, 139
+  MOV X3, 484
+  MOV X4, 143
+  LDR X7, =KHAKI
+  BL dibujar_rectangulo
+  
+  MOV X1, 489
+  MOV X2, 138
+  MOV X3, 495
+  MOV X4, 143
+  LDR X7, =KHAKI
+  BL dibujar_rectangulo
+  
+  MOV X1, 466
+  MOV X2, 19
+  MOV X3, 472
+  MOV X4, 151
+  LDR X7, =KHAKI
+  BL dibujar_rectangulo
+  
+  MOV X1, 466
+  MOV X2, 157
+  MOV X3, 472
+  MOV X4, 161
+  LDR X7, =KHAKI
+  BL dibujar_rectangulo
+
+
+ */

@@ -13,7 +13,7 @@
 .equ DARKSLATEGRAY_1, 0x453927      // perro detalles, ojo noche detalles perro
 .equ DARKSLATEGRAY_2, 0x403315      // Detalles marron verdoso
 .equ DARKOLIVEGREEN, 0x8E7E40       // Ojo perro noche
-.equ KHAKI, 0xDED687
+.equ KHAKI, 0xDED687                //Luces edificios 
 
 .equ DARKSLATEGRAY_3, 0x00506F      // Edificios oscuros detalles, Edificio medios cuerpo, Foco centro lampara, Detalles lampara palo, detalle ojo perro noche
 .equ DARKTURQUOISE, 0x3FD3E9        // Foco prendido

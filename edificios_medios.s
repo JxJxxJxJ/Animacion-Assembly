@@ -64,6 +64,7 @@ edificios_medios:
     LDR X7, =DARKSLATEGRAY_3
     BL dibujar_rectangulo
 
+
     // Ventanas Edificio 1 torre más alta
 
     MOV X1, 282
@@ -544,7 +545,7 @@ edificios_medios:
   
     
     
-  //Ventanas 
+  //Ventanas Edificio 3 
   MOV X1, 466
   MOV X2, 132
   MOV X3, 472
