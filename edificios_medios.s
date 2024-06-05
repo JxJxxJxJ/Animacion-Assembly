@@ -522,13 +522,110 @@ edificios_medios:
     BL dibujar_rectangulo
     
     
+    //--------------
+    // EDIFICIO 3
+    //---------------
+    
 
+    MOV X1, 462
+    MOV X2, 127
+    MOV X3, 495
+    MOV X4, 151
+    LDR X7, =DARKSLATEGRAY_3
+    BL dibujar_rectangulo
+    
+      //TORRE DEL COSTADO 
+  MOV X1, 461
+  MOV X2, 149
+  MOV X3, 477 
+  MOV X4, 217
+  LDR X7, =DARKSLATEGRAY_3
+  BL dibujar_rectangulo
+  
     
     
+  //Ventanas 
+  MOV X1, 466
+  MOV X2, 132
+  MOV X3, 472
+  MOV X4, 134
+  LDR X7, =FONDO_VARANDA_0
+  BL dibujar_rectangulo
+  
     
     
-    
-    
+  MOV X1, 477
+  MOV X2, 132
+  MOV X3, 484
+  MOV X4, 134
+  LDR X7, =FONDO_VARANDA_0
+  BL dibujar_rectangulo
+
+  MOV X1, 489
+  MOV X2, 132
+  MOV X3, 495
+  MOV X4, 134
+  LDR X7, =FONDO_VARANDA_0
+  BL dibujar_rectangulo
+  
+  
+  MOV X1, 466
+  MOV X2, 139
+  MOV X3, 472
+  MOV X4, 143
+  LDR X7, =FONDO_VARANDA_0
+  BL dibujar_rectangulo
+  
+  MOV X1, 477
+  MOV X2, 139
+  MOV X3, 484
+  MOV X4, 143
+  LDR X7, =FONDO_VARANDA_0
+  BL dibujar_rectangulo
+  
+  MOV X1, 489
+  MOV X2, 138
+  MOV X3, 495
+  MOV X4, 143
+  LDR X7, =FONDO_VARANDA_0
+  BL dibujar_rectangulo
+  
+  MOV X1, 466
+  MOV X2, 149
+  MOV X3, 472
+  MOV X4, 151
+  LDR X7, =FONDO_VARANDA_0
+  BL dibujar_rectangulo
+  
+  MOV X1, 466
+  MOV X2, 157
+  MOV X3, 472
+  MOV X4, 161
+  LDR X7, =FONDO_VARANDA_0
+  BL dibujar_rectangulo
+  
+  
+
+  
+  
+
+  //Detalle de arriba
+  MOV X1, 466
+  MOV X2, 122
+  MOV X3, 469
+  MOV X4, 126
+  LDR X7, =SALMON
+  BL dibujar_rectangulo
+  
+  
+  MOV X1, 488
+  MOV X2, 122
+  MOV X3, 493
+  MOV X4, 126
+  LDR X7, =SALMON
+  BL dibujar_rectangulo
+  
+  
     
     
     
