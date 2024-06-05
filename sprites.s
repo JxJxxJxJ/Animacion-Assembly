@@ -5,6 +5,9 @@
 .include "framebuffer.s"
 .include "elementales.s"
 
+// NOTE: Todas 'las fotos' de las figuras dinamicas estan aca,
+// luego con ellas conformamos "a animacion en ./capa_1.s.
+
 lampara_0_fondo_0: // NOTE DONE
     // PUSH(X30) 
     SUB SP, SP, 48

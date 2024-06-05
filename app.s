@@ -4,14 +4,12 @@
 
 .globl main
 
-// NOTE ---------------- CODE HERE ------------------------------------
 main:
 
-    BL capa_0             // La capa mas estatica de todas (literalmente estatica)
+    BL capa_0             // NOTE: La capa mas estatica de todas (literalmente estatica)
     BL capa_1             // Animados y demas detalles
 
-    
-  // Infinite Loop
+// NOTE: Loop infinito para que no se reinicie QEMU
 InfLoop:
 B InfLoop
 

@@ -6,7 +6,6 @@
 .include "elementales.s"
 
 
-
 /*
 Enumero edicios claros de izquierda a derecha, empezando por el 1
 A su vez hago lo mismo con las bases

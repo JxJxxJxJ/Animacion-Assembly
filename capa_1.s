@@ -10,8 +10,14 @@
 .include "capa_0.s"
 .include "sprites.s"
 
-capa_1: // Todas las rutinas que dibujen sprites iran aqui,
-        // solo se admiten BL a otras figuras en cada frame.
+    // NOTE: Todas las rutinas que dibujen sprites van aca.
+    // solo se admiten BL a otras figuras en cada frame.
+
+    // NOTE: Los sprites se actualizan solo cuando es necesario,
+    // en algunos casos, una misma figura permanece quieta durante
+    // varios frames.
+
+capa_1:
     // PUSH(X30)
     SUB SP, SP, 48
     STR X1, [SP]
