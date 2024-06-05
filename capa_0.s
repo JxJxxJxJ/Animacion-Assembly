@@ -8,7 +8,7 @@
 .include "edificios_claros.s"
 .include "edificios_medios.s"
 
-.equ Y_OFFSET, -64 + 48 // Restar a toda coordenada Y del gif
+.equ Y_OFFSET, -64 + 48         // Restar a toda coordenada Y del gif
 
 capa_0:                         // Absolutamente estatica, no cambia nunca
     // PUSH(X30)
@@ -20,6 +20,10 @@ capa_0:                         // Absolutamente estatica, no cambia nunca
     STR X7, [SP, 32]
     STR X30, [SP, 40]
 
+    // NOTE: Primero dibujamos "lo mas al fondo" y luego "lo mas al frente", pero
+    // siempre se tratan de objetos estaticos. En la animación terminan siendo
+    // dibujados solamente una vez.
+
     BL varanda
     BL piso
 
@@ -29,7 +33,7 @@ capa_0:                         // Absolutamente estatica, no cambia nunca
 
     BL puente
 
-    // PUSH(X30)
+    // POP(X30)
     LDR X30, [SP, 40]
     LDR X7, [SP, 32]
     LDR X4, [SP, 24]
@@ -236,7 +240,7 @@ piso:
 RET
 
 puente:
-// PUSH(X30)
+    // PUSH(X30)
     SUB SP, SP, 48
     STR X1, [SP]
     STR X2, [SP, 8]
@@ -428,7 +432,7 @@ puente:
     BL dibujar_rectangulo
     
     
-// PUSH(X30)
+    // PUSH(X30)
     LDR X30, [SP, 40]
     LDR X7, [SP, 32]
     LDR X4, [SP, 24]

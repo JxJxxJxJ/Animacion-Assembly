@@ -1,3 +1,4 @@
+// NOTE:
 // Poner en comentarios para que uso cada color, 
 // agregar si el uso no esta.
 
