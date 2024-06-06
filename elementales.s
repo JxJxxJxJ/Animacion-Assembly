@@ -204,5 +204,93 @@ sleep:
     dejar_de_dormir:
 RET                               // Retornar
 
+// NOTE:
+// (solo para cumplir con el punto)
+// fun dibujar_circulo(x,y,r,color)
+// regs: (X1, X2, X3, X7)
+// desc: dibuja un circulo de centro (x,y) con radio r del color `color`
+/*
+PERF:
+                                                        y-r
+                    # = (x-r, y-r)                  #---------?                  ? = (x+r, y-r) 
+                                                    |   ***   |
+                                                    | *  |r * |
+                                                    |*   |   *|
+                                                x-r |* (x,y) *| x+r              donde X1=x, X2=y, X3=r
+                                                    |*       *|
+                                                    | *     * |
+                                                    |   ***   |
+                    $ = (x-r, y+r)                  $---------!                  ! = (x+r, y+r)
+                                                        y+r
+
+*/
+//NOTE:
+// Para cada punto dentro del cuadrado debo chequear si se cumple esta ecuacion, si es asi entonces lo pinto (pues esta dentro del ciculo).
+//                                        (x-x_0)^2 + (y-y_0)^2 <= r^2
+
+dibujar_circulo:
+    // PUSH
+    SUB SP,SP,#64                                   
+    STR X4,[SP]
+    STR X9,[SP,#8]
+    STR X10,[SP,#16]
+    STR X11,[SP,#24]
+    STR X12,[SP,#32]
+    STR X13,[SP,#40]
+    STR X14,[SP,#48]
+    STR X30,[SP,#56]
+
+    // Copio en X9 X10 mi punto
+    MOV X9,X1                                       // X9 = x
+    MOV x10,X2                                      // X10 = y
+
+    // Calculo el punto inferior derecho del cuadrado
+    ADD X11,X1,X3                                   // X11 = x+r
+    ADD X12,X2,X3                                   // X12 = y+r
+
+    // Calculo el punto superior izquierdo del cuadrado (ademas voy a usar (x,y) como "punto actual")
+    SUB X1,X1,X3                                    // x := x-r
+    SUB X2,X2,X3                                    // y := y-r
+
+    // Calculo r^2 para usarlo en los CMP
+    MUL X4,X3,X3                                    // X4 = r^2
+
+    loop_dibujar_circulo:
+        // Seteo de registros auxiliares para guardar la ecuación de la circunferencia (x - x_0)^2 + (y - y_0)^2
+        SUB X13,X1,X9                               // X13 = x-x_0
+        MUL X13,X13,X13                             // X13 = (x-x_0)^2
+        SUB X14,X2,X10                              // X14 = y-y_0
+        MUL X14,X14,X14                             // X14 = (y-y_0)^2
+        ADD X14,X13,X14                             // X14 = (x-x_0)^2 + (y-y_0)^2
+
+        CMP X4,X14                                  // if
+        B.LE dejo_de_dibujar_circulo                // (r^2 <= (x-x_0)^2 + (y-y_0)^2) then dejo_de_dibujar_circulo
+        BL dibujar_pixel                            // else if ( (x-x_0)^2 + (y-y_0)^2 ) then dibujar_pixel
+
+        dejo_de_dibujar_circulo:
+	    // Aca avanzo horizontalmente
+            ADD X1,X1,1                             // X1=x++
+            CMP X11,X1                              // if
+            B.NE loop_dibujar_circulo               // (X11=x+r != X1=x) then loop_dibujar_ciculo
+
+	    // Reinicio x
+	    SUB X1, X1, X3                          // else X1=x+r := x-r
+            SUB X1, X1, X3                          // X1=x := x-r
+
+	    // Aca avanzo verticalmente
+            ADD X2,X2,1                             // X2=y++
+            CMP X12,X2                              // if 
+            B.NE loop_dibujar_circulo               // (X12=y+r != X2=y) then sigo_dibujando
+
+    LDR X30,[SP,#56]                                // Pop del stack
+    LDR X14,[SP,#48]
+    LDR X13,[SP,#40]
+    LDR X12,[SP,#32]
+    LDR X11,[SP,#24]
+    LDR X10,[SP,#16]
+    LDR X9,[SP,#8]
+    LDR X4,[SP]
+    ADD SP, SP, #64
+RET     
 
 .endif

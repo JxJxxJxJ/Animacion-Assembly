@@ -31,6 +31,7 @@ capa_1:
     /*                 FRAME 1                */
     /*                                        */
         BL fondo_3
+        BL luna_fondo3
         BL lampara_0_fondo_3
         BL perro_0
         BL hombre_0
@@ -574,6 +575,7 @@ capa_1:
     /*                 FRAME 46               */
     /*                                        */
         BL fondo_2
+        BL luna_fondo2
         BL lampara_0_fondo_2
         BL hombre_0
         BL celularUP_1
@@ -613,6 +615,7 @@ capa_1:
     /*                 FRAME 49               */
     /*                                        */
         BL fondo_1
+        BL luna_fondo1
         BL lampara_0_fondo_1
         BL hombre_0
         BL celularUP_1
@@ -657,6 +660,7 @@ capa_1:
     /*                 FRAME 53               */
     /*                                        */
         BL fondo_0
+        BL luna_fondo0
         BL lampara_0_fondo_0
         BL hombre_0
         BL celularUP_1
@@ -850,6 +854,7 @@ capa_1:
     /*                 FRAME 72               */
     /*                                        */
         BL fondo_1
+        BL luna_fondo1
         BL lampara_0_fondo_1
         BL hombre_0
         BL celularUP_1
@@ -908,6 +913,7 @@ capa_1:
     /*                 FRAME 77               */
     /*                                        */
         BL fondo_2
+        BL luna_fondo2
         BL lampara_0_fondo_2
         BL hombre_0
         BL celularUP_1
@@ -953,6 +959,7 @@ capa_1:
     /*                 FRAME 81               */
     /*                                        */
         BL fondo_3
+        BL luna_fondo3
         BL lampara_0_fondo_3
         BL hombre_0
         BL celularUP_1

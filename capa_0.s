@@ -24,6 +24,7 @@ capa_0:                         // Absolutamente estatica, no cambia nunca
     // siempre se tratan de objetos estaticos. En la animación terminan siendo
     // dibujados solamente una vez.
 
+
     BL varanda
     BL piso
 
@@ -441,6 +442,7 @@ puente:
     LDR X1, [SP] 
     ADD SP, SP, #48
 RET
+
 
 .endif
  
