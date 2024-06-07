@@ -1,0 +1,9 @@
+// NOTE: Constantes del frame buffer
+
+.equ SCREEN_WIDTH, 640
+.equ SCREEN_HEIGHT, 480
+.equ BITS_PER_PIXEL, 32
+
+.equ SCREEN_START, 0
+.equ SCREEN_END_X, SCREEN_WIDTH - 1
+.equ SCREEN_END_Y, SCREEN_HEIGHT - 1
