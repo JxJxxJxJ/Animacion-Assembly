@@ -15,3 +15,6 @@ memory_map.txt
 
 # Sacar .old
 *.old
+
+# Ignorar historial de gdb
+.gdb_history
