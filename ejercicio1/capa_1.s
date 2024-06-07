@@ -41,6 +41,12 @@ capa_1:
         BL celularUP_1
         BL brazoUP_0
         BL varanda_0
+    
+        BL grupo_1_1
+        BL grupo_2_1
+        BL grupo_3_1
+        BL grupo_4_1
+        BL grupo_5_1
 
     /*             END FRAME 1                */
     /*                                        */
