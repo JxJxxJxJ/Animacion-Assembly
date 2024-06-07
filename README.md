@@ -1,8 +1,8 @@
 # Lab Org. y Arq. de Computadoras
 
 ## Integrantes
-Juan Cruz Hermosilla Artico
-Gaspar Saenz Valiente
+Juan Cruz Hermosilla Artico<br>
+Gaspar Saenz Valiente<br>
 Nehuen Emanuel Guevara
 
 ## Descripción de los ejercicios
