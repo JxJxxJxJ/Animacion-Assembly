@@ -20574,6 +20574,306 @@ luna_fondo3:
     ADD SP, SP, #48
 RET
 
+highest_edif_1:
+    // PUSH(X30)
+    SUB SP, SP, 48
+    STR X1, [SP]
+    STR X2, [SP, 8]
+    STR X3, [SP, 16]
+    STR X4, [SP, 24]
+    STR X7, [SP, 32]
+    STR X30, [SP, 40]
+    
+    MOV X1, 480
+    MOV X2, 101
+    MOV X3, 497
+    MOV X4, 108
+    LDR X7, =WHITE
+    BL dibujar_rectangulo
+    
+    MOV X1, 484
+    MOV X2, 104
+    MOV X3, 487
+    MOV X4, 108
+    LDR X7, =DARKTURQUOISE
+    BL dibujar_rectangulo
+
+    MOV X1, 491
+    MOV X2, 104
+    MOV X3, 494
+    MOV X4, 108
+    LDR X7, =DARKTURQUOISE
+    BL dibujar_rectangulo
+    
+    MOV X1, 484
+    MOV X2, 96
+    MOV X3, 494
+    MOV X4, 98
+    LDR X7, =DARKTURQUOISE
+    BL dibujar_rectangulo
+    
+    MOV X1, 488
+    MOV X2, 87
+    MOV X3, 490
+    MOV X4, 90
+    LDR X7, =DARKTURQUOISE
+    BL dibujar_rectangulo
+
+    MOV X1, 488
+    MOV X2, 83
+    MOV X3, 490
+    MOV X4, 86
+    LDR X7, =WHITE
+    BL dibujar_rectangulo
+
+    MOV X1, 484
+    MOV X2, 91
+    MOV X3, 494
+    MOV X4, 95
+    LDR X7, =WHITE
+    BL dibujar_rectangulo
+
+    MOV X1, 480
+    MOV X2, 99
+    MOV X3, 498
+    MOV X4, 103
+    LDR X7, =WHITE
+    BL dibujar_rectangulo
+
+    MOV X1, 480
+    MOV X2, 104
+    MOV X3, 483
+    MOV X4, 108
+    LDR X7, =WHITE
+    BL dibujar_rectangulo
+
+    MOV X1, 488
+    MOV X2, 104
+    MOV X3, 490
+    MOV X4, 108
+    LDR X7, =WHITE
+    BL dibujar_rectangulo
+
+    MOV X1, 495
+    MOV X2, 104
+    MOV X3, 498
+    MOV X4, 108
+    LDR X7, =WHITE
+    BL dibujar_rectangulo
+
+    // ventanitas
+
+    MOV X1, 495
+    MOV X2, 138
+    MOV X3, 498
+    MOV X4, 142
+    LDR X7, =CIELO_2
+    BL dibujar_rectangulo
+
+    MOV X1, 495
+    MOV X2, 129
+    MOV X3, 498
+    MOV X4, 134
+    LDR X7, =CIELO_2
+    BL dibujar_rectangulo
+    
+    MOV X1, 495
+    MOV X2, 121
+    MOV X3, 498
+    MOV X4, 125
+    LDR X7, =CIELO_2
+    BL dibujar_rectangulo
+
+    MOV X1, 495
+    MOV X2, 112
+    MOV X3, 498
+    MOV X4, 117
+    LDR X7, =CIELO_2
+    BL dibujar_rectangulo
+
+    MOV X1, 487
+    MOV X2, 112
+    MOV X3, 490
+    MOV X4, 117
+    LDR X7, =CIELO_2
+    BL dibujar_rectangulo
+
+    MOV X1, 480
+    MOV X2, 112
+    MOV X3, 483
+    MOV X4, 117
+    LDR X7, =CIELO_2
+    BL dibujar_rectangulo
+
+    MOV X1, 480
+    MOV X2, 121
+    MOV X3, 483
+    MOV X4, 125
+    LDR X7, =CIELO_2
+    BL dibujar_rectangulo
+
+    // PUSH(X30)
+    LDR X30, [SP, 40]
+    LDR X7, [SP, 32]
+    LDR X4, [SP, 24]
+    LDR X3, [SP, 16]
+    LDR X2, [SP, 8]
+    LDR X1, [SP] 
+    ADD SP, SP, #48
+    
+    RET
+
+
+highest_edif_0:
+    // PUSH(X30)
+    SUB SP, SP, 48
+    STR X1, [SP]
+    STR X2, [SP, 8]
+    STR X3, [SP, 16]
+    STR X4, [SP, 24]
+    STR X7, [SP, 32]
+    STR X30, [SP, 40]
+    
+    MOV X1, 480
+    MOV X2, 101
+    MOV X3, 497
+    MOV X4, 108
+    LDR X7, =STEELBLUE_2
+    BL dibujar_rectangulo
+    
+    MOV X1, 484
+    MOV X2, 104
+    MOV X3, 487
+    MOV X4, 108
+    LDR X7, =STEELBLUE_2
+    BL dibujar_rectangulo
+
+    MOV X1, 491
+    MOV X2, 104
+    MOV X3, 494
+    MOV X4, 108
+    LDR X7, =STEELBLUE_2
+    BL dibujar_rectangulo
+    
+    MOV X1, 484
+    MOV X2, 96
+    MOV X3, 494
+    MOV X4, 98
+    LDR X7, =STEELBLUE_2
+    BL dibujar_rectangulo
+    
+    MOV X1, 488
+    MOV X2, 87
+    MOV X3, 490
+    MOV X4, 90
+    LDR X7, =STEELBLUE_2
+    BL dibujar_rectangulo
+
+    MOV X1, 488
+    MOV X2, 83
+    MOV X3, 490
+    MOV X4, 86
+    LDR X7, =STEELBLUE_2
+    BL dibujar_rectangulo
+
+    MOV X1, 484
+    MOV X2, 91
+    MOV X3, 494
+    MOV X4, 95
+    LDR X7, =STEELBLUE_2
+    BL dibujar_rectangulo
+
+    MOV X1, 480
+    MOV X2, 99
+    MOV X3, 498
+    MOV X4, 103
+    LDR X7, =STEELBLUE_2
+    BL dibujar_rectangulo
+
+    MOV X1, 480
+    MOV X2, 104
+    MOV X3, 483
+    MOV X4, 108
+    LDR X7, =STEELBLUE_2
+    BL dibujar_rectangulo
+
+    MOV X1, 488
+    MOV X2, 104
+    MOV X3, 490
+    MOV X4, 108
+    LDR X7, =STEELBLUE_2
+    BL dibujar_rectangulo
+
+    MOV X1, 495
+    MOV X2, 104
+    MOV X3, 498
+    MOV X4, 108
+    LDR X7, =STEELBLUE_2
+    BL dibujar_rectangulo
+
+    // ventanitas
+
+    MOV X1, 495
+    MOV X2, 138
+    MOV X3, 498
+    MOV X4, 142
+    LDR X7, =DARKSLATEGRAY_3
+    BL dibujar_rectangulo
+
+    MOV X1, 495
+    MOV X2, 129
+    MOV X3, 498
+    MOV X4, 134
+    LDR X7, =DARKSLATEGRAY_3
+    BL dibujar_rectangulo
+    
+    MOV X1, 495
+    MOV X2, 121
+    MOV X3, 498
+    MOV X4, 125
+    LDR X7, =DARKSLATEGRAY_3
+    BL dibujar_rectangulo
+
+    MOV X1, 495
+    MOV X2, 112
+    MOV X3, 498
+    MOV X4, 117
+    LDR X7, =DARKSLATEGRAY_3
+    BL dibujar_rectangulo
+
+    MOV X1, 487
+    MOV X2, 112
+    MOV X3, 490
+    MOV X4, 117
+    LDR X7, =DARKSLATEGRAY_3
+    BL dibujar_rectangulo
+
+    MOV X1, 480
+    MOV X2, 112
+    MOV X3, 483
+    MOV X4, 117
+    LDR X7, =DARKSLATEGRAY_3
+    BL dibujar_rectangulo
+
+    MOV X1, 480
+    MOV X2, 121
+    MOV X3, 483
+    MOV X4, 125
+    LDR X7, =DARKSLATEGRAY_3
+    BL dibujar_rectangulo
+
+    // PUSH(X30)
+    LDR X30, [SP, 40]
+    LDR X7, [SP, 32]
+    LDR X4, [SP, 24]
+    LDR X3, [SP, 16]
+    LDR X2, [SP, 8]
+    LDR X1, [SP] 
+    ADD SP, SP, #48
+    
+    RET
+
+
 .endif
 
 

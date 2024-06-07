@@ -45,6 +45,7 @@ capa_1:
         BL grupo_3_1
         BL grupo_4_1
         BL grupo_5_1
+        BL highest_edif_1
     /*             END FRAME 1                */
     /*                                        */
     /******************************************/
@@ -669,6 +670,7 @@ capa_1:
         BL lampara_0_fondo_0
         BL hombre_0
         BL celularUP_1
+        BL highest_edif_0
     /*             END FRAME 53               */
     /*                                        */
     /******************************************/
@@ -998,7 +1000,7 @@ capa_1:
     /*                 FRAME 84               */
     /*                                        */
         BL luciernagaf84
-        
+        BL highest_edif_1
     /*             END FRAME 84               */
     /*                                        */
     /******************************************/
@@ -1009,6 +1011,7 @@ capa_1:
     /*                 FRAME 85               */
     /*                                        */
         BL luciernagaf85
+        BL highest_edif_0
         
     /*             END FRAME 85               */
     /*                                        */
@@ -1020,7 +1023,7 @@ capa_1:
     /*                 FRAME 86               */
     /*                                        */
         BL luciernagaf86
-        
+        BL highest_edif_1
     /*             END FRAME 86               */
     /*                                        */
     /******************************************/

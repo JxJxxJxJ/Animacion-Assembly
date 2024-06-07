@@ -1,5 +1,10 @@
 # Lab Org. y Arq. de Computadoras
 
+## Integrantes
+Juan Cruz Hermosilla Artico
+Gaspar Saenz Valiente
+Nehuen Emanuel Guevara
+
 ## Descripción de los ejercicios
 ### Ejercicio1: 
 Un hombre y su perro en un paisaje urbano nocturno.
