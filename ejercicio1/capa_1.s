@@ -17,7 +17,8 @@
     // en algunos casos, una misma figura permanece quieta durante
     // varios frames.
 
-    // NOTE: Ejercicio1, solo dibujamos el frame 1
+    // NOTE: Ejercicio1, solo dibujamos el frame 1 (podriamos elegir
+    // cualquier otro)
 capa_1:
     // PUSH(X30)
     SUB SP, SP, 48
